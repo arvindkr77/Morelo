@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<preferences version="10.0">
+  <category name="Active Workspace">
+    <category_description>No description available for this category.</category_description>
+    <preference name="AWC_MO4_Board.SUMMARYRENDERING" type="String" array="false" disabled="false" protectionScope="User" envEnabled="false">
+      <preference_description>Board summary stylesheet</preference_description>
+      <context name="Teamcenter">
+        <value>Awp0MO4_BoardSummary</value>
+      </context>
+    </preference>
+    <preference name="AWC_MO4_Cover.SUMMARYRENDERING" type="String" array="false" disabled="false" protectionScope="User" envEnabled="false">
+      <preference_description>Cover summary stylesheet</preference_description>
+      <context name="Teamcenter">
+        <value>Awp0MO4_CoverSummary</value>
+      </context>
+    </preference>
+    <preference name="AWC_MO4_Rim.SUMMARYRENDERING" type="String" array="false" disabled="false" protectionScope="User" envEnabled="false">
+      <preference_description>Rim summary stylesheet</preference_description>
+      <context name="Teamcenter">
+        <value>Awp0MO4_RimSummary</value>
+      </context>
+    </preference>	
+    <preference name="AWC_MO4_Eng_Design.CREATERENDERING" type="String" array="false" disabled="false" protectionScope="User" envEnabled="false">
+      <preference_description>Register stylesheet for Engineering Design creation</preference_description>
+      <context name="Teamcenter">
+        <value>Awp0MO4_Eng_DesignCreate</value>
+      </context>
+    </preference>	
+    <preference name="AWC_MO4_Eng_Design.SUMMARYRENDERING" type="String" array="false" disabled="false" protectionScope="User" envEnabled="false">
+      <preference_description>Engineering Design summary stylesheet</preference_description>
+      <context name="Teamcenter">
+        <value>Awp0MO4_Eng_DesignSummary</value>
+      </context>
+    </preference>
+    <preference name="AWC_MO4_Eng_DesignRevision.SUMMARYRENDERING" type="String" array="false" disabled="false" protectionScope="User" envEnabled="false">
+      <preference_description>Engineering Design Revision summary stylesheet</preference_description>
+      <context name="Teamcenter">
+        <value>Awp0MO4_Eng_DesignRevisionSummary</value>
+      </context>
+    </preference>
+    <preference name="AWC_MO4_Eng_Part.CREATERENDERING" type="String" array="false" disabled="false" protectionScope="User" envEnabled="false">
+      <preference_description>Register stylesheet for Engineering Part creation</preference_description>
+      <context name="Teamcenter">
+        <value>Awp0MO4_Eng_PartCreate</value>
+      </context>
+    </preference>	
+    <preference name="AWC_MO4_Eng_Part.SUMMARYRENDERING" type="String" array="false" disabled="false" protectionScope="User" envEnabled="false">
+      <preference_description>Engineering Part summary stylesheet</preference_description>
+      <context name="Teamcenter">
+        <value>Awp0MO4_Eng_PartSummary</value>
+      </context>
+    </preference>
+    <preference name="AWC_MO4_Eng_PartRevision.SUMMARYRENDERING" type="String" array="false" disabled="false" protectionScope="User" envEnabled="false">
+      <preference_description>Engineering Part Revision summary stylesheet</preference_description>
+      <context name="Teamcenter">
+        <value>Awp0MO4_Eng_PartRevisionSummary</value>
+      </context>
+    </preference>
+  </category>
+  <category name="General">
+    <category_description>No description available for this category.</category_description>
+    <preference name="MO4_Board.SUMMARYRENDERING" type="String" array="true" disabled="false" protectionScope="Site" envEnabled="false">
+      <preference_description>This is an internal preference.</preference_description>
+      <context name="Teamcenter">
+        <value>MO4_BoardSummary</value>
+      </context>
+    </preference>
+    <preference name="MO4_BoardSummary.SUMMARY_REGISTEREDTO" type="String" array="true" disabled="false" protectionScope="Site" envEnabled="false">
+      <preference_description>This is an internal preference.</preference_description>
+      <context name="Teamcenter">
+        <value>MO4_Board</value>
+      </context>
+    </preference>
+    <preference name="MO4_Cover.SUMMARYRENDERING" type="String" array="true" disabled="false" protectionScope="Site" envEnabled="false">
+      <preference_description>This is an internal preference.</preference_description>
+      <context name="Teamcenter">
+        <value>MO4_CoverSummary</value>
+      </context>
+    </preference>
+    <preference name="MO4_CoverSummary.SUMMARY_REGISTEREDTO" type="String" array="true" disabled="false" protectionScope="Site" envEnabled="false">
+      <preference_description>This is an internal preference.</preference_description>
+      <context name="Teamcenter">
+        <value>MO4_Cover</value>
+      </context>
+    </preference>
+    <preference name="MO4_Rim.SUMMARYRENDERING" type="String" array="true" disabled="false" protectionScope="Site" envEnabled="false">
+      <preference_description>This is an internal preference.</preference_description>
+      <context name="Teamcenter">
+        <value>MO4_RimSummary</value>
+      </context>
+    </preference>
+    <preference name="MO4_RimSummary.SUMMARY_REGISTEREDTO" type="String" array="true" disabled="false" protectionScope="Site" envEnabled="false">
+      <preference_description>This is an internal preference.</preference_description>
+      <context name="Teamcenter">
+        <value>MO4_Rim</value>
+      </context>
+    </preference>
+    <preference name="MO4_Eng_Design.SUMMARYRENDERING" type="String" array="true" disabled="false" protectionScope="Site" envEnabled="false">
+      <preference_description>This is an internal preference.</preference_description>
+      <context name="Teamcenter">
+        <value>MO4_Eng_DesignSummary</value>
+      </context>
+    </preference>
+    <preference name="MO4_Eng_DesignSummary.SUMMARY_REGISTEREDTO" type="String" array="true" disabled="false" protectionScope="Site" envEnabled="false">
+      <preference_description>This is an internal preference.</preference_description>
+      <context name="Teamcenter">
+        <value>MO4_Eng_Design</value>
+      </context>
+    </preference>
+    <preference name="MO4_Eng_DesignRevision.SUMMARYRENDERING" type="String" array="true" disabled="false" protectionScope="Site" envEnabled="false">
+      <preference_description>This is an internal preference.</preference_description>
+      <context name="Teamcenter">
+        <value>MO4_Eng_DesignRevisionSummary</value>
+      </context>
+    </preference>
+    <preference name="MO4_Eng_DesignRevisionSummary.SUMMARY_REGISTEREDTO" type="String" array="true" disabled="false" protectionScope="Site" envEnabled="false">
+      <preference_description>This is an internal preference.</preference_description>
+      <context name="Teamcenter">
+        <value>MO4_Eng_DesignRevision</value>
+      </context>
+    </preference>
+    <preference name="MO4_Eng_Part.SUMMARYRENDERING" type="String" array="true" disabled="false" protectionScope="Site" envEnabled="false">
+      <preference_description>This is an internal preference.</preference_description>
+      <context name="Teamcenter">
+        <value>MO4_Eng_PartSummary</value>
+      </context>
+    </preference>
+    <preference name="MO4_Eng_PartSummary.SUMMARY_REGISTEREDTO" type="String" array="true" disabled="false" protectionScope="Site" envEnabled="false">
+      <preference_description>This is an internal preference.</preference_description>
+      <context name="Teamcenter">
+        <value>MO4_Eng_Part</value>
+      </context>
+    </preference>
+    <preference name="MO4_Eng_PartRevision.SUMMARYRENDERING" type="String" array="true" disabled="false" protectionScope="Site" envEnabled="false">
+      <preference_description>This is an internal preference.</preference_description>
+      <context name="Teamcenter">
+        <value>MO4_Eng_PartRevisionSummary</value>
+      </context>
+    </preference>
+    <preference name="MO4_Eng_PartRevisionSummary.SUMMARY_REGISTEREDTO" type="String" array="true" disabled="false" protectionScope="Site" envEnabled="false">
+      <preference_description>This is an internal preference.</preference_description>
+      <context name="Teamcenter">
+        <value>MO4_Eng_PartRevision</value>
+      </context>
+    </preference>
+    <preference name="MO4_Eng_PartRevision_DefaultChildProperties" type="String" array="true" disabled="false" protectionScope="User" envEnabled="false">
+      <preference_description>This is an internal preference.</preference_description>
+      <context name="Teamcenter">
+        <value>MO4_Categorized</value>
+      </context>
+    </preference>
+    <preference name="MO4_Eng_PartRevision_PseudoFolder" type="String" array="true" disabled="false" protectionScope="User" envEnabled="false">
+      <preference_description>This is an internal preference.</preference_description>
+      <context name="Teamcenter">
+        <value>MO4_Categorized</value>
+      </context>
+    </preference>	
+    <preference name="Pma0_Part_Design_Type" type="String" array="true" disabled="false" protectionScope="Site" envEnabled="false">
+      <preference_description>Defines the mapping of the Part type with its aligned Design Type. This mapping is used while creating or updating an engineering BOM from a design BOM, and vice versa.
+The syntax is in the KEY:VALUE format:
+PartType:ValidPartType,DesignType:ValidDesignType
+Here, PartType and DesignType are the keywords to be used to specify the corresponding types.
+System supports mapping of 1 Part type to multiple design types and vice versa.
+Example:
+PartType:Part,DesignType:Design
+PartType:Part,DesignType:CustomDesign
+Please consider the following 2 cases with the above preference value.
+case1: When we have a mixed design BOM structure of design type as &quot;Design&quot; and &quot;CustomDesign&quot; and we try to create or update engineering BOM,
+For both design types, system will create Parts having part type as &quot;Part&quot;.
+case2: When we have an engineering BOM structure having part type as &quot;Part&quot; and we try to create or update a design BOM,
+System has more than one choices of design types i.e.  &quot;Design&quot; and &quot;CustomDesign&quot;. In such cases, system chooses from the value which is defined first.
+Here, we have design type &quot;Design&quot; defined first, thus system will use it to create designs.</preference_description>
+      <context name="Teamcenter">
+        <value>PartType:Part,DesignType:Design</value>
+        <value>PartType:MO4_Eng_Part,DesignType:MO4_Eng_Design</value>
+      </context>
+    </preference>	
+  </category>	
+</preferences>

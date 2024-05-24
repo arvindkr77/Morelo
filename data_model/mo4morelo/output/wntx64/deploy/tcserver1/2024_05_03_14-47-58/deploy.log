@@ -1,0 +1,196 @@
+
+------------------------------------------------------------------------------------------------------------------
+LogFileName    : Deploy.log
+TimeStamp      : 03-May-2024_14-47-59
+Options        : Full Update
+Deploy Source  : BMIDE
+------------------------------------------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------------------------------------------
+Deploy Summary
+------------------------------------------------------------------------------------------------------------------
+
+*****  BMIDE deployment lock utility results  *****
+
+*****  BMIDE deployment lock utility is successful  *****
+2024/05/03-12:48:06.148 UTC - INFO  - - 06501E553 - - - Deploy Step 1 of 9: Success
+2024/05/03-12:48:06.793 UTC - INFO  - - 06501E553 - - - Deploy Step 2 of 9: Success
+2024/05/03-12:48:06.825 UTC - INFO  - - 06501E553 - - - Deploy Step 3 of 9: Success
+2024/05/03-12:48:06.826 UTC - INFO  - - 06501E553 - - - Deploy Step 4 of 9: Success
+2024/05/03-12:48:14.060 UTC - INFO  - - 06501E553 - - - Deploy Step 5 of 9: Success
+2024/05/03-12:48:19.271 UTC - INFO  - - 06501E553 - - - Deploy Step 6 of 9: Success
+2024/05/03-12:48:55.150 UTC - INFO  - - 06501E553 - - - Deploy Step 7 of 9: Success
+2024/05/03-12:48:56.883 UTC - INFO  - - 06501E553 - - - Deploy Step 8 of 9: Success
+Deploy Step 0 of 0: Success
+2024/05/03-12:48:06.148 UTC - INFO  - - 06501E553 - - - ---------------------------------------------------------------------------------------------------------------------
+2024/05/03-12:48:06.148 UTC - INFO  - - 06501E553 - - - Deploy Step 1 of 9:
+2024/05/03-12:48:06.148 UTC - INFO  - - 06501E553 - - - ---------------------------------------------------------------------------------------------------------------------
+2024/05/03-12:48:06.148 UTC - INFO  - - 06501E553 - - - Description: Validating template for deployment 
+
+2024/05/03-12:48:06.148 UTC - INFO  - - 06501E553 - - - 
+Result: Success
+2024/05/03-12:48:06.148 UTC - INFO  - - 06501E553 - - - 
+
+
+2024/05/03-12:48:06.148 UTC - INFO  - - 06501E553 - - - ---------------------------------------------------------------------------------------------------------------------
+2024/05/03-12:48:06.148 UTC - INFO  - - 06501E553 - - - Deploy Step 2 of 9:
+2024/05/03-12:48:06.148 UTC - INFO  - - 06501E553 - - - ---------------------------------------------------------------------------------------------------------------------
+2024/05/03-12:48:06.148 UTC - INFO  - - 06501E553 - - - Description: Adding entries to the master.xml file
+
+Adding the following entries:
+2024/05/03-12:48:06.148 UTC - INFO  - - 06501E553 - - - mo4morelo_template.xml
+2024/05/03-12:48:06.791 UTC - INFO  - - 06501E553 - - - 
+Result: Success
+
+
+2024/05/03-12:48:06.818 UTC - INFO  - - 06501E553 - - - ---------------------------------------------------------------------------------------------------------------------
+2024/05/03-12:48:06.819 UTC - INFO  - - 06501E553 - - - Deploy Step 3 of 9:
+2024/05/03-12:48:06.820 UTC - INFO  - - 06501E553 - - - ---------------------------------------------------------------------------------------------------------------------
+2024/05/03-12:48:06.820 UTC - INFO  - - 06501E553 - - - Description: Backup the existing model.xml file to model_backup.xml. 
+Consolidate all templates into the <TC_DATA>/model/model.xml file.
+Backing up model.xml to model_backup.xml.
+
+2024/05/03-12:48:06.824 UTC - INFO  - - 06501E553 - - - The file model.xml is copied to: C:\Siemens\tcdata\model\model_backup.xml
+2024/05/03-12:48:06.824 UTC - INFO  - - 06501E553 - - - 
+Result: Success
+2024/05/03-12:48:06.824 UTC - INFO  - - 06501E553 - - - 
+
+
+2024/05/03-12:48:06.826 UTC - INFO  - - 06501E553 - - - ---------------------------------------------------------------------------------------------------------------------
+2024/05/03-12:48:06.826 UTC - INFO  - - 06501E553 - - - Deploy Step 4 of 9:
+2024/05/03-12:48:06.826 UTC - INFO  - - 06501E553 - - - ---------------------------------------------------------------------------------------------------------------------
+2024/05/03-12:48:06.826 UTC - INFO  - - 06501E553 - - - Description: Creates a backup of model_lang.xml into model_lang_backup.xml.
+2024/05/03-12:48:06.826 UTC - INFO  - - 06501E553 - - - The file model_lang.xml is copied to: C:\Siemens\tcdata\model\lang\model_backup_lang.xml
+2024/05/03-12:48:06.826 UTC - INFO  - - 06501E553 - - - 
+Result: Success
+2024/05/03-12:48:06.826 UTC - INFO  - - 06501E553 - - - 
+
+
+2024/05/03-12:48:08.463 UTC - INFO  - - 06501E553 - - - ---------------------------------------------------------------------------------------------------------------------
+2024/05/03-12:48:08.463 UTC - INFO  - - 06501E553 - - - Deploy Step 5 of 9:
+2024/05/03-12:48:08.464 UTC - INFO  - - 06501E553 - - - ---------------------------------------------------------------------------------------------------------------------
+2024/05/03-12:48:08.465 UTC - INFO  - - 06501E553 - - - Description: Consolidate templates from master.xml to model.xml. 
+
+2024/05/03-12:48:08.467 UTC - INFO  - - 06501E553 - - - The full path to the master file:C:\Siemens\tcdata\model
+2024/05/03-12:48:08.467 UTC - INFO  - - 06501E553 - - - The full path to the file that should be generated: C:\Siemens\tcdata\model\model.xml
+2024/05/03-12:48:14.058 UTC - INFO  - - 06501E553 - - - 
+Result: Success
+2024/05/03-12:48:14.060 UTC - INFO  - - 06501E553 - - - 
+
+
+2024/05/03-12:48:19.258 UTC - INFO  - - 06501E553 - - - ---------------------------------------------------------------------------------------------------------------------
+2024/05/03-12:48:19.269 UTC - INFO  - - 06501E553 - - - Deploy Step 6 of 9:
+2024/05/03-12:48:19.270 UTC - INFO  - - 06501E553 - - - ---------------------------------------------------------------------------------------------------------------------
+2024/05/03-12:48:19.270 UTC - INFO  - - 06501E553 - - - Description: Extract the list of allowable Live Update elements
+from the database into the live_update_preference.xml file.
+2024/05/03-12:48:19.270 UTC - INFO  - - 06501E553 - - - The Process Mode is not Ops Data
+2024/05/03-12:48:19.270 UTC - INFO  - - 06501E553 - - - 
+Result: Success
+2024/05/03-12:48:19.270 UTC - INFO  - - 06501E553 - - - 
+
+
+2024/05/03-12:48:19.272 UTC - INFO  - - 06501E553 - - - ---------------------------------------------------------------------------------------------------------------------
+2024/05/03-12:48:19.272 UTC - INFO  - - 06501E553 - - - Deploy Step 7 of 9:
+2024/05/03-12:48:19.272 UTC - INFO  - - 06501E553 - - - ---------------------------------------------------------------------------------------------------------------------
+2024/05/03-12:48:19.272 UTC - INFO  - - 06501E553 - - - Description: Loads the new model (deployed from BMIDE) and the old model (previous) 
+to compute the elements that were added, deleted, or changed in the BMIDE. 
+Verifies that each of these elements are permitted to be updated by verifying against 
+the Live Update Elements List from the database. Writes the added, deleted, changed elements to a delta.xml file.
+
+2024/05/03-12:48:19.277 UTC - INFO  - - 06501E553 - - - Loading the Backup File...
+2024/05/03-12:48:43.906 UTC - INFO  - - 06501E553 - - - Loading the Consolidated File...
+2024/05/03-12:48:53.932 UTC - INFO  - - 06501E553 - - - Comparing the two Files...
+2024/05/03-12:48:55.075 UTC - INFO  - - 06501E553 - - - Creating the Delta file...
+2024/05/03-12:48:55.150 UTC - INFO  - - 06501E553 - - - 
+Result: Success
+2024/05/03-12:48:55.150 UTC - INFO  - - 06501E553 - - - 
+
+
+2024/05/03-12:48:55.150 UTC - INFO  - - 06501E553 - - - ---------------------------------------------------------------------------------------------------------------------
+2024/05/03-12:48:55.150 UTC - INFO  - - 06501E553 - - - Deploy Step 8 of 9:
+2024/05/03-12:48:55.150 UTC - INFO  - - 06501E553 - - - ---------------------------------------------------------------------------------------------------------------------
+2024/05/03-12:48:55.150 UTC - INFO  - - 06501E553 - - - Description: Compares model_lang.xml and model_lang_backup.xml and generates delta_lang.xml.
+2024/05/03-12:48:55.191 UTC - INFO  - - 06501E553 - - - Comparing the two Localization Files...
+2024/05/03-12:48:56.780 UTC - INFO  - - 06501E553 - - - Creating the Localization Delta file...
+2024/05/03-12:48:56.882 UTC - INFO  - - 06501E553 - - - 
+Result: Success
+2024/05/03-12:48:56.882 UTC - INFO  - - 06501E553 - - - 
+
+
+Uploading the project backup files to Database...
+	 Processing File:mo4morelo_project_tc14000.3.0.zip
+Result: Success
+
+
+
+Uploading the project icon files to Database...
+Result: Completed uploading the project icon files 
+
+
+
+---------------------------------------------------------------------------------------------------------------------
+Deploy Step 0 of 0:
+---------------------------------------------------------------------------------------------------------------------
+Description: Process the delta.xml file committing each data model element to the database.
+Executing: business_model_updater.
+Result: Success
+
+
+
+====================================================================================================================================
+Command output for the business_model_updater
+====================================================================================================================================
+ Log File Name   : C:\Temp\transientVolume_infodba\BMIDE\2024_05_03_14-47-59\process\business_model_updater.log
+ Model File Name : C:\Siemens\tcdata\model\delta.xml
+ Update Option   : all
+ Run Mode        : upgrade
+ Process Option  : all
+====================================================================================================================================
+
+
+====================================================================================================================================
+Processed Schema Changes:
+====================================================================================================================================
+Action | Element Type   | Element Name                   | Error # | Error                                           | Template Name
+-------|----------------|--------------------------------|---------|-------------------------------------------------|--------------
+
+
+
+
+====================================================================================================================================
+Unprocessed Schema Changes:
+====================================================================================================================================
+Action | Element Type   | Element Name                   | Error # | Error                                           | Template Name
+-------|----------------|--------------------------------|---------|-------------------------------------------------|--------------
+
+
+
+
+====================================================================================================================================
+Processed Non-Schema Changes:
+====================================================================================================================================
+Action | Element Type   | Element Name                   | Error # | Error                                           | Template Name
+-------|----------------|--------------------------------|---------|-------------------------------------------------|--------------
+Add    | TcExtension    | MO4_register_epm_handlers      |       0 | Success                                         |              
+Add    | TcExtensionAtta| Session:BMF_SESSION_register_ep|       0 | Success                                         |              
+       | ch             | m_handlers:BaseAction:MO4_regis|         |                                                 |              
+       |                | ter_epm_handlers               |         |                                                 |              
+
+
+
+
+====================================================================================================================================
+Unprocessed Non-Schema Changes:
+====================================================================================================================================
+Action | Element Type   | Element Name                   | Error # | Error                                           | Template Name
+-------|----------------|--------------------------------|---------|-------------------------------------------------|--------------
+
+
+
+
+-------|----------------|--------------------------------|---------|-------------------------------------------------|--------------
+
+*****  Please refer to the Multi-Fields Keys (MFK) updater log at the following location for status of processed MFK type constant attach element(s): C:\Users\install\AppData\Local\Temp\mfk_updater_2024_05_03_14-49-20.log.
+Memory=55818674, SQL=507, Time 0.031000s cpu, 0.105000s real at-Statistics
+

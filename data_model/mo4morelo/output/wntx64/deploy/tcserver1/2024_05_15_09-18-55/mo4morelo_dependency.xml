@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<TcBusinessDataIncludes ActiveRelease="tc14000.3.0" currentTemplateVersion="14.0_0" displayName="Morelo" enableOpsDataDeploy="true" guid="A5B35A854704040780556C2CFC7F7ABA" isDescriptionMandatory="false" name="mo4morelo" optional="true" prefixes="MO4" teamcenterTemplate="false">
+    <include file="foundation_template.xml"/>
+</TcBusinessDataIncludes>

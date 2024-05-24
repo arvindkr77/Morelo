@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TcBusinessDataLocalization xmlns="http://teamcenter.com/BusinessModel/TcBusinessDataLocalization"
+    Date="">
+<Add>
+   <key locale="de_DE" id="BusinessObject{::}MO4_Eng_DesignRevision" status="Approved">Engineering Design Revision</key>
+   <key locale="de_DE" id="BusinessObject{::}MO4_Eng_Design" status="Approved">Engineering Design</key>
+   <key locale="de_DE" id="BusinessObject{::}MO4_Eng_Part" status="Approved">Engineering Teil</key>
+   <key locale="de_DE" id="LOVValue{::}MO4_BurrFreeLOV{::}Norm" status="Approved">Norm</key>
+   <key locale="de_DE" id="LOVValue{::}MO4_BurrFreeLOV{::}No" status="Approved">Nein</key>
+   <key locale="de_DE" id="LOVValue{::}MO4_BurrFreeLOV{::}Yes" status="Approved">Ja</key>
+   <key locale="de_DE" id="LOVValue{::}MO4_ChipFreeLOV{::}Norm" status="Approved">Norm</key>
+   <key locale="de_DE" id="LOVValue{::}MO4_ChipFreeLOV{::}No" status="Approved">Nein</key>
+   <key locale="de_DE" id="LOVValue{::}MO4_ChipFreeLOV{::}Yes" status="Approved">Ja</key>
+   <key locale="de_DE" id="LOVValue{::}MO4_CleannessLOV{::}Norm" status="Approved">Norm</key>
+   <key locale="de_DE" id="LOVValue{::}MO4_CleannessLOV{::}No" status="Approved">Nein</key>
+   <key locale="de_DE" id="LOVValue{::}MO4_CleannessLOV{::}Yes" status="Approved">Ja</key>
+   <key locale="de_DE" id="Property{::}MO4_DesignRevision{::}mo4_name_extension" status="Approved">Erweiterter Name</key>
+   <key locale="de_DE" id="Property{::}MO4_Eng_DesignRevision{::}object_desc" status="Approved">Beschreibung</key>
+   <key locale="de_DE" id="Property{::}MO4_Eng_Design{::}object_desc" status="Approved">Beschreibung</key>
+   <key locale="de_DE" id="Property{::}MO4_Eng_Design{::}object_name" status="Approved">Benennung</key>
+</Add>
+</TcBusinessDataLocalization>

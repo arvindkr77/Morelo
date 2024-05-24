@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<TcBusinessDataLocalization xmlns="http://teamcenter.com/BusinessModel/TcBusinessDataLocalization" Date="Thu Apr 18 04:31:30 PM 2024">
+    <Add>
+           
+        <key id="BusinessObject{::}MO4_Eng_DesignRevision" locale="de_DE" status="Approved">Engineering Design Revision</key>
+           
+        <key id="BusinessObject{::}MO4_Eng_Design" locale="de_DE" status="Approved">Engineering Design</key>
+           
+        <key id="BusinessObject{::}MO4_Eng_Part" locale="de_DE" status="Approved">Engineering Teil</key>
+           
+        <key id="LOVValue{::}MO4_BurrFreeLOV{::}Norm" locale="de_DE" status="Approved">Norm</key>
+           
+        <key id="LOVValue{::}MO4_BurrFreeLOV{::}No" locale="de_DE" status="Approved">Nein</key>
+           
+        <key id="LOVValue{::}MO4_BurrFreeLOV{::}Yes" locale="de_DE" status="Approved">Ja</key>
+           
+        <key id="LOVValue{::}MO4_ChipFreeLOV{::}Norm" locale="de_DE" status="Approved">Norm</key>
+           
+        <key id="LOVValue{::}MO4_ChipFreeLOV{::}No" locale="de_DE" status="Approved">Nein</key>
+           
+        <key id="LOVValue{::}MO4_ChipFreeLOV{::}Yes" locale="de_DE" status="Approved">Ja</key>
+           
+        <key id="LOVValue{::}MO4_CleannessLOV{::}Norm" locale="de_DE" status="Approved">Norm</key>
+           
+        <key id="LOVValue{::}MO4_CleannessLOV{::}No" locale="de_DE" status="Approved">Nein</key>
+           
+        <key id="LOVValue{::}MO4_CleannessLOV{::}Yes" locale="de_DE" status="Approved">Ja</key>
+           
+        <key id="Property{::}MO4_DesignRevision{::}mo4_name_extension" locale="de_DE" status="Approved">Erweiterter Name</key>
+           
+        <key id="Property{::}MO4_Eng_DesignRevision{::}object_desc" locale="de_DE" status="Approved">Beschreibung</key>
+           
+        <key id="Property{::}MO4_Eng_Design{::}object_desc" locale="de_DE" status="Approved">Beschreibung</key>
+           
+        <key id="Property{::}MO4_Eng_Design{::}object_name" locale="de_DE" status="Approved">Benennung</key>
+        
+    </Add>
+</TcBusinessDataLocalization>

@@ -1,0 +1,45 @@
+
+--------------------------------------------------------------------------------
+Log file name : server_metadata_cache.log
+Timestamp     : 2024_04_19_13-56-57
+Action        : Generate Server Cache [ON: Creates the server cache]
+
+
+--------------------------------------------------------------------------------
+Generate Server Cache Summary
+--------------------------------------------------------------------------------
+Generate Server Cache Step 1 of 2: SUCCESS
+Generate Server Cache Step 2 of 2: SUCCESS
+
+
+--------------------------------------------------------------------------------
+Generate Server Cache Step 1 of 2:
+--------------------------------------------------------------------------------
+Description: This steps generates / deletes the server(metadata) cache.
+If this step deletes the server cache then step #2 step is not executed.
+Executing: generate_metadata_cache
+Result: Success
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Command output for the generate_metadata_cache
+
+--------------------------------------------------------------------------------
+Log File Name         : C:\Temp\transientVolume_infodba\BMIDE\2024_04_19_13-56-57\process\server_metadata_cache.log
+Force generate cache  : true
+
+--------------------------------------------------------------------------------
+Building shared metadata cache...
+Shared metadata cache version 13 built successfully.
+
+
+--------------------------------------------------------------------------------
+Generate Server Cache Step 2 of 2:
+--------------------------------------------------------------------------------
+Description: Update servers with new server(metadata) cache.
+This step makes the Teamcenter server use the new server cache.
+Updating server with the new server cache...
+Result: Success
+
+--------------------------------------------------------------------------------

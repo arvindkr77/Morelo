@@ -1,0 +1,779 @@
+
+------------------------------------------------------------------------------------------------------------------
+LogFileName    : Deploy.log
+TimeStamp      : 10-Apr-2024_08-04-23
+Options        : Full Update
+Deploy Source  : BMIDE
+------------------------------------------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------------------------------------------
+Deploy Summary
+------------------------------------------------------------------------------------------------------------------
+
+*****  BMIDE deployment lock utility results  *****
+
+*****  BMIDE deployment lock utility is successful  *****
+2024/04/10-06:04:34.043 UTC - INFO  - - 029F727D8 - - - Deploy Step 1 of 9: Success
+2024/04/10-06:04:35.041 UTC - INFO  - - 029F727D8 - - - Deploy Step 2 of 9: Success
+2024/04/10-06:04:35.079 UTC - INFO  - - 029F727D8 - - - Deploy Step 3 of 9: Success
+2024/04/10-06:04:35.082 UTC - INFO  - - 029F727D8 - - - Deploy Step 4 of 9: Success
+2024/04/10-06:04:48.523 UTC - INFO  - - 029F727D8 - - - Deploy Step 5 of 9: Success
+2024/04/10-06:05:04.030 UTC - INFO  - - 029F727D8 - - - Deploy Step 6 of 9: Success
+2024/04/10-06:06:46.378 UTC - INFO  - - 029F727D8 - - - Deploy Step 7 of 9: Success
+2024/04/10-06:06:51.503 UTC - INFO  - - 029F727D8 - - - Deploy Step 8 of 9: Success
+Deploy Step 0 of 0: Success
+2024/04/10-06:04:34.019 UTC - INFO  - - 029F727D8 - - - ---------------------------------------------------------------------------------------------------------------------
+2024/04/10-06:04:34.043 UTC - INFO  - - 029F727D8 - - - Deploy Step 1 of 9:
+2024/04/10-06:04:34.043 UTC - INFO  - - 029F727D8 - - - ---------------------------------------------------------------------------------------------------------------------
+2024/04/10-06:04:34.043 UTC - INFO  - - 029F727D8 - - - Description: Validating template for deployment 
+
+2024/04/10-06:04:34.043 UTC - INFO  - - 029F727D8 - - - 
+Result: Success
+2024/04/10-06:04:34.043 UTC - INFO  - - 029F727D8 - - - 
+
+
+2024/04/10-06:04:34.043 UTC - INFO  - - 029F727D8 - - - ---------------------------------------------------------------------------------------------------------------------
+2024/04/10-06:04:34.043 UTC - INFO  - - 029F727D8 - - - Deploy Step 2 of 9:
+2024/04/10-06:04:34.043 UTC - INFO  - - 029F727D8 - - - ---------------------------------------------------------------------------------------------------------------------
+2024/04/10-06:04:34.051 UTC - INFO  - - 029F727D8 - - - Description: Adding entries to the master.xml file
+
+Adding the following entries:
+2024/04/10-06:04:34.054 UTC - INFO  - - 029F727D8 - - - mo4morelo_template.xml
+2024/04/10-06:04:35.041 UTC - INFO  - - 029F727D8 - - - 
+Result: Success
+
+
+2024/04/10-06:04:35.068 UTC - INFO  - - 029F727D8 - - - ---------------------------------------------------------------------------------------------------------------------
+2024/04/10-06:04:35.068 UTC - INFO  - - 029F727D8 - - - Deploy Step 3 of 9:
+2024/04/10-06:04:35.068 UTC - INFO  - - 029F727D8 - - - ---------------------------------------------------------------------------------------------------------------------
+2024/04/10-06:04:35.068 UTC - INFO  - - 029F727D8 - - - Description: Backup the existing model.xml file to model_backup.xml. 
+Consolidate all templates into the <TC_DATA>/model/model.xml file.
+Backing up model.xml to model_backup.xml.
+
+2024/04/10-06:04:35.068 UTC - INFO  - - 029F727D8 - - - The file model.xml is copied to: C:\Siemens\tcdata\model\model_backup.xml
+2024/04/10-06:04:35.077 UTC - INFO  - - 029F727D8 - - - 
+Result: Success
+2024/04/10-06:04:35.079 UTC - INFO  - - 029F727D8 - - - 
+
+
+2024/04/10-06:04:35.082 UTC - INFO  - - 029F727D8 - - - ---------------------------------------------------------------------------------------------------------------------
+2024/04/10-06:04:35.082 UTC - INFO  - - 029F727D8 - - - Deploy Step 4 of 9:
+2024/04/10-06:04:35.082 UTC - INFO  - - 029F727D8 - - - ---------------------------------------------------------------------------------------------------------------------
+2024/04/10-06:04:35.082 UTC - INFO  - - 029F727D8 - - - Description: Creates a backup of model_lang.xml into model_lang_backup.xml.
+2024/04/10-06:04:35.082 UTC - INFO  - - 029F727D8 - - - The file model_lang.xml is copied to: C:\Siemens\tcdata\model\lang\model_backup_lang.xml
+2024/04/10-06:04:35.082 UTC - INFO  - - 029F727D8 - - - 
+Result: Success
+2024/04/10-06:04:35.082 UTC - INFO  - - 029F727D8 - - - 
+
+
+2024/04/10-06:04:38.144 UTC - INFO  - - 029F727D8 - - - ---------------------------------------------------------------------------------------------------------------------
+2024/04/10-06:04:38.144 UTC - INFO  - - 029F727D8 - - - Deploy Step 5 of 9:
+2024/04/10-06:04:38.144 UTC - INFO  - - 029F727D8 - - - ---------------------------------------------------------------------------------------------------------------------
+2024/04/10-06:04:38.164 UTC - INFO  - - 029F727D8 - - - Description: Consolidate templates from master.xml to model.xml. 
+
+2024/04/10-06:04:38.166 UTC - INFO  - - 029F727D8 - - - The full path to the master file:C:\Siemens\tcdata\model
+2024/04/10-06:04:38.166 UTC - INFO  - - 029F727D8 - - - The full path to the file that should be generated: C:\Siemens\tcdata\model\model.xml
+2024/04/10-06:04:48.523 UTC - INFO  - - 029F727D8 - - - 
+Result: Success
+2024/04/10-06:04:48.523 UTC - INFO  - - 029F727D8 - - - 
+
+
+2024/04/10-06:05:04.019 UTC - INFO  - - 029F727D8 - - - ---------------------------------------------------------------------------------------------------------------------
+2024/04/10-06:05:04.030 UTC - INFO  - - 029F727D8 - - - Deploy Step 6 of 9:
+2024/04/10-06:05:04.030 UTC - INFO  - - 029F727D8 - - - ---------------------------------------------------------------------------------------------------------------------
+2024/04/10-06:05:04.030 UTC - INFO  - - 029F727D8 - - - Description: Extract the list of allowable Live Update elements
+from the database into the live_update_preference.xml file.
+2024/04/10-06:05:04.030 UTC - INFO  - - 029F727D8 - - - The Process Mode is not Ops Data
+2024/04/10-06:05:04.030 UTC - INFO  - - 029F727D8 - - - 
+Result: Success
+2024/04/10-06:05:04.030 UTC - INFO  - - 029F727D8 - - - 
+
+
+2024/04/10-06:05:04.030 UTC - INFO  - - 029F727D8 - - - ---------------------------------------------------------------------------------------------------------------------
+2024/04/10-06:05:04.030 UTC - INFO  - - 029F727D8 - - - Deploy Step 7 of 9:
+2024/04/10-06:05:04.030 UTC - INFO  - - 029F727D8 - - - ---------------------------------------------------------------------------------------------------------------------
+2024/04/10-06:05:04.030 UTC - INFO  - - 029F727D8 - - - Description: Loads the new model (deployed from BMIDE) and the old model (previous) 
+to compute the elements that were added, deleted, or changed in the BMIDE. 
+Verifies that each of these elements are permitted to be updated by verifying against 
+the Live Update Elements List from the database. Writes the added, deleted, changed elements to a delta.xml file.
+
+2024/04/10-06:05:04.047 UTC - INFO  - - 029F727D8 - - - Loading the Backup File...
+2024/04/10-06:06:05.008 UTC - INFO  - - 029F727D8 - - - Loading the Consolidated File...
+2024/04/10-06:06:40.437 UTC - INFO  - - 029F727D8 - - - Comparing the two Files...
+2024/04/10-06:06:45.973 UTC - INFO  - - 029F727D8 - - - Creating the Delta file...
+2024/04/10-06:06:46.362 UTC - INFO  - - 029F727D8 - - - 
+Result: Success
+2024/04/10-06:06:46.378 UTC - INFO  - - 029F727D8 - - - 
+
+
+2024/04/10-06:06:46.378 UTC - INFO  - - 029F727D8 - - - ---------------------------------------------------------------------------------------------------------------------
+2024/04/10-06:06:46.378 UTC - INFO  - - 029F727D8 - - - Deploy Step 8 of 9:
+2024/04/10-06:06:46.386 UTC - INFO  - - 029F727D8 - - - ---------------------------------------------------------------------------------------------------------------------
+2024/04/10-06:06:46.386 UTC - INFO  - - 029F727D8 - - - Description: Compares model_lang.xml and model_lang_backup.xml and generates delta_lang.xml.
+2024/04/10-06:06:46.641 UTC - INFO  - - 029F727D8 - - - Comparing the two Localization Files...
+2024/04/10-06:06:51.483 UTC - INFO  - - 029F727D8 - - - Creating the Localization Delta file...
+2024/04/10-06:06:51.499 UTC - INFO  - - 029F727D8 - - - 
+Result: Success
+2024/04/10-06:06:51.499 UTC - INFO  - - 029F727D8 - - - 
+
+
+Uploading the project backup files to Database...
+	 Processing File:mo4morelo_project_tc14000.3.0.zip
+Result: Success
+
+
+
+Uploading the project icon files to Database...
+Result: Completed uploading the project icon files 
+
+
+
+---------------------------------------------------------------------------------------------------------------------
+Deploy Step 0 of 0:
+---------------------------------------------------------------------------------------------------------------------
+Description: Process the delta.xml file committing each data model element to the database.
+Executing: business_model_updater.
+Result: Success
+
+
+
+====================================================================================================================================
+Command output for the business_model_updater
+====================================================================================================================================
+ Log File Name   : C:\Temp\transientVolume_infodba\BMIDE\2024_04_10_08-04-23\process\business_model_updater.log
+ Model File Name : C:\Siemens\tcdata\model\delta.xml
+ Update Option   : all
+ Run Mode        : upgrade
+ Process Option  : all
+====================================================================================================================================
+
+
+====================================================================================================================================
+Processed Schema Changes:
+====================================================================================================================================
+Action | Element Type   | Element Name                   | Error # | Error                                           | Template Name
+-------|----------------|--------------------------------|---------|-------------------------------------------------|--------------
+Add    | TcClass        | MO4_Design                     |       0 | Success                                         |              
+Add    | TcClass        | MO4_DesignMasterS              |       0 | Success                                         |              
+Add    | TcClass        | MO4_DesignRevMasterS           |       0 | Success                                         |              
+Add    | TcClass        | MO4_DesignRevision             |       0 | Success                                         |              
+Add    | TcClass        | MO4_Eng_Design                 |       0 | Success                                         |              
+Add    | TcClass        | MO4_Eng_DesignMasterS          |       0 | Success                                         |              
+Add    | TcClass        | MO4_Eng_DesignRevMasterS       |       0 | Success                                         |              
+Add    | TcClass        | MO4_Eng_DesignRevision         |       0 | Success                                         |              
+Add    | TcClass        | MO4_MoreloClass                |       0 | Success                                         |              
+Add    | TcClass        | MO4_Part                       |       0 | Success                                         |              
+Add    | TcClass        | MO4_PartMasterS                |       0 | Success                                         |              
+Add    | TcClass        | MO4_PartRevMasterS             |       0 | Success                                         |              
+Add    | TcClass        | MO4_PartRevision               |       0 | Success                                         |              
+Add    | TcClass        | MO4_Rim                        |       0 | Success                                         |              
+Add    | TcClass        | MO4_board_data                 |       0 | Success                                         |              
+Add    | TcClass        | MO4_cover_data                 |       0 | Success                                         |              
+Add    | TcClass        | MO4_rim_data                   |       0 | Success                                         |              
+Add    | TcAttributeAtta| Fnd0RecipeContainer:mo4_coverin|       0 | Success                                         |              
+       | ch             | g_1                            |         |                                                 |              
+Add    | TcAttributeAtta| Fnd0RecipeContainer:mo4_coverin|       0 | Success                                         |              
+       | ch             | g_2                            |         |                                                 |              
+Add    | TcClass        | MO4_Board                      |       0 | Success                                         |              
+Add    | TcClass        | MO4_Cover                      |       0 | Success                                         |              
+Add    | TcClass        | MO4_Eng_Part                   |       0 | Success                                         |              
+Add    | TcClass        | MO4_Eng_PartMasterS            |       0 | Success                                         |              
+Add    | TcClass        | MO4_Eng_PartRevMasterS         |       0 | Success                                         |              
+Add    | TcClass        | MO4_Eng_PartRevision           |       0 | Success                                         |              
+
+
+
+
+====================================================================================================================================
+Unprocessed Schema Changes:
+====================================================================================================================================
+Action | Element Type   | Element Name                   | Error # | Error                                           | Template Name
+-------|----------------|--------------------------------|---------|-------------------------------------------------|--------------
+
+
+
+
+====================================================================================================================================
+Processed Non-Schema Changes:
+====================================================================================================================================
+Action | Element Type   | Element Name                   | Error # | Error                                           | Template Name
+-------|----------------|--------------------------------|---------|-------------------------------------------------|--------------
+Add    | Library        | MO4Extensions                  |       0 | Success                                         |              
+Add    | TcStandardType | MO4_Design                     |       0 | Success                                         |              
+Add    | TcStandardType | MO4_DesignMasterS              |       0 | Success                                         |              
+Add    | TcStandardType | MO4_DesignRevMasterS           |       0 | Success                                         |              
+Add    | TcStandardType | MO4_DesignRevision             |       0 | Success                                         |              
+Add    | TcStandardType | MO4_Eng_Design                 |       0 | Success                                         |              
+Add    | TcStandardType | MO4_Eng_DesignMasterS          |       0 | Success                                         |              
+Add    | TcStandardType | MO4_Eng_DesignRevMasterS       |       0 | Success                                         |              
+Add    | TcStandardType | MO4_Eng_DesignRevision         |       0 | Success                                         |              
+Add    | TcStandardType | MO4_MoreloClass                |       0 | Success                                         |              
+Add    | TcStandardType | MO4_Part                       |       0 | Success                                         |              
+Add    | TcStandardType | MO4_PartMasterS                |       0 | Success                                         |              
+Add    | TcStandardType | MO4_PartRevMasterS             |       0 | Success                                         |              
+Add    | TcStandardType | MO4_PartRevision               |       0 | Success                                         |              
+Add    | TcStandardType | MO4_Rim                        |       0 | Success                                         |              
+Add    | TcStandardType | MO4_board_data                 |       0 | Success                                         |              
+Add    | TcStandardType | MO4_cover_data                 |       0 | Success                                         |              
+Add    | TcStandardType | MO4_rim_data                   |       0 | Success                                         |              
+Add    | TcStandardType | MO4_Board                      |       0 | Success                                         |              
+Add    | TcStandardType | MO4_Cover                      |       0 | Success                                         |              
+Add    | TcStandardType | MO4_Eng_Part                   |       0 | Success                                         |              
+Add    | TcStandardType | MO4_Eng_PartMasterS            |       0 | Success                                         |              
+Add    | TcStandardType | MO4_Eng_PartRevMasterS         |       0 | Success                                         |              
+Add    | TcStandardType | MO4_Eng_PartRevision           |       0 | Success                                         |              
+Add    | TcForm         | MO4_DesignMaster               |       0 | Success                                         |              
+Add    | TcForm         | MO4_DesignRevisionMaster       |       0 | Success                                         |              
+Add    | TcForm         | MO4_Eng_DesignMaster           |       0 | Success                                         |              
+Add    | TcForm         | MO4_Eng_DesignRevisionMaster   |       0 | Success                                         |              
+Add    | TcForm         | MO4_PartMaster                 |       0 | Success                                         |              
+Add    | TcForm         | MO4_PartRevisionMaster         |       0 | Success                                         |              
+Add    | TcForm         | MO4_Eng_PartMaster             |       0 | Success                                         |              
+Add    | TcForm         | MO4_Eng_PartRevisionMaster     |       0 | Success                                         |              
+Add    | TcGRMRule      | MO4_Eng_PartRevision:MO4_Board:|       0 | Success                                         |              
+       |                | MO4_board_data:isTrue          |         |                                                 |              
+Add    | TcGRMRule      | MO4_Eng_PartRevision:MO4_Cover:|       0 | Success                                         |              
+       |                | MO4_cover_data:isTrue          |         |                                                 |              
+Add    | TcGRMRule      | MO4_Eng_PartRevision:MO4_Rim:MO|       0 | Success                                         |              
+       |                | 4_rim_data:isTrue              |         |                                                 |              
+Add    | TcNamingRule   | MO4_BoardID                    |       0 | Success                                         |              
+Add    | TcNamingRule   | MO4_DesignItem_Rule            |       0 | Success                                         |              
+Add    | TcNamingRule   | MO4_PartItem_Rule              |       0 | Success                                         |              
+Add    | TcNamingRuleAtt| MO4_Eng_Design:item_id:MO4_Desi|       0 | Success                                         |              
+       | ach            | gnItem_Rule                    |         |                                                 |              
+Add    | TcNamingRuleAtt| MO4_Eng_Part:item_id:MO4_PartIt|       0 | Success                                         |              
+       | ach            | em_Rule                        |         |                                                 |              
+Add    | TcRevNamingRule| MO4_DesignRevision_Rule        |       0 | Success                                         |              
+Add    | TcRevNamingRule| MO4_PartRevision_Rule          |       0 | Success                                         |              
+Add    | TcNamingRuleAtt| MO4_Design:item_revision_id:MO4|       0 | Success                                         |              
+       | ach            | _DesignRevision_Rule           |         |                                                 |              
+Add    | TcNamingRuleAtt| MO4_Part:item_revision_id:MO4_P|       0 | Success                                         |              
+       | ach            | artRevision_Rule               |         |                                                 |              
+Add    | TcExtension    | MO4_checkin                    |       0 | Success                                         |              
+Add    | TcExtension    | MO4_delete                     |       0 | Success                                         |              
+Add    | TcExtension    | MO4_init_name_extension        |       0 | Success                                         |              
+Add    | TcExtension    | MO4_update_item                |       0 | Success                                         |              
+Add    | TcExtensionAtta| ImanReservation:RES_checkin:Pos|       0 | Success                                         |              
+       | ch             | tAction:MO4_checkin            |         |                                                 |              
+Add    | TcExtensionAtta| MO4_Cover:fnd0Delete#:PreAction|       0 | Success                                         |              
+       | ch             | :MO4_delete                    |         |                                                 |              
+Add    | TcExtensionAtta| MO4_Rim:fnd0Delete#:PreAction:M|       0 | Success                                         |              
+       | ch             | O4_delete                      |         |                                                 |              
+Add    | TcExtensionAtta| MO4_Eng_DesignRevision:finalize|       0 | Success                                         |              
+       | ch             | CreateInput#Teamcenter::CreateI|         |                                                 |              
+       |                | nput,*:PreAction:MO4_init_name_|         |                                                 |              
+       |                | extension                      |         |                                                 |              
+Add    | TcExtensionAtta| MO4_Eng_PartRevision:finalizeCr|       0 | Success                                         |              
+       | ch             | eateInput#Teamcenter::CreateInp|         |                                                 |              
+       |                | ut,*:PreAction:MO4_init_name_ex|         |                                                 |              
+       |                | tension                        |         |                                                 |              
+Add    | TcExtensionAtta| MO4_Eng_DesignRevision:IMAN_sav|       0 | Success                                         |              
+       | ch             | e:PostAction:MO4_update_item   |         |                                                 |              
+Add    | TcExtensionAtta| MO4_Eng_PartRevision:IMAN_save:|       0 | Success                                         |              
+       | ch             | PostAction:MO4_update_item     |         |                                                 |              
+Add    | TcLOV          | MO4_BoardLOV                   |       0 | Success                                         |              
+Add    | TcLOV          | MO4_BurrFreeLOV                |       0 | Success                                         |              
+Add    | TcLOV          | MO4_ChipFreeLOV                |       0 | Success                                         |              
+Add    | TcLOV          | MO4_CleannessLOV               |       0 | Success                                         |              
+Add    | TcLOV          | MO4_ColorLOV                   |       0 | Success                                         |              
+Add    | TcLOV          | MO4_CoverLOV                   |       0 | Success                                         |              
+Add    | TcLOV          | MO4_DocumentTypeLOV            |       0 | Success                                         |              
+Add    | TcLOV          | MO4_FinishLOV                  |       0 | Success                                         |              
+Add    | TcLOV          | MO4_GlossLevelLOV              |       0 | Success                                         |              
+Add    | TcLOV          | MO4_MaterialLOV                |       0 | Success                                         |              
+Add    | TcLOV          | MO4_NamingLOV                  |       0 | Success                                         |              
+Add    | TcLOV          | MO4_RimLOV                     |       0 | Success                                         |              
+Add    | TcLOV          | MO4_RimTypeLOV                 |       0 | Success                                         |              
+Add    | TcLOV          | MO4GeneralTolerancesLOV        |       0 | Success                                         |              
+Add    | TcTypeConstantA| CreateInput:MO4_Board          |       0 | Success                                         |              
+       | ttach          |                                |         |                                                 |              
+Add    | TcTypeConstantA| CreateInput:MO4_board_data     |       0 | Success                                         |              
+       | ttach          |                                |         |                                                 |              
+Add    | TcTypeConstantA| CreateInput:MO4_Cover          |       0 | Success                                         |              
+       | ttach          |                                |         |                                                 |              
+Add    | TcTypeConstantA| CreateInput:MO4_cover_data     |       0 | Success                                         |              
+       | ttach          |                                |         |                                                 |              
+Add    | TcTypeConstantA| CreateInput:MO4_Design         |       0 | Success                                         |              
+       | ttach          |                                |         |                                                 |              
+Add    | TcTypeConstantA| CreateInput:MO4_DesignMaster   |       0 | Success                                         |              
+       | ttach          |                                |         |                                                 |              
+Add    | TcTypeConstantA| CreateInput:MO4_DesignMasterS  |       0 | Success                                         |              
+       | ttach          |                                |         |                                                 |              
+Add    | TcTypeConstantA| CreateInput:MO4_DesignRevision |       0 | Success                                         |              
+       | ttach          |                                |         |                                                 |              
+Add    | TcTypeConstantA| CreateInput:MO4_DesignRevisionM|       0 | Success                                         |              
+       | ttach          | aster                          |         |                                                 |              
+Add    | TcTypeConstantA| CreateInput:MO4_DesignRevMaster|       0 | Success                                         |              
+       | ttach          | S                              |         |                                                 |              
+Add    | TcTypeConstantA| CreateInput:MO4_Eng_Design     |       0 | Success                                         |              
+       | ttach          |                                |         |                                                 |              
+Add    | TcTypeConstantA| CreateInput:MO4_Eng_DesignMaste|       0 | Success                                         |              
+       | ttach          | r                              |         |                                                 |              
+Add    | TcTypeConstantA| CreateInput:MO4_Eng_DesignMaste|       0 | Success                                         |              
+       | ttach          | rS                             |         |                                                 |              
+Add    | TcTypeConstantA| CreateInput:MO4_Eng_DesignRevis|       0 | Success                                         |              
+       | ttach          | ion                            |         |                                                 |              
+Add    | TcTypeConstantA| CreateInput:MO4_Eng_DesignRevis|       0 | Success                                         |              
+       | ttach          | ionMaster                      |         |                                                 |              
+Add    | TcTypeConstantA| CreateInput:MO4_Eng_DesignRevMa|       0 | Success                                         |              
+       | ttach          | sterS                          |         |                                                 |              
+Add    | TcTypeConstantA| CreateInput:MO4_Eng_Part       |       0 | Success                                         |              
+       | ttach          |                                |         |                                                 |              
+Add    | TcTypeConstantA| CreateInput:MO4_Eng_PartMaster |       0 | Success                                         |              
+       | ttach          |                                |         |                                                 |              
+Add    | TcTypeConstantA| CreateInput:MO4_Eng_PartMasterS|       0 | Success                                         |              
+       | ttach          |                                |         |                                                 |              
+Add    | TcTypeConstantA| CreateInput:MO4_Eng_PartRevisio|       0 | Success                                         |              
+       | ttach          | n                              |         |                                                 |              
+Add    | TcTypeConstantA| CreateInput:MO4_Eng_PartRevisio|       0 | Success                                         |              
+       | ttach          | nMaster                        |         |                                                 |              
+Add    | TcTypeConstantA| CreateInput:MO4_Eng_PartRevMast|       0 | Success                                         |              
+       | ttach          | erS                            |         |                                                 |              
+Add    | TcTypeConstantA| CreateInput:MO4_MoreloClass    |       0 | Success                                         |              
+       | ttach          |                                |         |                                                 |              
+Add    | TcTypeConstantA| CreateInput:MO4_Part           |       0 | Success                                         |              
+       | ttach          |                                |         |                                                 |              
+Add    | TcTypeConstantA| CreateInput:MO4_PartMaster     |       0 | Success                                         |              
+       | ttach          |                                |         |                                                 |              
+Add    | TcTypeConstantA| CreateInput:MO4_PartMasterS    |       0 | Success                                         |              
+       | ttach          |                                |         |                                                 |              
+Add    | TcTypeConstantA| CreateInput:MO4_PartRevision   |       0 | Success                                         |              
+       | ttach          |                                |         |                                                 |              
+Add    | TcTypeConstantA| CreateInput:MO4_PartRevisionMas|       0 | Success                                         |              
+       | ttach          | ter                            |         |                                                 |              
+Add    | TcTypeConstantA| CreateInput:MO4_PartRevMasterS |       0 | Success                                         |              
+       | ttach          |                                |         |                                                 |              
+Add    | TcTypeConstantA| CreateInput:MO4_Rim            |       0 | Success                                         |              
+       | ttach          |                                |         |                                                 |              
+Add    | TcTypeConstantA| CreateInput:MO4_rim_data       |       0 | Success                                         |              
+       | ttach          |                                |         |                                                 |              
+Add    | TcTypeConstantA| DisplayName:MO4_Board          |       0 | Success                                         |              
+       | ttach          |                                |         |                                                 |              
+Add    | TcTypeConstantA| DisplayName:MO4_Cover          |       0 | Success                                         |              
+       | ttach          |                                |         |                                                 |              
+Add    | TcTypeConstantA| DisplayName:MO4_Design         |       0 | Success                                         |              
+       | ttach          |                                |         |                                                 |              
+Add    | TcTypeConstantA| DisplayName:MO4_DesignRevision |       0 | Success                                         |              
+       | ttach          |                                |         |                                                 |              
+Add    | TcTypeConstantA| DisplayName:MO4_Eng_Design     |       0 | Success                                         |              
+       | ttach          |                                |         |                                                 |              
+Add    | TcTypeConstantA| DisplayName:MO4_Eng_DesignRevis|       0 | Success                                         |              
+       | ttach          | ion                            |         |                                                 |              
+Add    | TcTypeConstantA| DisplayName:MO4_Eng_PartRevisio|       0 | Success                                         |              
+       | ttach          | n                              |         |                                                 |              
+Add    | TcTypeConstantA| DisplayName:MO4_PartRevision   |       0 | Success                                         |              
+       | ttach          |                                |         |                                                 |              
+Add    | TcTypeConstantA| DisplayName:MO4_Rim            |       0 | Success                                         |              
+       | ttach          |                                |         |                                                 |              
+Add    | TcTypeConstantA| Fnd0Icon:MO4_Board             |       0 | Success                                         |              
+       | ttach          |                                |         |                                                 |              
+Add    | TcTypeConstantA| Fnd0Icon:MO4_Cover             |       0 | Success                                         |              
+       | ttach          |                                |         |                                                 |              
+Add    | TcTypeConstantA| Fnd0Icon:MO4_Eng_Design        |       0 | Success                                         |              
+       | ttach          |                                |         |                                                 |              
+Add    | TcTypeConstantA| Fnd0Icon:MO4_Eng_DesignRevision|       0 | Success                                         |              
+       | ttach          |                                |         |                                                 |              
+Add    | TcTypeConstantA| Fnd0Icon:MO4_Eng_Part          |       0 | Success                                         |              
+       | ttach          |                                |         |                                                 |              
+Add    | TcTypeConstantA| Fnd0Icon:MO4_Eng_PartRevision  |       0 | Success                                         |              
+       | ttach          |                                |         |                                                 |              
+Add    | TcTypeConstantA| Fnd0Icon:MO4_Rim               |       0 | Success                                         |              
+       | ttach          |                                |         |                                                 |              
+Add    | TcTypeConstantA| ItemRevision:MO4_Design        |       0 | Success                                         |              
+       | ttach          |                                |         |                                                 |              
+Add    | TcTypeConstantA| ItemRevision:MO4_Eng_Design    |       0 | Success                                         |              
+       | ttach          |                                |         |                                                 |              
+Add    | TcTypeConstantA| ItemRevision:MO4_Eng_Part      |       0 | Success                                         |              
+       | ttach          |                                |         |                                                 |              
+Add    | TcTypeConstantA| ItemRevision:MO4_Part          |       0 | Success                                         |              
+       | ttach          |                                |         |                                                 |              
+Add    | TcTypeConstantA| MasterForm:MO4_Design          |       0 | Success                                         |              
+       | ttach          |                                |         |                                                 |              
+Add    | TcTypeConstantA| MasterForm:MO4_DesignRevision  |       0 | Success                                         |              
+       | ttach          |                                |         |                                                 |              
+Add    | TcTypeConstantA| MasterForm:MO4_Eng_Design      |       0 | Success                                         |              
+       | ttach          |                                |         |                                                 |              
+Add    | TcTypeConstantA| MasterForm:MO4_Eng_DesignRevisi|       0 | Success                                         |              
+       | ttach          | on                             |         |                                                 |              
+Add    | TcTypeConstantA| MasterForm:MO4_Eng_Part        |       0 | Success                                         |              
+       | ttach          |                                |         |                                                 |              
+Add    | TcTypeConstantA| MasterForm:MO4_Eng_PartRevision|       0 | Success                                         |              
+       | ttach          |                                |         |                                                 |              
+Add    | TcTypeConstantA| MasterForm:MO4_Part            |       0 | Success                                         |              
+       | ttach          |                                |         |                                                 |              
+Add    | TcTypeConstantA| MasterForm:MO4_PartRevision    |       0 | Success                                         |              
+       | ttach          |                                |         |                                                 |              
+Add    | TcTypeConstantA| ReviseInput:MO4_DesignRevision |       0 | Success                                         |              
+       | ttach          |                                |         |                                                 |              
+Add    | TcTypeConstantA| ReviseInput:MO4_Eng_DesignRevis|       0 | Success                                         |              
+       | ttach          | ion                            |         |                                                 |              
+Add    | TcTypeConstantA| ReviseInput:MO4_Eng_PartRevisio|       0 | Success                                         |              
+       | ttach          | n                              |         |                                                 |              
+Add    | TcTypeConstantA| ReviseInput:MO4_PartRevision   |       0 | Success                                         |              
+       | ttach          |                                |         |                                                 |              
+Add    | TcTypeConstantA| SaveAsInput:MO4_Board          |       0 | Success                                         |              
+       | ttach          |                                |         |                                                 |              
+Add    | TcTypeConstantA| SaveAsInput:MO4_board_data     |       0 | Success                                         |              
+       | ttach          |                                |         |                                                 |              
+Add    | TcTypeConstantA| SaveAsInput:MO4_Cover          |       0 | Success                                         |              
+       | ttach          |                                |         |                                                 |              
+Add    | TcTypeConstantA| SaveAsInput:MO4_cover_data     |       0 | Success                                         |              
+       | ttach          |                                |         |                                                 |              
+Add    | TcTypeConstantA| SaveAsInput:MO4_Design         |       0 | Success                                         |              
+       | ttach          |                                |         |                                                 |              
+Add    | TcTypeConstantA| SaveAsInput:MO4_DesignMaster   |       0 | Success                                         |              
+       | ttach          |                                |         |                                                 |              
+Add    | TcTypeConstantA| SaveAsInput:MO4_DesignMasterS  |       0 | Success                                         |              
+       | ttach          |                                |         |                                                 |              
+Add    | TcTypeConstantA| SaveAsInput:MO4_DesignRevision |       0 | Success                                         |              
+       | ttach          |                                |         |                                                 |              
+Add    | TcTypeConstantA| SaveAsInput:MO4_DesignRevisionM|       0 | Success                                         |              
+       | ttach          | aster                          |         |                                                 |              
+Add    | TcTypeConstantA| SaveAsInput:MO4_DesignRevMaster|       0 | Success                                         |              
+       | ttach          | S                              |         |                                                 |              
+Add    | TcTypeConstantA| SaveAsInput:MO4_Eng_Design     |       0 | Success                                         |              
+       | ttach          |                                |         |                                                 |              
+Add    | TcTypeConstantA| SaveAsInput:MO4_Eng_DesignMaste|       0 | Success                                         |              
+       | ttach          | r                              |         |                                                 |              
+Add    | TcTypeConstantA| SaveAsInput:MO4_Eng_DesignMaste|       0 | Success                                         |              
+       | ttach          | rS                             |         |                                                 |              
+Add    | TcTypeConstantA| SaveAsInput:MO4_Eng_DesignRevis|       0 | Success                                         |              
+       | ttach          | ion                            |         |                                                 |              
+Add    | TcTypeConstantA| SaveAsInput:MO4_Eng_DesignRevis|       0 | Success                                         |              
+       | ttach          | ionMaster                      |         |                                                 |              
+Add    | TcTypeConstantA| SaveAsInput:MO4_Eng_DesignRevMa|       0 | Success                                         |              
+       | ttach          | sterS                          |         |                                                 |              
+Add    | TcTypeConstantA| SaveAsInput:MO4_Eng_Part       |       0 | Success                                         |              
+       | ttach          |                                |         |                                                 |              
+Add    | TcTypeConstantA| SaveAsInput:MO4_Eng_PartMaster |       0 | Success                                         |              
+       | ttach          |                                |         |                                                 |              
+Add    | TcTypeConstantA| SaveAsInput:MO4_Eng_PartMasterS|       0 | Success                                         |              
+       | ttach          |                                |         |                                                 |              
+Add    | TcTypeConstantA| SaveAsInput:MO4_Eng_PartRevisio|       0 | Success                                         |              
+       | ttach          | n                              |         |                                                 |              
+Add    | TcTypeConstantA| SaveAsInput:MO4_Eng_PartRevisio|       0 | Success                                         |              
+       | ttach          | nMaster                        |         |                                                 |              
+Add    | TcTypeConstantA| SaveAsInput:MO4_Eng_PartRevMast|       0 | Success                                         |              
+       | ttach          | erS                            |         |                                                 |              
+Add    | TcTypeConstantA| SaveAsInput:MO4_MoreloClass    |       0 | Success                                         |              
+       | ttach          |                                |         |                                                 |              
+Add    | TcTypeConstantA| SaveAsInput:MO4_Part           |       0 | Success                                         |              
+       | ttach          |                                |         |                                                 |              
+Add    | TcTypeConstantA| SaveAsInput:MO4_PartMaster     |       0 | Success                                         |              
+       | ttach          |                                |         |                                                 |              
+Add    | TcTypeConstantA| SaveAsInput:MO4_PartMasterS    |       0 | Success                                         |              
+       | ttach          |                                |         |                                                 |              
+Add    | TcTypeConstantA| SaveAsInput:MO4_PartRevision   |       0 | Success                                         |              
+       | ttach          |                                |         |                                                 |              
+Add    | TcTypeConstantA| SaveAsInput:MO4_PartRevisionMas|       0 | Success                                         |              
+       | ttach          | ter                            |         |                                                 |              
+Add    | TcTypeConstantA| SaveAsInput:MO4_PartRevMasterS |       0 | Success                                         |              
+       | ttach          |                                |         |                                                 |              
+Add    | TcTypeConstantA| SaveAsInput:MO4_Rim            |       0 | Success                                         |              
+       | ttach          |                                |         |                                                 |              
+Add    | TcTypeConstantA| SaveAsInput:MO4_rim_data       |       0 | Success                                         |              
+       | ttach          |                                |         |                                                 |              
+Add    | TcPropertyConst| Enabled:Fnd0RecipeContainer:mo4|       0 | Success                                         |              
+       | antAttach      | _covering_1                    |         |                                                 |              
+Add    | TcPropertyConst| Enabled:Fnd0RecipeContainer:mo4|       0 | Success                                         |              
+       | antAttach      | _covering_2                    |         |                                                 |              
+Add    | TcPropertyConst| Enabled:MO4_Board:mo4_material_|       0 | Success                                         |              
+       | antAttach      | code                           |         |                                                 |              
+Add    | TcPropertyConst| Enabled:MO4_Cover:mo4_bom_align|       0 | Success                                         |              
+       | antAttach      | ed                             |         |                                                 |              
+Add    | TcPropertyConst| Enabled:MO4_Cover:mo4_cleanness|       0 | Success                                         |              
+       | antAttach      |                                |         |                                                 |              
+Add    | TcPropertyConst| Enabled:MO4_Cover:mo4_gloss_lev|       0 | Success                                         |              
+       | antAttach      | el                             |         |                                                 |              
+Add    | TcPropertyConst| Enabled:MO4_Cover:mo4_grain_rel|       0 | Success                                         |              
+       | antAttach      | evance                         |         |                                                 |              
+Add    | TcPropertyConst| Enabled:MO4_Cover:mo4_id       |       0 | Success                                         |              
+       | antAttach      |                                |         |                                                 |              
+Add    | TcPropertyConst| Enabled:MO4_Cover:mo4_material_|       0 | Success                                         |              
+       | antAttach      | code                           |         |                                                 |              
+Add    | TcPropertyConst| Enabled:MO4_Design:mo4_name_ext|       0 | Success                                         |              
+       | antAttach      | ension                         |         |                                                 |              
+Add    | TcPropertyConst| Enabled:MO4_DesignRevision:mo4_|       0 | Success                                         |              
+       | antAttach      | name_extension                 |         |                                                 |              
+Add    | TcPropertyConst| Enabled:MO4_Eng_PartRevision:MO|       0 | Success                                         |              
+       | antAttach      | 4_board_data                   |         |                                                 |              
+Add    | TcPropertyConst| Enabled:MO4_Eng_PartRevision:MO|       0 | Success                                         |              
+       | antAttach      | 4_cover_data                   |         |                                                 |              
+Add    | TcPropertyConst| Enabled:MO4_Eng_PartRevision:MO|       0 | Success                                         |              
+       | antAttach      | 4_rim_data                     |         |                                                 |              
+Add    | TcPropertyConst| Enabled:MO4_Part:mo4_article_nu|       0 | Success                                         |              
+       | antAttach      | mber                           |         |                                                 |              
+Add    | TcPropertyConst| Enabled:MO4_Part:mo4_name_exten|       0 | Success                                         |              
+       | antAttach      | sion                           |         |                                                 |              
+Add    | TcPropertyConst| Enabled:MO4_PartRevision:mo4_ar|       0 | Success                                         |              
+       | antAttach      | ticle_number                   |         |                                                 |              
+Add    | TcPropertyConst| Enabled:MO4_PartRevision:mo4_na|       0 | Success                                         |              
+       | antAttach      | me_extension                   |         |                                                 |              
+Add    | TcPropertyConst| Enabled:MO4_Rim:mo4_article_num|       0 | Success                                         |              
+       | antAttach      | ber                            |         |                                                 |              
+Add    | TcPropertyConst| Enabled:MO4_Rim:mo4_bom_aligned|       0 | Success                                         |              
+       | antAttach      |                                |         |                                                 |              
+Add    | TcPropertyConst| Enabled:MO4_Rim:mo4_id         |       0 | Success                                         |              
+       | antAttach      |                                |         |                                                 |              
+Add    | TcPropertyConst| Enabled:MO4_Rim:mo4_length     |       0 | Success                                         |              
+       | antAttach      |                                |         |                                                 |              
+Add    | TcPropertyConst| Enabled:MO4_Rim:mo4_length_exce|       0 | Success                                         |              
+       | antAttach      | ss                             |         |                                                 |              
+Add    | TcPropertyConst| Enabled:MO4_Rim:mo4_material_co|       0 | Success                                         |              
+       | antAttach      | de                             |         |                                                 |              
+Add    | TcPropertyConst| Enabled:MO4_Rim:mo4_rim_type   |       0 | Success                                         |              
+       | antAttach      |                                |         |                                                 |              
+Add    | TcPropertyConst| Enabled:MO4_Rim:mo4_size       |       0 | Success                                         |              
+       | antAttach      |                                |         |                                                 |              
+Add    | TcPropertyConst| Enabled:MO4_Rim:mo4_width_max  |       0 | Success                                         |              
+       | antAttach      |                                |         |                                                 |              
+Add    | TcPropertyConst| Enabled:MO4_Rim:mo4_width_min  |       0 | Success                                         |              
+       | antAttach      |                                |         |                                                 |              
+Add    | TcPropertyConst| InitialValue:MO4_Cover:mo4_id  |       0 | Success                                         |              
+       | antAttach      |                                |         |                                                 |              
+Add    | TcPropertyConst| InitialValue:MO4_Cover:mo4_mate|       0 | Success                                         |              
+       | antAttach      | rial_code                      |         |                                                 |              
+Add    | TcPropertyConst| InitialValue:MO4_MoreloClass:ob|       0 | Success                                         |              
+       | antAttach      | ject_name                      |         |                                                 |              
+Add    | TcPropertyConst| InitialValue:MO4_Rim:mo4_id    |       0 | Success                                         |              
+       | antAttach      |                                |         |                                                 |              
+Add    | TcPropertyConst| InitialValue:MO4_Rim:mo4_materi|       0 | Success                                         |              
+       | antAttach      | al_code                        |         |                                                 |              
+Add    | TcPropertyConst| Modifiable:Fnd0RecipeContainer:|       0 | Success                                         |              
+       | antAttach      | mo4_covering_1                 |         |                                                 |              
+Add    | TcPropertyConst| Modifiable:Fnd0RecipeContainer:|       0 | Success                                         |              
+       | antAttach      | mo4_covering_2                 |         |                                                 |              
+Add    | TcPropertyConst| Modifiable:MO4_Board:mo4_materi|       0 | Success                                         |              
+       | antAttach      | al_code                        |         |                                                 |              
+Add    | TcPropertyConst| Modifiable:MO4_Cover:mo4_bom_al|       0 | Success                                         |              
+       | antAttach      | igned                          |         |                                                 |              
+Add    | TcPropertyConst| Modifiable:MO4_Cover:mo4_cleann|       0 | Success                                         |              
+       | antAttach      | ess                            |         |                                                 |              
+Add    | TcPropertyConst| Modifiable:MO4_Cover:mo4_gloss_|       0 | Success                                         |              
+       | antAttach      | level                          |         |                                                 |              
+Add    | TcPropertyConst| Modifiable:MO4_Cover:mo4_grain_|       0 | Success                                         |              
+       | antAttach      | relevance                      |         |                                                 |              
+Add    | TcPropertyConst| Modifiable:MO4_Cover:mo4_id    |       0 | Success                                         |              
+       | antAttach      |                                |         |                                                 |              
+Add    | TcPropertyConst| Modifiable:MO4_Cover:mo4_materi|       0 | Success                                         |              
+       | antAttach      | al_code                        |         |                                                 |              
+Add    | TcPropertyConst| Modifiable:MO4_Design:mo4_name_|       0 | Success                                         |              
+       | antAttach      | extension                      |         |                                                 |              
+Add    | TcPropertyConst| Modifiable:MO4_DesignRevision:m|       0 | Success                                         |              
+       | antAttach      | o4_name_extension              |         |                                                 |              
+Add    | TcPropertyConst| Modifiable:MO4_Eng_PartRevision|       0 | Success                                         |              
+       | antAttach      | :MO4_board_data                |         |                                                 |              
+Add    | TcPropertyConst| Modifiable:MO4_Eng_PartRevision|       0 | Success                                         |              
+       | antAttach      | :MO4_cover_data                |         |                                                 |              
+Add    | TcPropertyConst| Modifiable:MO4_Eng_PartRevision|       0 | Success                                         |              
+       | antAttach      | :MO4_rim_data                  |         |                                                 |              
+Add    | TcPropertyConst| Modifiable:MO4_Part:mo4_article|       0 | Success                                         |              
+       | antAttach      | _number                        |         |                                                 |              
+Add    | TcPropertyConst| Modifiable:MO4_Part:mo4_name_ex|       0 | Success                                         |              
+       | antAttach      | tension                        |         |                                                 |              
+Add    | TcPropertyConst| Modifiable:MO4_PartRevision:mo4|       0 | Success                                         |              
+       | antAttach      | _article_number                |         |                                                 |              
+Add    | TcPropertyConst| Modifiable:MO4_PartRevision:mo4|       0 | Success                                         |              
+       | antAttach      | _name_extension                |         |                                                 |              
+Add    | TcPropertyConst| Modifiable:MO4_Rim:mo4_article_|       0 | Success                                         |              
+       | antAttach      | number                         |         |                                                 |              
+Add    | TcPropertyConst| Modifiable:MO4_Rim:mo4_bom_alig|       0 | Success                                         |              
+       | antAttach      | ned                            |         |                                                 |              
+Add    | TcPropertyConst| Modifiable:MO4_Rim:mo4_id      |       0 | Success                                         |              
+       | antAttach      |                                |         |                                                 |              
+Add    | TcPropertyConst| Modifiable:MO4_Rim:mo4_length  |       0 | Success                                         |              
+       | antAttach      |                                |         |                                                 |              
+Add    | TcPropertyConst| Modifiable:MO4_Rim:mo4_length_e|       0 | Success                                         |              
+       | antAttach      | xcess                          |         |                                                 |              
+Add    | TcPropertyConst| Modifiable:MO4_Rim:mo4_material|       0 | Success                                         |              
+       | antAttach      | _code                          |         |                                                 |              
+Add    | TcPropertyConst| Modifiable:MO4_Rim:mo4_rim_type|       0 | Success                                         |              
+       | antAttach      |                                |         |                                                 |              
+Add    | TcPropertyConst| Modifiable:MO4_Rim:mo4_size    |       0 | Success                                         |              
+       | antAttach      |                                |         |                                                 |              
+Add    | TcPropertyConst| Modifiable:MO4_Rim:mo4_width_ma|       0 | Success                                         |              
+       | antAttach      | x                              |         |                                                 |              
+Add    | TcPropertyConst| Modifiable:MO4_Rim:mo4_width_mi|       0 | Success                                         |              
+       | antAttach      | n                              |         |                                                 |              
+Add    | TcPropertyConst| Required:MO4_Cover:mo4_id      |       0 | Success                                         |              
+       | antAttach      |                                |         |                                                 |              
+Add    | TcPropertyConst| Required:MO4_Cover:mo4_material|       0 | Success                                         |              
+       | antAttach      | _code                          |         |                                                 |              
+Add    | TcPropertyConst| Required:MO4_DesignRevision:mo4|       0 | Success                                         |              
+       | antAttach      | _name_extension                |         |                                                 |              
+Add    | TcPropertyConst| Required:MO4_MoreloClass:object|       0 | Success                                         |              
+       | antAttach      | _name                          |         |                                                 |              
+Add    | TcPropertyConst| Required:MO4_Rim:mo4_id        |       0 | Success                                         |              
+       | antAttach      |                                |         |                                                 |              
+Add    | TcPropertyConst| Required:MO4_Rim:mo4_material_c|       0 | Success                                         |              
+       | antAttach      | ode                            |         |                                                 |              
+Add    | TcPropertyAttac| Fnd0RecipeContainerCreI:mo4_cov|       0 | Success                                         |              
+       | h              | ering_1                        |         |                                                 |              
+Add    | TcPropertyAttac| Fnd0RecipeContainerCreI:mo4_cov|       0 | Success                                         |              
+       | h              | ering_2                        |         |                                                 |              
+Add    | TcLOVAttach    | MO4_BoardLOV:MO4_Board         |       0 | Success                                         |              
+Add    | TcLOVAttach    | MO4_CleannessLOV:MO4_Cover     |       0 | Success                                         |              
+Add    | TcLOVAttach    | MO4_CoverLOV:MO4_Cover         |       0 | Success                                         |              
+Add    | TcLOVAttach    | MO4_GlossLevelLOV:MO4_Cover    |       0 | Success                                         |              
+Add    | TcLOVAttach    | MO4_NamingLOV:MO4_Design       |       0 | Success                                         |              
+Add    | TcLOVAttach    | MO4_NamingLOV:MO4_DesignRevisio|       0 | Success                                         |              
+       |                | n                              |         |                                                 |              
+Add    | TcLOVAttach    | MO4_NamingLOV:MO4_Eng_Design   |       0 | Success                                         |              
+Add    | TcLOVAttach    | MO4_NamingLOV:MO4_Part         |       0 | Success                                         |              
+Add    | TcLOVAttach    | MO4_NamingLOV:MO4_PartRevision |       0 | Success                                         |              
+Add    | TcLOVAttach    | MO4_RimLOV:MO4_Rim             |       0 | Success                                         |              
+Add    | TcLOVAttach    | MO4_RimTypeLOV:MO4_Rim         |       0 | Success                                         |              
+Add    | OperationInputT| MO4_DesignCreI                 |       0 | Success                                         |              
+       | ype            |                                |         |                                                 |              
+Add    | OperationInputT| MO4_DesignMasterCreI           |       0 | Success                                         |              
+       | ype            |                                |         |                                                 |              
+Add    | OperationInputT| MO4_DesignMasterSCreI          |       0 | Success                                         |              
+       | ype            |                                |         |                                                 |              
+Add    | OperationInputT| MO4_DesignMasterSSvAI          |       0 | Success                                         |              
+       | ype            |                                |         |                                                 |              
+Add    | OperationInputT| MO4_DesignMasterSvAI           |       0 | Success                                         |              
+       | ype            |                                |         |                                                 |              
+Add    | OperationInputT| MO4_DesignRevMasterSCreI       |       0 | Success                                         |              
+       | ype            |                                |         |                                                 |              
+Add    | OperationInputT| MO4_DesignRevMasterSSvAI       |       0 | Success                                         |              
+       | ype            |                                |         |                                                 |              
+Add    | OperationInputT| MO4_DesignRevisionCreI         |       0 | Success                                         |              
+       | ype            |                                |         |                                                 |              
+Add    | OperationInputT| MO4_DesignRevisionMasterCreI   |       0 | Success                                         |              
+       | ype            |                                |         |                                                 |              
+Add    | OperationInputT| MO4_DesignRevisionMasterSvAI   |       0 | Success                                         |              
+       | ype            |                                |         |                                                 |              
+Add    | OperationInputT| MO4_DesignRevisionRevI         |       0 | Success                                         |              
+       | ype            |                                |         |                                                 |              
+Add    | OperationInputT| MO4_DesignRevisionSvAI         |       0 | Success                                         |              
+       | ype            |                                |         |                                                 |              
+Add    | OperationInputT| MO4_DesignSvAI                 |       0 | Success                                         |              
+       | ype            |                                |         |                                                 |              
+Add    | OperationInputT| MO4_Eng_DesignCreI             |       0 | Success                                         |              
+       | ype            |                                |         |                                                 |              
+Add    | OperationInputT| MO4_Eng_DesignMasterCreI       |       0 | Success                                         |              
+       | ype            |                                |         |                                                 |              
+Add    | OperationInputT| MO4_Eng_DesignMasterSCreI      |       0 | Success                                         |              
+       | ype            |                                |         |                                                 |              
+Add    | OperationInputT| MO4_Eng_DesignMasterSSvAI      |       0 | Success                                         |              
+       | ype            |                                |         |                                                 |              
+Add    | OperationInputT| MO4_Eng_DesignMasterSvAI       |       0 | Success                                         |              
+       | ype            |                                |         |                                                 |              
+Add    | OperationInputT| MO4_Eng_DesignRevMasterSCreI   |       0 | Success                                         |              
+       | ype            |                                |         |                                                 |              
+Add    | OperationInputT| MO4_Eng_DesignRevMasterSSvAI   |       0 | Success                                         |              
+       | ype            |                                |         |                                                 |              
+Add    | OperationInputT| MO4_Eng_DesignRevisionCreI     |       0 | Success                                         |              
+       | ype            |                                |         |                                                 |              
+Add    | OperationInputT| MO4_Eng_DesignRevisionRevI     |       0 | Success                                         |              
+       | ype            |                                |         |                                                 |              
+Add    | OperationInputT| MO4_Eng_DesignRevisionSvAI     |       0 | Success                                         |              
+       | ype            |                                |         |                                                 |              
+Add    | OperationInputT| MO4_Eng_DesignRevision_alt0CreI|       0 | Success                                         |              
+       | ype            |                                |         |                                                 |              
+Add    | OperationInputT| MO4_Eng_DesignRevision_alt0SvAI|       0 | Success                                         |              
+       | ype            |                                |         |                                                 |              
+Add    | OperationInputT| MO4_Eng_DesignSvAI             |       0 | Success                                         |              
+       | ype            |                                |         |                                                 |              
+Add    | OperationInputT| MO4_MoreloClassCreI            |       0 | Success                                         |              
+       | ype            |                                |         |                                                 |              
+Add    | OperationInputT| MO4_MoreloClassSvAI            |       0 | Success                                         |              
+       | ype            |                                |         |                                                 |              
+Add    | OperationInputT| MO4_PartCreI                   |       0 | Success                                         |              
+       | ype            |                                |         |                                                 |              
+Add    | OperationInputT| MO4_PartMasterCreI             |       0 | Success                                         |              
+       | ype            |                                |         |                                                 |              
+Add    | OperationInputT| MO4_PartMasterSCreI            |       0 | Success                                         |              
+       | ype            |                                |         |                                                 |              
+Add    | OperationInputT| MO4_PartMasterSSvAI            |       0 | Success                                         |              
+       | ype            |                                |         |                                                 |              
+Add    | OperationInputT| MO4_PartMasterSvAI             |       0 | Success                                         |              
+       | ype            |                                |         |                                                 |              
+Add    | OperationInputT| MO4_PartRevMasterSCreI         |       0 | Success                                         |              
+       | ype            |                                |         |                                                 |              
+Add    | OperationInputT| MO4_PartRevMasterSSvAI         |       0 | Success                                         |              
+       | ype            |                                |         |                                                 |              
+Add    | OperationInputT| MO4_PartRevisionCreI           |       0 | Success                                         |              
+       | ype            |                                |         |                                                 |              
+Add    | OperationInputT| MO4_PartRevisionMasterCreI     |       0 | Success                                         |              
+       | ype            |                                |         |                                                 |              
+Add    | OperationInputT| MO4_PartRevisionMasterSvAI     |       0 | Success                                         |              
+       | ype            |                                |         |                                                 |              
+Add    | OperationInputT| MO4_PartRevisionRevI           |       0 | Success                                         |              
+       | ype            |                                |         |                                                 |              
+Add    | OperationInputT| MO4_PartRevisionSvAI           |       0 | Success                                         |              
+       | ype            |                                |         |                                                 |              
+Add    | OperationInputT| MO4_PartSvAI                   |       0 | Success                                         |              
+       | ype            |                                |         |                                                 |              
+Add    | OperationInputT| MO4_RimCreI                    |       0 | Success                                         |              
+       | ype            |                                |         |                                                 |              
+Add    | OperationInputT| MO4_RimSvAI                    |       0 | Success                                         |              
+       | ype            |                                |         |                                                 |              
+Add    | OperationInputT| MO4_board_dataCreI             |       0 | Success                                         |              
+       | ype            |                                |         |                                                 |              
+Add    | OperationInputT| MO4_board_dataSvAI             |       0 | Success                                         |              
+       | ype            |                                |         |                                                 |              
+Add    | OperationInputT| MO4_cover_dataCreI             |       0 | Success                                         |              
+       | ype            |                                |         |                                                 |              
+Add    | OperationInputT| MO4_cover_dataSvAI             |       0 | Success                                         |              
+       | ype            |                                |         |                                                 |              
+Add    | OperationInputT| MO4_rim_dataCreI               |       0 | Success                                         |              
+       | ype            |                                |         |                                                 |              
+Add    | OperationInputT| MO4_rim_dataSvAI               |       0 | Success                                         |              
+       | ype            |                                |         |                                                 |              
+Add    | TcPropertyConst| Visible:MO4_DesignRevisionCreI:|       0 | Success                                         |              
+       | antAttach      | mo4_name_extension             |         |                                                 |              
+Add    | OperationInputT| MO4_BoardCreI                  |       0 | Success                                         |              
+       | ype            |                                |         |                                                 |              
+Add    | OperationInputT| MO4_BoardSvAI                  |       0 | Success                                         |              
+       | ype            |                                |         |                                                 |              
+Add    | OperationInputT| MO4_CoverCreI                  |       0 | Success                                         |              
+       | ype            |                                |         |                                                 |              
+Add    | OperationInputT| MO4_CoverSvAI                  |       0 | Success                                         |              
+       | ype            |                                |         |                                                 |              
+Add    | OperationInputT| MO4_Eng_PartCreI               |       0 | Success                                         |              
+       | ype            |                                |         |                                                 |              
+Add    | OperationInputT| MO4_Eng_PartMasterCreI         |       0 | Success                                         |              
+       | ype            |                                |         |                                                 |              
+Add    | OperationInputT| MO4_Eng_PartMasterSCreI        |       0 | Success                                         |              
+       | ype            |                                |         |                                                 |              
+Add    | OperationInputT| MO4_Eng_PartMasterSSvAI        |       0 | Success                                         |              
+       | ype            |                                |         |                                                 |              
+Add    | OperationInputT| MO4_Eng_PartMasterSvAI         |       0 | Success                                         |              
+       | ype            |                                |         |                                                 |              
+Add    | OperationInputT| MO4_Eng_PartRevMasterSCreI     |       0 | Success                                         |              
+       | ype            |                                |         |                                                 |              
+Add    | OperationInputT| MO4_Eng_PartRevMasterSSvAI     |       0 | Success                                         |              
+       | ype            |                                |         |                                                 |              
+Add    | OperationInputT| MO4_Eng_PartRevisionCreI       |       0 | Success                                         |              
+       | ype            |                                |         |                                                 |              
+Add    | OperationInputT| MO4_Eng_PartRevisionMasterCreI |       0 | Success                                         |              
+       | ype            |                                |         |                                                 |              
+Add    | OperationInputT| MO4_Eng_PartRevisionMasterSvAI |       0 | Success                                         |              
+       | ype            |                                |         |                                                 |              
+Add    | OperationInputT| MO4_Eng_PartRevisionRevI       |       0 | Success                                         |              
+       | ype            |                                |         |                                                 |              
+Add    | OperationInputT| MO4_Eng_PartRevisionSvAI       |       0 | Success                                         |              
+       | ype            |                                |         |                                                 |              
+Add    | OperationInputT| MO4_Eng_PartSvAI               |       0 | Success                                         |              
+       | ype            |                                |         |                                                 |              
+Add    | Functionality  | MO4morelo                      |       0 | Success                                         |              
+
+
+
+
+====================================================================================================================================
+Unprocessed Non-Schema Changes:
+====================================================================================================================================
+Action | Element Type   | Element Name                   | Error # | Error                                           | Template Name
+-------|----------------|--------------------------------|---------|-------------------------------------------------|--------------
+
+
+
+
+-------|----------------|--------------------------------|---------|-------------------------------------------------|--------------
+
+*****  Please refer to the Multi-Fields Keys (MFK) updater log at the following location for status of processed MFK type constant attach element(s): C:\Users\install\AppData\Local\Temp\mfk_updater_2024_04_10_08-09-18.log.
+Memory=62181727, SQL=6004, Time 10.016000s cpu, 35.086000s real at-Statistics
+

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TcBusinessDataLocalization xmlns="http://teamcenter.com/BusinessModel/TcBusinessDataLocalization"
+    Date="">
+<Add>
+   <key locale="en_US" id="BusinessObject{::}MO4_Board" status="Approved">Board</key>
+   <key locale="en_US" id="BusinessObject{::}MO4_Cover" status="Approved">Cover</key>
+   <key locale="en_US" id="BusinessObject{::}MO4_DesignMasterS" status="Approved">Design Master Storage</key>
+   <key locale="en_US" id="BusinessObject{::}MO4_DesignMaster" status="Approved">Design Master</key>
+   <key locale="en_US" id="BusinessObject{::}MO4_DesignRevMasterS" status="Approved">Design Revision Master Storage</key>
+   <key locale="en_US" id="BusinessObject{::}MO4_DesignRevisionMaster" status="Approved">Design Revision Master</key>
+   <key locale="en_US" id="BusinessObject{::}MO4_DesignRevision" status="Approved">Design Revision</key>
+   <key locale="en_US" id="BusinessObject{::}MO4_Design" status="Approved">Design</key>
+   <key locale="en_US" id="BusinessObject{::}MO4_Eng_DesignMasterS" status="Approved">Eng Design Master Storage</key>
+   <key locale="en_US" id="BusinessObject{::}MO4_Eng_DesignMaster" status="Approved">Eng Design Master</key>
+   <key locale="en_US" id="BusinessObject{::}MO4_Eng_DesignRevMasterS" status="Approved">Eng Design Revision Master Storage</key>
+   <key locale="en_US" id="BusinessObject{::}MO4_Eng_DesignRevisionMaster" status="Approved">Eng Design Revision Master</key>
+   <key locale="en_US" id="BusinessObject{::}MO4_Eng_DesignRevision" status="Approved">Engineering Design Revision</key>
+   <key locale="en_US" id="BusinessObject{::}MO4_Eng_Design" status="Approved">Engineering Design</key>
+   <key locale="en_US" id="BusinessObject{::}MO4_Eng_PartMasterS" status="Approved">Eng Part Master Storage</key>
+   <key locale="en_US" id="BusinessObject{::}MO4_Eng_PartMaster" status="Approved">Eng Part Master</key>
+   <key locale="en_US" id="BusinessObject{::}MO4_Eng_PartRevMasterS" status="Approved">Eng Part Revision Master Storage</key>
+   <key locale="en_US" id="BusinessObject{::}MO4_Eng_PartRevisionMaster" status="Approved">Eng Part Revision Master</key>
+   <key locale="en_US" id="BusinessObject{::}MO4_Eng_PartRevision" status="Approved">Engineering Part Revision</key>
+   <key locale="en_US" id="BusinessObject{::}MO4_Eng_Part" status="Approved">Engineering Part</key>
+   <key locale="en_US" id="BusinessObject{::}MO4_MoreloClass" status="Approved">Morelo Class</key>
+   <key locale="en_US" id="BusinessObject{::}MO4_PartMasterS" status="Approved">Part Master Storage</key>
+   <key locale="en_US" id="BusinessObject{::}MO4_PartMaster" status="Approved">Part Master</key>
+   <key locale="en_US" id="BusinessObject{::}MO4_PartRevMasterS" status="Approved">Part Revision Master Storage</key>
+   <key locale="en_US" id="BusinessObject{::}MO4_PartRevisionMaster" status="Approved">Part Revision Master</key>
+   <key locale="en_US" id="BusinessObject{::}MO4_PartRevision" status="Approved">Part Revision</key>
+   <key locale="en_US" id="BusinessObject{::}MO4_Part" status="Approved">Part</key>
+   <key locale="en_US" id="BusinessObject{::}MO4_Rim" status="Approved">Rim</key>
+   <key locale="en_US" id="BusinessObject{::}MO4_board_data" status="Approved">Board Data</key>
+   <key locale="en_US" id="BusinessObject{::}MO4_cover_data" status="Approved">Cover Data</key>
+   <key locale="en_US" id="BusinessObject{::}MO4_rim_data" status="Approved">Rim Data</key>
+   <key locale="en_US" id="ConditionDescription{::}MO4_WFFilter_Design" status="Approved">This condition checks the type of object is Design Revision.</key>
+   <key locale="en_US" id="LOVValue{::}MO4_BurrFreeLOV{::}Norm" status="Approved">Norm</key>
+   <key locale="en_US" id="LOVValue{::}MO4_BurrFreeLOV{::}No" status="Approved">No</key>
+   <key locale="en_US" id="LOVValue{::}MO4_BurrFreeLOV{::}Yes" status="Approved">Yes</key>
+   <key locale="en_US" id="LOVValue{::}MO4_ChipFreeLOV{::}Norm" status="Approved">Norm</key>
+   <key locale="en_US" id="LOVValue{::}MO4_ChipFreeLOV{::}No" status="Approved">No</key>
+   <key locale="en_US" id="LOVValue{::}MO4_ChipFreeLOV{::}Yes" status="Approved">Yes</key>
+   <key locale="en_US" id="LOVValue{::}MO4_CleannessLOV{::}Norm" status="Approved">Norm</key>
+   <key locale="en_US" id="LOVValue{::}MO4_CleannessLOV{::}No" status="Approved">No</key>
+   <key locale="en_US" id="LOVValue{::}MO4_CleannessLOV{::}Yes" status="Approved">Yes</key>
+   <key locale="en_US" id="Property{::}Fnd0RecipeContainer{::}mo4_covering_1" status="Approved">Covering 1</key>
+   <key locale="en_US" id="Property{::}Fnd0RecipeContainer{::}mo4_covering_2" status="Approved">covering 2</key>
+   <key locale="en_US" id="Property{::}MO4_Board{::}mo4_material_code" status="Approved">Material Code</key>
+   <key locale="en_US" id="Property{::}MO4_Cover{::}mo4_article_number" status="Approved">Article Number</key>
+   <key locale="en_US" id="Property{::}MO4_Cover{::}mo4_bom_aligned" status="Approved">BOM Aligned</key>
+   <key locale="en_US" id="Property{::}MO4_Cover{::}mo4_cleanness" status="Approved">Cleanness</key>
+   <key locale="en_US" id="Property{::}MO4_Cover{::}mo4_gloss_level" status="Approved">Gloss Level</key>
+   <key locale="en_US" id="Property{::}MO4_Cover{::}mo4_grain_relevance" status="Approved">Grain Relevance</key>
+   <key locale="en_US" id="Property{::}MO4_Cover{::}mo4_id" status="Approved">ID</key>
+   <key locale="en_US" id="Property{::}MO4_Cover{::}mo4_material_code" status="Approved">Material Code</key>
+   <key locale="en_US" id="Property{::}MO4_DesignRevision{::}mo4_name_extension" status="Approved">Name extension</key>
+   <key locale="en_US" id="Property{::}MO4_Design{::}mo4_name_extension" status="Approved">Name Extension</key>
+   <key locale="en_US" id="Property{::}MO4_Eng_DesignRevision{::}object_desc" status="Approved">Description</key>
+   <key locale="en_US" id="Property{::}MO4_Eng_Design{::}object_desc" status="Approved">Description</key>
+   <key locale="en_US" id="Property{::}MO4_PartRevision{::}mo4_article_number" status="Approved">Article Number</key>
+   <key locale="en_US" id="Property{::}MO4_PartRevision{::}mo4_name_extension" status="Approved">Name Extension</key>
+   <key locale="en_US" id="Property{::}MO4_Part{::}mo4_article_number" status="Approved">Article Number</key>
+   <key locale="en_US" id="Property{::}MO4_Part{::}mo4_name_extension" status="Approved">Name Extension</key>
+   <key locale="en_US" id="Property{::}MO4_Rim{::}mo4_article_number" status="Approved">Article Number</key>
+   <key locale="en_US" id="Property{::}MO4_Rim{::}mo4_bom_aligned" status="Approved">BOM Aligned</key>
+   <key locale="en_US" id="Property{::}MO4_Rim{::}mo4_id" status="Approved">ID</key>
+   <key locale="en_US" id="Property{::}MO4_Rim{::}mo4_length_excess" status="Approved">Length (excess)</key>
+   <key locale="en_US" id="Property{::}MO4_Rim{::}mo4_length" status="Approved">Length</key>
+   <key locale="en_US" id="Property{::}MO4_Rim{::}mo4_material_code" status="Approved">Material Code</key>
+   <key locale="en_US" id="Property{::}MO4_Rim{::}mo4_rim_type" status="Approved">Type</key>
+   <key locale="en_US" id="Property{::}MO4_Rim{::}mo4_size" status="Approved">Size</key>
+   <key locale="en_US" id="Property{::}MO4_Rim{::}mo4_width_max" status="Approved">High (max)</key>
+   <key locale="en_US" id="Property{::}MO4_Rim{::}mo4_width_min" status="Approved">High (min)</key>
+</Add>
+</TcBusinessDataLocalization>

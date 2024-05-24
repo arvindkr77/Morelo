@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+=======================================================================
+Copyright 2015.
+Siemens Product Lifecycle Management Software Inc.
+All Rights Reserved.
+=======================================================================
+     Filename: WorkspaceObjectSummary.xml
+
+    Style sheet rendering for WorkspaceObject summary in Active Workspace.
+=======================================================================
+-->
+<rendering>
+    <header>
+        <image source="type"/>
+        <property name="object_name"/>
+        <property name="release_status_list" renderingHint="overflow"/>
+        <property name="object_type"/>
+    </header>
+    <page titleKey="tc_xrt_Overview">
+        <column>
+            <section titleKey="tc_xrt_properties">
+				<property name="object_name" modifiable="false"/>
+				<property name="mo4_id"/>
+				<property name="mo4_article_number"/>				
+				<property name="mo4_material_code"/>
+				<property name="mo4_bom_aligned"/>
+				<property name="mo4_rim_type"/>
+				<property name="mo4_length"/>
+				<property name="mo4_length_excess"/>
+				<property name="mo4_size"/>
+				<property name="mo4_width_max"/>
+				<property name="mo4_width_min"/>
+				<property name="object_desc"/>
+                <separator/>
+                <property name="owning_user" renderingHint="objectlink" modifiable="false"/>
+                <property name="checked_out" modifiable="false"/>
+                <property name="checked_out_user" renderingHint="objectlink" modifiable="false"/>
+                <separator/>
+                <command commandId="com.teamcenter.rac.properties" titleKey="tc_xrt_moreProperties"/>
+            </section>
+            <content visibleWhen="Cls0ClassifiedBy != null" >
+              <!-- advanced Classification -->
+              <inject type="dataset" src="Fnd0ClassificationSummary"/>
+            </content>
+            <content visibleWhen="ics_classified != null and Cls0ClassifiedBy == null" >
+              <!-- traditional Classification -->
+              <inject type="dataset" src="Fnd0ClassificationSummary"/>
+            </content>
+            <content visibleWhen="REFBY(lbr0LibraryObject,Lbr0LibraryElement).lbr0ElementId != null" >
+              <inject type="dataset" src="Lbr1LibraryInformation"/>
+            </content>
+        </column>
+        <column>
+            <section titleKey="tc_xrt_Preview">
+                <image source="thumbnail"/>
+            </section>
+        </column>
+    </page>
+    <inject type="preference" src="ClassificationStylesheetTab"/>
+    <inject type="dataset" src="Rb0InContextReportsSubLocation" />
+    <inject type="dataset" src="AuditLogGNForWSO"/>
+</rendering>

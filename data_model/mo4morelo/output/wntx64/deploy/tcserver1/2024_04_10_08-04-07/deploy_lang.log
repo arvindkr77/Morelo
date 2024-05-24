@@ -1,0 +1,121 @@
+====================================================================================================================================
+Command output for the business_model_updater
+====================================================================================================================================
+ Log File Name   : C:\Temp\transientVolume_infodba\BMIDE\2024_04_10_08-04-23\process\business_model_updater_lang.log
+ Model File Name : C:\Siemens\tcdata\model\lang\delta_lang.xml
+ Update Option   : localization
+ Run Mode        : upgrade
+ Process Option  : all
+====================================================================================================================================
+
+
+====================================================================================================================================
+Processed Schema Changes:
+====================================================================================================================================
+Action | Element Type   | Element Name                   | Error # | Error                                           | Template Name
+-------|----------------|--------------------------------|---------|-------------------------------------------------|--------------
+
+
+
+
+====================================================================================================================================
+Unprocessed Schema Changes:
+====================================================================================================================================
+Action | Element Type   | Element Name                   | Error # | Error                                           | Template Name
+-------|----------------|--------------------------------|---------|-------------------------------------------------|--------------
+
+
+
+
+====================================================================================================================================
+Processed Non-Schema Changes:
+====================================================================================================================================
+Action | Element Type   | Element Name                   | Error # | Error                                           | Template Name
+-------|----------------|--------------------------------|---------|-------------------------------------------------|--------------
+Add    | Property       | Fnd0RecipeContainer{::}mo4_cove|       0 | Success                                         |              
+       |                | ring_1                         |         |                                                 |              
+Add    | Property       | Fnd0RecipeContainer{::}mo4_cove|       0 | Success                                         |              
+       |                | ring_2                         |         |                                                 |              
+Add    | Property       | MO4_Board{::}mo4_material_code |       0 | Success                                         |              
+Add    | Property       | MO4_Cover{::}mo4_bom_aligned   |       0 | Success                                         |              
+Add    | Property       | MO4_Cover{::}mo4_cleanness     |       0 | Success                                         |              
+Add    | Property       | MO4_Cover{::}mo4_gloss_level   |       0 | Success                                         |              
+Add    | Property       | MO4_Cover{::}mo4_grain_relevanc|       0 | Success                                         |              
+       |                | e                              |         |                                                 |              
+Add    | Property       | MO4_Cover{::}mo4_id            |       0 | Success                                         |              
+Add    | Property       | MO4_Cover{::}mo4_material_code |       0 | Success                                         |              
+Add    | Property       | MO4_DesignRevision{::}mo4_name_|       0 | Success                                         |              
+       |                | extension                      |         |                                                 |              
+Add    | Property       | MO4_Design{::}mo4_name_extensio|       0 | Success                                         |              
+       |                | n                              |         |                                                 |              
+Add    | Property       | MO4_Eng_DesignRevision{::}objec|       0 | Success                                         |              
+       |                | t_desc                         |         |                                                 |              
+Add    | Property       | MO4_Eng_Design{::}object_desc  |       0 | Success                                         |              
+Add    | Property       | MO4_Eng_Design{::}object_name  |       0 | Success                                         |              
+Add    | Property       | MO4_PartRevision{::}mo4_article|       0 | Success                                         |              
+       |                | _number                        |         |                                                 |              
+Add    | Property       | MO4_PartRevision{::}mo4_name_ex|       0 | Success                                         |              
+       |                | tension                        |         |                                                 |              
+Add    | Property       | MO4_Part{::}mo4_article_number |       0 | Success                                         |              
+Add    | Property       | MO4_Part{::}mo4_name_extension |       0 | Success                                         |              
+Add    | Property       | MO4_Rim{::}mo4_article_number  |       0 | Success                                         |              
+Add    | Property       | MO4_Rim{::}mo4_bom_aligned     |       0 | Success                                         |              
+Add    | Property       | MO4_Rim{::}mo4_id              |       0 | Success                                         |              
+Add    | Property       | MO4_Rim{::}mo4_length_excess   |       0 | Success                                         |              
+Add    | Property       | MO4_Rim{::}mo4_length          |       0 | Success                                         |              
+Add    | Property       | MO4_Rim{::}mo4_material_code   |       0 | Success                                         |              
+Add    | Property       | MO4_Rim{::}mo4_rim_type        |       0 | Success                                         |              
+Add    | Property       | MO4_Rim{::}mo4_size            |       0 | Success                                         |              
+Add    | Property       | MO4_Rim{::}mo4_width_max       |       0 | Success                                         |              
+Add    | Property       | MO4_Rim{::}mo4_width_min       |       0 | Success                                         |              
+Add    | BusinessObject | MO4_Board                      |       0 | Success                                         |              
+Add    | BusinessObject | MO4_Cover                      |       0 | Success                                         |              
+Add    | BusinessObject | MO4_DesignMasterS              |       0 | Success                                         |              
+Add    | BusinessObject | MO4_DesignMaster               |       0 | Success                                         |              
+Add    | BusinessObject | MO4_DesignRevMasterS           |       0 | Success                                         |              
+Add    | BusinessObject | MO4_DesignRevisionMaster       |       0 | Success                                         |              
+Add    | BusinessObject | MO4_DesignRevision             |       0 | Success                                         |              
+Add    | BusinessObject | MO4_Design                     |       0 | Success                                         |              
+Add    | BusinessObject | MO4_Eng_DesignMasterS          |       0 | Success                                         |              
+Add    | BusinessObject | MO4_Eng_DesignMaster           |       0 | Success                                         |              
+Add    | BusinessObject | MO4_Eng_DesignRevMasterS       |       0 | Success                                         |              
+Add    | BusinessObject | MO4_Eng_DesignRevisionMaster   |       0 | Success                                         |              
+Add    | BusinessObject | MO4_Eng_DesignRevision         |       0 | Success                                         |              
+Add    | BusinessObject | MO4_Eng_Design                 |       0 | Success                                         |              
+Add    | BusinessObject | MO4_Eng_PartMasterS            |       0 | Success                                         |              
+Add    | BusinessObject | MO4_Eng_PartMaster             |       0 | Success                                         |              
+Add    | BusinessObject | MO4_Eng_PartRevMasterS         |       0 | Success                                         |              
+Add    | BusinessObject | MO4_Eng_PartRevisionMaster     |       0 | Success                                         |              
+Add    | BusinessObject | MO4_Eng_PartRevision           |       0 | Success                                         |              
+Add    | BusinessObject | MO4_Eng_Part                   |       0 | Success                                         |              
+Add    | BusinessObject | MO4_MoreloClass                |       0 | Success                                         |              
+Add    | BusinessObject | MO4_PartMasterS                |       0 | Success                                         |              
+Add    | BusinessObject | MO4_PartMaster                 |       0 | Success                                         |              
+Add    | BusinessObject | MO4_PartRevMasterS             |       0 | Success                                         |              
+Add    | BusinessObject | MO4_PartRevisionMaster         |       0 | Success                                         |              
+Add    | BusinessObject | MO4_PartRevision               |       0 | Success                                         |              
+Add    | BusinessObject | MO4_Part                       |       0 | Success                                         |              
+Add    | BusinessObject | MO4_Rim                        |       0 | Success                                         |              
+Add    | BusinessObject | MO4_board_data                 |       0 | Success                                         |              
+Add    | BusinessObject | MO4_cover_data                 |       0 | Success                                         |              
+Add    | BusinessObject | MO4_rim_data                   |       0 | Success                                         |              
+Add    | LOVValue       | MO4_BurrFreeLOV                |       0 | Success                                         |              
+Add    | LOVValue       | MO4_ChipFreeLOV                |       0 | Success                                         |              
+Add    | LOVValue       | MO4_CleannessLOV               |       0 | Success                                         |              
+
+
+
+
+====================================================================================================================================
+Unprocessed Non-Schema Changes:
+====================================================================================================================================
+Action | Element Type   | Element Name                   | Error # | Error                                           | Template Name
+-------|----------------|--------------------------------|---------|-------------------------------------------------|--------------
+
+
+
+
+-------|----------------|--------------------------------|---------|-------------------------------------------------|--------------
+
+*****  Please refer to the Multi-Fields Keys (MFK) updater log at the following location for status of processed MFK type constant attach element(s): C:\Users\install\AppData\Local\Temp\mfk_updater_2024_04_10_08-10-24.log.
+Memory=57965040, SQL=1444, Time 0.859000s cpu, 3.480000s real at-Statistics

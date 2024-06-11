@@ -5,15 +5,29 @@
    <key locale="de_DE" id="BusinessObject{::}MO4_Eng_DesignRevision" status="Approved">Engineering Design Revision</key>
    <key locale="de_DE" id="BusinessObject{::}MO4_Eng_Design" status="Approved">Engineering Design</key>
    <key locale="de_DE" id="BusinessObject{::}MO4_Eng_Part" status="Approved">Engineering Teil</key>
-   <key locale="de_DE" id="LOVValue{::}MO4_BurrFreeLOV{::}Norm" status="Approved">Norm</key>
-   <key locale="de_DE" id="LOVValue{::}MO4_BurrFreeLOV{::}No" status="Approved">Nein</key>
-   <key locale="de_DE" id="LOVValue{::}MO4_BurrFreeLOV{::}Yes" status="Approved">Ja</key>
-   <key locale="de_DE" id="LOVValue{::}MO4_ChipFreeLOV{::}Norm" status="Approved">Norm</key>
-   <key locale="de_DE" id="LOVValue{::}MO4_ChipFreeLOV{::}No" status="Approved">Nein</key>
-   <key locale="de_DE" id="LOVValue{::}MO4_ChipFreeLOV{::}Yes" status="Approved">Ja</key>
+   <key locale="de_DE" id="LOVValueDescription{::}MO4_SurfaceLOV{::}leathered" status="Approved">nur für Holz, GFK</key>
+   <key locale="de_DE" id="LOVValueDescription{::}MO4_SurfaceLOV{::}upholstered" status="Approved">nur für Holz</key>
    <key locale="de_DE" id="LOVValue{::}MO4_CleannessLOV{::}Norm" status="Approved">Norm</key>
    <key locale="de_DE" id="LOVValue{::}MO4_CleannessLOV{::}No" status="Approved">Nein</key>
    <key locale="de_DE" id="LOVValue{::}MO4_CleannessLOV{::}Yes" status="Approved">Ja</key>
+   <key locale="de_DE" id="LOVValue{::}MO4_SurfaceLOV{::}anodized" status="Approved">eloxiert</key>
+   <key locale="de_DE" id="LOVValue{::}MO4_SurfaceLOV{::}brushed" status="Approved">gebuerstet</key>
+   <key locale="de_DE" id="LOVValue{::}MO4_SurfaceLOV{::}chromed" status="Approved">verchromt</key>
+   <key locale="de_DE" id="LOVValue{::}MO4_SurfaceLOV{::}etched" status="Approved">geaezt</key>
+   <key locale="de_DE" id="LOVValue{::}MO4_SurfaceLOV{::}galvanized" status="Approved">galv. verzinkt</key>
+   <key locale="de_DE" id="LOVValue{::}MO4_SurfaceLOV{::}hot-dip galvanized" status="Approved">feuerverzinkt</key>
+   <key locale="de_DE" id="LOVValue{::}MO4_SurfaceLOV{::}laminated" status="Approved">kaschiert</key>
+   <key locale="de_DE" id="LOVValue{::}MO4_SurfaceLOV{::}leathered" status="Approved">beledert</key>
+   <key locale="de_DE" id="LOVValue{::}MO4_SurfaceLOV{::}milled and fluted" status="Approved">gefräst und gerillt</key>
+   <key locale="de_DE" id="LOVValue{::}MO4_SurfaceLOV{::}milled" status="Approved">gefräst</key>
+   <key locale="de_DE" id="LOVValue{::}MO4_SurfaceLOV{::}polished" status="Approved">poliert</key>
+   <key locale="de_DE" id="LOVValue{::}MO4_SurfaceLOV{::}powder coated" status="Approved">pulverbeschichtet</key>
+   <key locale="de_DE" id="LOVValue{::}MO4_SurfaceLOV{::}primed" status="Approved">grundiert</key>
+   <key locale="de_DE" id="LOVValue{::}MO4_SurfaceLOV{::}raw" status="Approved">Roh</key>
+   <key locale="de_DE" id="LOVValue{::}MO4_SurfaceLOV{::}sheathed" status="Approved">ummantelt</key>
+   <key locale="de_DE" id="LOVValue{::}MO4_SurfaceLOV{::}upholstered" status="Approved">bezogen</key>
+   <key locale="de_DE" id="LOVValue{::}MO4_SurfaceLOV{::}varnish" status="Approved">lackiert</key>
+   <key locale="de_DE" id="LOVValue{::}MO4_SurfaceLOV{::}veneered" status="Approved">furniert</key>
    <key locale="de_DE" id="Property{::}MO4_DesignRevision{::}mo4_name_extension" status="Approved">Erweiterter Name</key>
    <key locale="de_DE" id="Property{::}MO4_Eng_DesignRevision{::}object_desc" status="Approved">Beschreibung</key>
    <key locale="de_DE" id="Property{::}MO4_Eng_Design{::}object_desc" status="Approved">Beschreibung</key>

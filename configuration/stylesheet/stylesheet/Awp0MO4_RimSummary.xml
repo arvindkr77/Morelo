@@ -20,24 +20,24 @@ All Rights Reserved.
     <page titleKey="tc_xrt_Overview">
         <column>
             <section titleKey="tc_xrt_properties">
-				<property name="object_name" modifiable="false"/>
-				<property name="mo4_id"/>
-				<property name="mo4_article_number"/>				
-				<property name="mo4_material_code"/>
-				<property name="mo4_bom_aligned"/>
-				<property name="mo4_rim_type"/>
-				<property name="mo4_length"/>
-				<property name="mo4_length_excess"/>
-				<property name="mo4_size"/>
-				<property name="mo4_width_max"/>
-				<property name="mo4_width_min"/>
-				<property name="object_desc"/>
-                <separator/>
-                <property name="owning_user" renderingHint="objectlink" modifiable="false"/>
-                <property name="checked_out" modifiable="false"/>
-                <property name="checked_out_user" renderingHint="objectlink" modifiable="false"/>
-                <separator/>
-                <command commandId="com.teamcenter.rac.properties" titleKey="tc_xrt_moreProperties"/>
+                  <property name="object_name" modifiable="false"/>
+                  <property name="object_desc"/>
+                  <property name="mo4_id"/>
+                  <property name="mo4_article_number_cp"/>				
+                  <property name="mo4_material_code"/>
+                  <property name="mo4_bom_aligned"/>
+                  <property name="mo4_rim_type"/>
+                  <property name="mo4_length"/>
+                  <property name="mo4_length_excess"/>
+                  <property name="mo4_size"/>
+                  <property name="mo4_width_max"/>
+                  <property name="mo4_width_min"/>		
+                  <separator/>
+                  <property name="owning_user" renderingHint="objectlink" modifiable="false"/>
+                  <property name="checked_out" modifiable="false"/>
+                  <property name="checked_out_user" renderingHint="objectlink" modifiable="false"/>
+                  <separator/>
+                  <command commandId="com.teamcenter.rac.properties" titleKey="tc_xrt_moreProperties"/>
             </section>
             <content visibleWhen="Cls0ClassifiedBy != null" >
               <!-- advanced Classification -->

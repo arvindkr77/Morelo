@@ -23,12 +23,14 @@
             <section titleKey="tc_xrt_properties">
                 <property name="item_id" renderingHint="label"/>
                 <property name="object_name"/>
+                <property name="mo4_object_name"/>
                 <property name="mo4_name_extension"/>
+                <property name="mo4_lhd_rhd"/>
+                <property name="object_desc"/>
+                <property name="object_type"/>
                 <content>
                     <inject type="dataset" src="Usp1ItemOwningSite"/>
                 </content>
-                <property name="object_desc"/>
-                <property name="object_type"/>
                 <inject type="dataset" src="Smc1HasVariantConfiguratorContext"/>
                 <inject type="dataset" src="Awn0MaterialLibrary"/>
                 <property name="release_status_list" renderingHint="label"/>

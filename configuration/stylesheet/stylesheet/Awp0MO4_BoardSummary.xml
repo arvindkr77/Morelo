@@ -21,7 +21,14 @@ All Rights Reserved.
         <column>
             <section titleKey="tc_xrt_properties">
                 <property name="object_name" modifiable="false"/>
-                <property name="mo4_material_code"/>
+                  <property name="mo4_material_code"/>
+                  <property name="mo4_article_number_cp"/>
+                  <property name="mo4_length"/>
+                  <property name="mo4_width"/>
+                  <property name="mo4_size"/>
+                  <property name="mo4_length_net"/>
+                  <property name="mo4_width_net"/> 
+                  <property name="mo4_grain_angel"/>
                 <property name="object_desc"/>
                 <separator/>
                 <property name="owning_user" renderingHint="objectlink" modifiable="false"/>

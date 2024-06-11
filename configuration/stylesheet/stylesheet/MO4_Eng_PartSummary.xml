@@ -23,8 +23,11 @@ All Rights Reserved.
         <column>
             <section titleKey="tc_xrt_ItemProperties">
                 <property name="object_name"/>
-                <property name="mo4_article_number"/>
+                <property name="mo4_object_name"/>
                 <property name="mo4_name_extension"/>
+                <property name="mo4_article_number"/>
+                <property name="mo4_lhd_rhd"/>
+                <property name="mo4_homologation"/>
                 <property name="object_desc"/>
                 <separator/>
                 <property name="owning_user" renderingHint="objectlink" modifiable="false"/>

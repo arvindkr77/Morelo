@@ -16,6 +16,36 @@
          isUnique="false" isPublicRead="true" isPublicWrite="true" isCandidateKey="false"
          isTransient="false" exportAsString="false" noBackpointer="false" initialValue="NULL"
          lowerBoundValue="" upperBoundValue=""/>
+     <TcAttribute attributeName="mo4_length" description="" attributeType="POM_double"
+         maxStringLength="0" isArray="false" followOnExport="false" isNullsAllowed="true"
+         isUnique="false" isPublicRead="true" isPublicWrite="true" isCandidateKey="false"
+         isTransient="false" exportAsString="false" noBackpointer="false" lowerBoundValue=""
+         upperBoundValue=""/>
+     <TcAttribute attributeName="mo4_width" description="" attributeType="POM_double"
+         maxStringLength="0" isArray="false" followOnExport="false" isNullsAllowed="true"
+         isUnique="false" isPublicRead="true" isPublicWrite="true" isCandidateKey="false"
+         isTransient="false" exportAsString="false" noBackpointer="false" lowerBoundValue=""
+         upperBoundValue=""/>
+     <TcAttribute attributeName="mo4_size" description="" attributeType="POM_double"
+         maxStringLength="0" isArray="false" followOnExport="false" isNullsAllowed="true"
+         isUnique="false" isPublicRead="true" isPublicWrite="true" isCandidateKey="false"
+         isTransient="false" exportAsString="false" noBackpointer="false" lowerBoundValue=""
+         upperBoundValue=""/>
+     <TcAttribute attributeName="mo4_length_net" description="" attributeType="POM_double"
+         maxStringLength="0" isArray="false" followOnExport="false" isNullsAllowed="true"
+         isUnique="false" isPublicRead="true" isPublicWrite="true" isCandidateKey="false"
+         isTransient="false" exportAsString="false" noBackpointer="false" lowerBoundValue=""
+         upperBoundValue=""/>
+     <TcAttribute attributeName="mo4_width_net" description="" attributeType="POM_double"
+         maxStringLength="0" isArray="false" followOnExport="false" isNullsAllowed="true"
+         isUnique="false" isPublicRead="true" isPublicWrite="true" isCandidateKey="false"
+         isTransient="false" exportAsString="false" noBackpointer="false" lowerBoundValue=""
+         upperBoundValue=""/>
+     <TcAttribute attributeName="mo4_grain_angel" description="" attributeType="POM_int"
+         maxStringLength="0" isArray="false" followOnExport="false" isNullsAllowed="true"
+         isUnique="false" isPublicRead="true" isPublicWrite="true" isCandidateKey="false"
+         isTransient="false" exportAsString="false" noBackpointer="false" initialValue="0"
+         lowerBoundValue="" upperBoundValue=""/>
    </TcClass>
    <TcClass className="MO4_Cover" parentClassName="MO4_MoreloClass" isExportable="false"
        isUninstantiable="false" isUninheritable="false" description="">
@@ -47,16 +77,31 @@
          isPublicRead="true" isPublicWrite="true" isCandidateKey="false" isTransient="false"
          exportAsString="false" noBackpointer="false" initialValue="01" lowerBoundValue="01"
          upperBoundValue="10"/>
-     <TcAttribute attributeName="mo4_article_number" description="" attributeType="POM_string"
+     <TcAttribute attributeName="mo4_surface" description="" attributeType="POM_string"
          maxStringLength="32" isArray="false" followOnExport="false" isNullsAllowed="true"
          isUnique="false" isPublicRead="true" isPublicWrite="true" isCandidateKey="false"
-         isTransient="false" exportAsString="false" noBackpointer="false" initialValue="NULL"
+         isTransient="false" exportAsString="false" noBackpointer="false" lowerBoundValue=""
+         upperBoundValue=""/>
+     <TcAttribute attributeName="mo4_orientation" description="" attributeType="POM_int"
+         maxStringLength="0" isArray="false" followOnExport="false" isNullsAllowed="true"
+         isUnique="false" isPublicRead="true" isPublicWrite="true" isCandidateKey="false"
+         isTransient="false" exportAsString="false" noBackpointer="false" initialValue="0"
          lowerBoundValue="" upperBoundValue=""/>
    </TcClass>
    <TcClass className="MO4_Design" parentClassName="Design" isExportable="false" isUninstantiable="false"
        isUninheritable="false" description="">
      <TcAttribute attributeName="mo4_name_extension" description="" attributeType="POM_string"
-         maxStringLength="28" isArray="false" followOnExport="false" isNullsAllowed="true"
+         maxStringLength="128" isArray="false" followOnExport="false" isNullsAllowed="true"
+         isUnique="false" isPublicRead="true" isPublicWrite="true" isCandidateKey="false"
+         isTransient="false" exportAsString="false" noBackpointer="false" initialValue=""
+         lowerBoundValue="" upperBoundValue=""/>
+     <TcAttribute attributeName="mo4_object_name" description="" attributeType="POM_string"
+         maxStringLength="32" isArray="false" followOnExport="false" isNullsAllowed="true"
+         isUnique="false" isPublicRead="true" isPublicWrite="true" isCandidateKey="false"
+         isTransient="false" exportAsString="false" noBackpointer="false" lowerBoundValue=""
+         upperBoundValue=""/>
+     <TcAttribute attributeName="mo4_lhd_rhd" description="" attributeType="POM_string"
+         maxStringLength="3" isArray="false" followOnExport="false" isNullsAllowed="true"
          isUnique="false" isPublicRead="true" isPublicWrite="true" isCandidateKey="false"
          isTransient="false" exportAsString="false" noBackpointer="false" lowerBoundValue=""
          upperBoundValue=""/>
@@ -68,11 +113,24 @@
    <TcClass className="MO4_DesignRevision" parentClassName="Design_0_Revision_alt"
        isExportable="false" isUninstantiable="false" isUninheritable="false" description="">
      <TcAttribute attributeName="mo4_name_extension" description="" attributeType="POM_string"
-         maxStringLength="28" isArray="false" followOnExport="false" isNullsAllowed="true"
+         maxStringLength="128" isArray="false" followOnExport="false" isNullsAllowed="true"
          isUnique="false" isPublicRead="true" isPublicWrite="true" isCandidateKey="false"
-         isTransient="false" exportAsString="false" noBackpointer="false" lowerBoundValue=""
-         upperBoundValue=""/>
+         isTransient="false" exportAsString="false" noBackpointer="false" initialValue=""
+         lowerBoundValue="" upperBoundValue=""/>
+     <TcAttribute attributeName="mo4_object_name" description="" attributeType="POM_string"
+         maxStringLength="32" isArray="false" followOnExport="false" isNullsAllowed="true"
+         isUnique="false" isPublicRead="true" isPublicWrite="true" isCandidateKey="false"
+         isTransient="false" exportAsString="false" noBackpointer="false" initialValue=""
+         lowerBoundValue="" upperBoundValue=""/>
    </TcClass>
+   <TcClass className="MO4_Drawing" parentClassName="MO4_GenDrawing" isExportable="false"
+       isUninstantiable="false" isUninheritable="false" description=""/>
+   <TcClass className="MO4_DrawingMasterS" parentClassName="MO4_GenDrawingMasterS"
+       isExportable="false" isUninstantiable="false" isUninheritable="false" description=""/>
+   <TcClass className="MO4_DrawingRevMasterS" parentClassName="MO4_GenDrawingRevMasterS"
+       isExportable="false" isUninstantiable="false" isUninheritable="false" description=""/>
+   <TcClass className="MO4_DrawingRevision" parentClassName="MO4_GenDrawingRevision"
+       isExportable="false" isUninstantiable="false" isUninheritable="false" description=""/>
    <TcClass className="MO4_Eng_Design" parentClassName="MO4_Design" isExportable="false"
        isUninstantiable="false" isUninheritable="false" description=""/>
    <TcClass className="MO4_Eng_DesignMasterS" parentClassName="MO4_DesignMasterS"
@@ -88,13 +146,48 @@
    <TcClass className="MO4_Eng_PartRevMasterS" parentClassName="MO4_PartRevMasterS"
        isExportable="false" isUninstantiable="false" isUninheritable="false" description=""/>
    <TcClass className="MO4_Eng_PartRevision" parentClassName="MO4_PartRevision" isExportable="false"
+       isUninstantiable="false" isUninheritable="false" description="">
+     <TcAttribute attributeName="mo4_color" description="" attributeType="POM_string"
+         maxStringLength="32" isArray="false" followOnExport="false" isNullsAllowed="true"
+         isUnique="false" isPublicRead="true" isPublicWrite="true" isCandidateKey="false"
+         isTransient="false" exportAsString="false" noBackpointer="false" lowerBoundValue=""
+         upperBoundValue=""/>
+   </TcClass>
+   <TcClass className="MO4_GenDrawing" parentClassName="Drawing" isExportable="false"
+       isUninstantiable="false" isUninheritable="false" description="">
+     <TcAttribute attributeName="mo4_name_extension" description="" attributeType="POM_string"
+         maxStringLength="128" isArray="false" followOnExport="false" isNullsAllowed="true"
+         isUnique="false" isPublicRead="true" isPublicWrite="true" isCandidateKey="false"
+         isTransient="false" exportAsString="false" noBackpointer="false" initialValue=""
+         lowerBoundValue="" upperBoundValue=""/>
+     <TcAttribute attributeName="mo4_drawing_type" description="" attributeType="POM_string"
+         maxStringLength="28" isArray="false" followOnExport="false" isNullsAllowed="true"
+         isUnique="false" isPublicRead="true" isPublicWrite="true" isCandidateKey="false"
+         isTransient="false" exportAsString="false" noBackpointer="false" lowerBoundValue=""
+         upperBoundValue=""/>
+   </TcClass>
+   <TcClass className="MO4_GenDrawingMasterS" parentClassName="DrawingMaster" isExportable="false"
        isUninstantiable="false" isUninheritable="false" description=""/>
+   <TcClass className="MO4_GenDrawingRevMasterS" parentClassName="DrawingVerMaster"
+       isExportable="false" isUninstantiable="false" isUninheritable="false" description=""/>
+   <TcClass className="MO4_GenDrawingRevision" parentClassName="Drawing_0_Revision_alt"
+       isExportable="false" isUninstantiable="false" isUninheritable="false" description="">
+     <TcAttribute attributeName="mo4_name_extension" description="" attributeType="POM_string"
+         maxStringLength="128" isArray="false" followOnExport="false" isNullsAllowed="true"
+         isUnique="false" isPublicRead="true" isPublicWrite="true" isCandidateKey="false"
+         isTransient="false" exportAsString="false" noBackpointer="false" initialValue=""
+         lowerBoundValue="" upperBoundValue=""/>
+     <TcAttribute attributeName="mo4_external" description="" attributeType="POM_logical"
+         maxStringLength="0" isArray="false" followOnExport="false" isNullsAllowed="true"
+         isUnique="false" isPublicRead="true" isPublicWrite="true" isCandidateKey="false"
+         isTransient="false" exportAsString="false" noBackpointer="false"/>
+   </TcClass>
    <TcClass className="MO4_MoreloClass" parentClassName="WorkspaceObject" isExportable="false"
        isUninstantiable="true" isUninheritable="false" description=""/>
    <TcClass className="MO4_Part" parentClassName="Part" isExportable="false" isUninstantiable="false"
        isUninheritable="false" description="">
      <TcAttribute attributeName="mo4_name_extension" description="" attributeType="POM_string"
-         maxStringLength="28" isArray="false" followOnExport="false" isNullsAllowed="true"
+         maxStringLength="128" isArray="false" followOnExport="false" isNullsAllowed="true"
          isUnique="false" isPublicRead="true" isPublicWrite="true" isCandidateKey="false"
          isTransient="false" exportAsString="false" noBackpointer="false" initialValue="NULL"
          lowerBoundValue="" upperBoundValue=""/>
@@ -103,6 +196,20 @@
          isUnique="false" isPublicRead="true" isPublicWrite="true" isCandidateKey="false"
          isTransient="false" exportAsString="false" noBackpointer="false" lowerBoundValue=""
          upperBoundValue=""/>
+     <TcAttribute attributeName="mo4_object_name" description="" attributeType="POM_string"
+         maxStringLength="32" isArray="false" followOnExport="false" isNullsAllowed="true"
+         isUnique="false" isPublicRead="true" isPublicWrite="true" isCandidateKey="false"
+         isTransient="false" exportAsString="false" noBackpointer="false" lowerBoundValue=""
+         upperBoundValue=""/>
+     <TcAttribute attributeName="mo4_lhd_rhd" description="" attributeType="POM_string"
+         maxStringLength="3" isArray="false" followOnExport="false" isNullsAllowed="true"
+         isUnique="false" isPublicRead="true" isPublicWrite="true" isCandidateKey="false"
+         isTransient="false" exportAsString="false" noBackpointer="false" lowerBoundValue=""
+         upperBoundValue=""/>
+     <TcAttribute attributeName="mo4_homologation" description="" attributeType="POM_logical"
+         maxStringLength="0" isArray="false" followOnExport="false" isNullsAllowed="true"
+         isUnique="false" isPublicRead="true" isPublicWrite="true" isCandidateKey="false"
+         isTransient="false" exportAsString="false" noBackpointer="false"/>
    </TcClass>
    <TcClass className="MO4_PartMasterS" parentClassName="PartMaster" isExportable="false"
        isUninstantiable="false" isUninheritable="false" description=""/>
@@ -111,11 +218,16 @@
    <TcClass className="MO4_PartRevision" parentClassName="Part_0_Revision_alt" isExportable="false"
        isUninstantiable="false" isUninheritable="false" description="">
      <TcAttribute attributeName="mo4_name_extension" description="" attributeType="POM_string"
-         maxStringLength="28" isArray="false" followOnExport="false" isNullsAllowed="true"
+         maxStringLength="128" isArray="false" followOnExport="false" isNullsAllowed="true"
          isUnique="false" isPublicRead="true" isPublicWrite="true" isCandidateKey="false"
          isTransient="false" exportAsString="false" noBackpointer="false" initialValue="NULL"
          lowerBoundValue="" upperBoundValue=""/>
-     <TcAttribute attributeName="mo4_article_number" description="" attributeType="POM_string"
+     <TcAttribute attributeName="mo4_object_name" description="" attributeType="POM_string"
+         maxStringLength="32" isArray="false" followOnExport="false" isNullsAllowed="true"
+         isUnique="false" isPublicRead="true" isPublicWrite="true" isCandidateKey="false"
+         isTransient="false" exportAsString="false" noBackpointer="false" lowerBoundValue=""
+         upperBoundValue=""/>
+     <TcAttribute attributeName="mo4_approval_number" description="" attributeType="POM_string"
          maxStringLength="32" isArray="false" followOnExport="false" isNullsAllowed="true"
          isUnique="false" isPublicRead="true" isPublicWrite="true" isCandidateKey="false"
          isTransient="false" exportAsString="false" noBackpointer="false" lowerBoundValue=""
@@ -137,11 +249,6 @@
          isPublicRead="true" isPublicWrite="true" isCandidateKey="false" isTransient="false"
          exportAsString="false" noBackpointer="false" initialValue="01" lowerBoundValue="01"
          upperBoundValue="10"/>
-     <TcAttribute attributeName="mo4_article_number" description="" attributeType="POM_string"
-         maxStringLength="32" isArray="false" followOnExport="false" isNullsAllowed="true"
-         isUnique="false" isPublicRead="true" isPublicWrite="true" isCandidateKey="false"
-         isTransient="false" exportAsString="false" noBackpointer="false" initialValue=""
-         lowerBoundValue="" upperBoundValue=""/>
      <TcAttribute attributeName="mo4_rim_type" description="" attributeType="POM_string"
          maxStringLength="8" isArray="false" followOnExport="false" isNullsAllowed="true"
          isUnique="false" isPublicRead="true" isPublicWrite="true" isCandidateKey="false"
@@ -197,6 +304,22 @@
      <OperationInputProperty propName="mo4_material_code" compoundObjectConstant=""
          srcPropName="mo4_material_code" compoundObjectType="" fieldType="SimpleProperty"
          description=""/>
+     <OperationInputProperty propName="mo4MO4_board_data" compoundObjectConstant=""
+         srcPropName="MO4_board_data" compoundObjectType="" fieldType="SimpleProperty"
+         description=""/>
+     <OperationInputProperty propName="mo4_length" compoundObjectConstant="" srcPropName="mo4_length"
+         compoundObjectType="" fieldType="SimpleProperty" description=""/>
+     <OperationInputProperty propName="mo4_width" compoundObjectConstant="" srcPropName="mo4_width"
+         compoundObjectType="" fieldType="SimpleProperty" description=""/>
+     <OperationInputProperty propName="mo4_size" compoundObjectConstant="" srcPropName="mo4_size"
+         compoundObjectType="" fieldType="SimpleProperty" description=""/>
+     <OperationInputProperty propName="mo4_length_net" compoundObjectConstant="" srcPropName="mo4_length_net"
+         compoundObjectType="" fieldType="SimpleProperty" description=""/>
+     <OperationInputProperty propName="mo4_width_net" compoundObjectConstant="" srcPropName="mo4_width_net"
+         compoundObjectType="" fieldType="SimpleProperty" description=""/>
+     <OperationInputProperty propName="mo4_grain_angel" compoundObjectConstant=""
+         srcPropName="mo4_grain_angel" compoundObjectType="" fieldType="SimpleProperty"
+         description=""/>
    </OperationInputType>
    <OperationInputType typeName="MO4_BoardSvAI" parentTypeName="MO4_MoreloClassSvAI"
        typeClassName="MO4_BoardSvAI" description="SaveAsInput object for &quot;MO4_Board&quot; business object"
@@ -220,6 +343,14 @@
          description=""/>
      <OperationInputProperty propName="mo4_id" compoundObjectConstant="" srcPropName="mo4_id"
          compoundObjectType="" fieldType="SimpleProperty" description=""/>
+     <OperationInputProperty propName="mo4MO4_cover_data" compoundObjectConstant=""
+         srcPropName="MO4_cover_data" compoundObjectType="" fieldType="SimpleProperty"
+         description=""/>
+     <OperationInputProperty propName="mo4_surface" compoundObjectConstant="" srcPropName="mo4_surface"
+         compoundObjectType="" fieldType="SimpleProperty" description=""/>
+     <OperationInputProperty propName="mo4_orientation" compoundObjectConstant=""
+         srcPropName="mo4_orientation" compoundObjectType="" fieldType="SimpleProperty"
+         description=""/>
    </OperationInputType>
    <OperationInputType typeName="MO4_CoverSvAI" parentTypeName="MO4_MoreloClassSvAI"
        typeClassName="MO4_CoverSvAI" description="SaveAsInput object for &quot;MO4_Cover&quot; business object"
@@ -230,6 +361,11 @@
      <OperationInputProperty propName="mo4_name_extension" compoundObjectConstant=""
          srcPropName="mo4_name_extension" compoundObjectType="" fieldType="SimpleProperty"
          description=""/>
+     <OperationInputProperty propName="mo4_object_name" compoundObjectConstant=""
+         srcPropName="mo4_object_name" compoundObjectType="" fieldType="SimpleProperty"
+         description=""/>
+     <OperationInputProperty propName="mo4_lhd_rhd" compoundObjectConstant="" srcPropName="mo4_lhd_rhd"
+         compoundObjectType="" fieldType="SimpleProperty" description=""/>
    </OperationInputType>
    <OperationInputType typeName="MO4_DesignMasterCreI" parentTypeName="Design MasterCreI"
        typeClassName="MO4_DesignMasterCreI" description="CreateInput object for &quot;MO4_DesignMaster&quot; business object"
@@ -255,6 +391,9 @@
      <OperationInputProperty propName="mo4_name_extension" compoundObjectConstant=""
          srcPropName="mo4_name_extension" compoundObjectType="" fieldType="SimpleProperty"
          description=""/>
+     <OperationInputProperty propName="mo4_object_name" compoundObjectConstant=""
+         srcPropName="mo4_object_name" compoundObjectType="" fieldType="SimpleProperty"
+         description=""/>
    </OperationInputType>
    <OperationInputType typeName="MO4_DesignRevisionMasterCreI" parentTypeName="Design Revision MasterCreI"
        typeClassName="MO4_DesignRevisionMasterCreI" description="CreateInput object for &quot;MO4_DesignRevisionMaster&quot; business object"
@@ -271,6 +410,45 @@
    <OperationInputType typeName="MO4_DesignSvAI" parentTypeName="DesignSvAI" typeClassName="MO4_DesignSvAI"
        description="SaveAsInput object for &quot;MO4_Design&quot; business object"
        isAbstract="true" artifactName="MO4_DesignSvAI"/>
+   <OperationInputType typeName="MO4_DrawingCreI" parentTypeName="MO4_GenDrawingCreI"
+       typeClassName="MO4_DrawingCreI" description="CreateInput object for &quot;MO4_Drawing&quot; business object"
+       isAbstract="false" artifactName="MO4_DrawingCreI"/>
+   <OperationInputType typeName="MO4_DrawingMasterCreI" parentTypeName="MO4_GenDrawingMasterCreI"
+       typeClassName="MO4_DrawingMasterCreI" description="CreateInput object for &quot;MO4_DrawingMaster&quot; business object"
+       isAbstract="false" artifactName="MO4_DrawingMasterCreI"/>
+   <OperationInputType typeName="MO4_DrawingMasterSCreI" parentTypeName="MO4_GenDrawingMasterSCreI"
+       typeClassName="MO4_DrawingMasterSCreI" description="CreateInput object for &quot;MO4_DrawingMasterS&quot; business object"
+       isAbstract="false" artifactName="MO4_DrawingMasterSCreI"/>
+   <OperationInputType typeName="MO4_DrawingMasterSSvAI" parentTypeName="MO4_GenDrawingMasterSSvAI"
+       typeClassName="MO4_DrawingMasterSSvAI" description="SaveAsInput object for &quot;MO4_DrawingMasterS&quot; business object"
+       isAbstract="false" artifactName="MO4_DrawingMasterSSvAI"/>
+   <OperationInputType typeName="MO4_DrawingMasterSvAI" parentTypeName="MO4_GenDrawingMasterSvAI"
+       typeClassName="MO4_DrawingMasterSvAI" description="SaveAsInput object for &quot;MO4_DrawingMaster&quot; business object"
+       isAbstract="false" artifactName="MO4_DrawingMasterSvAI"/>
+   <OperationInputType typeName="MO4_DrawingRevMasterSCreI" parentTypeName="MO4_GenDrawingRevMasterSCreI"
+       typeClassName="MO4_DrawingRevMasterSCreI" description="CreateInput object for &quot;MO4_DrawingRevMasterS&quot; business object"
+       isAbstract="false" artifactName="MO4_DrawingRevMasterSCreI"/>
+   <OperationInputType typeName="MO4_DrawingRevMasterSSvAI" parentTypeName="MO4_GenDrawingRevMasterSSvAI"
+       typeClassName="MO4_DrawingRevMasterSSvAI" description="SaveAsInput object for &quot;MO4_DrawingRevMasterS&quot; business object"
+       isAbstract="false" artifactName="MO4_DrawingRevMasterSSvAI"/>
+   <OperationInputType typeName="MO4_DrawingRevisionCreI" parentTypeName="MO4_GenDrawingRevisionCreI"
+       typeClassName="MO4_DrawingRevisionCreI" description="CreateInput object for &quot;MO4_DrawingRevision&quot; business object"
+       isAbstract="false" artifactName="MO4_DrawingRevisionCreI"/>
+   <OperationInputType typeName="MO4_DrawingRevisionMasterCreI" parentTypeName="MO4_GenDrawingRevision_alt0CreI"
+       typeClassName="MO4_DrawingRevisionMasterCreI" description="CreateInput object for &quot;MO4_DrawingRevisionMaster&quot; business object"
+       isAbstract="false" artifactName="MO4_DrawingRevisionMasterCreI"/>
+   <OperationInputType typeName="MO4_DrawingRevisionMasterSvAI" parentTypeName="MO4_GenDrawingRevision_alt0SvAI"
+       typeClassName="MO4_DrawingRevisionMasterSvAI" description="SaveAsInput object for &quot;MO4_DrawingRevisionMaster&quot; business object"
+       isAbstract="false" artifactName="MO4_DrawingRevisionMasterSvAI"/>
+   <OperationInputType typeName="MO4_DrawingRevisionRevI" parentTypeName="MO4_GenDrawingRevisionRevI"
+       typeClassName="MO4_DrawingRevisionRevI" description="ReviseInput object for &quot;MO4_DrawingRevision&quot; business object"
+       isAbstract="false" artifactName="MO4_DrawingRevisionRevI"/>
+   <OperationInputType typeName="MO4_DrawingRevisionSvAI" parentTypeName="MO4_GenDrawingRevisionSvAI"
+       typeClassName="MO4_DrawingRevisionSvAI" description="SaveAsInput object for &quot;MO4_DrawingRevision&quot; business object"
+       isAbstract="false" artifactName="MO4_DrawingRevisionSvAI"/>
+   <OperationInputType typeName="MO4_DrawingSvAI" parentTypeName="MO4_GenDrawingSvAI"
+       typeClassName="MO4_DrawingSvAI" description="SaveAsInput object for &quot;MO4_Drawing&quot; business object"
+       isAbstract="false" artifactName="MO4_DrawingSvAI"/>
    <OperationInputType typeName="MO4_Eng_DesignCreI" parentTypeName="MO4_DesignCreI"
        typeClassName="MO4_Eng_DesignCreI" description="CreateInput object for &quot;MO4_Eng_Design&quot; business object"
        isAbstract="false" artifactName="MO4_Eng_DesignCreI"/>
@@ -343,6 +521,8 @@
      <OperationInputProperty propName="mo4MO4_rim_data" compoundObjectConstant=""
          srcPropName="MO4_rim_data" compoundObjectType="" fieldType="SimpleProperty"
          description=""/>
+     <OperationInputProperty propName="mo4_color" compoundObjectConstant="" srcPropName="mo4_color"
+         compoundObjectType="" fieldType="SimpleProperty" description=""/>
    </OperationInputType>
    <OperationInputType typeName="MO4_Eng_PartRevisionMasterCreI" parentTypeName="MO4_PartRevisionMasterCreI"
        typeClassName="MO4_Eng_PartRevisionMasterCreI" description="CreateInput object for &quot;MO4_Eng_PartRevisionMaster&quot; business object"
@@ -359,6 +539,58 @@
    <OperationInputType typeName="MO4_Eng_PartSvAI" parentTypeName="MO4_PartSvAI" typeClassName="MO4_Eng_PartSvAI"
        description="SaveAsInput object for &quot;MO4_Eng_Part&quot; business object"
        isAbstract="false" artifactName="MO4_Eng_PartSvAI"/>
+   <OperationInputType typeName="MO4_GenDrawingCreI" parentTypeName="DrawingCreI"
+       typeClassName="MO4_GenDrawingCreI" description="CreateInput object for &quot;MO4_GenDrawing&quot; business object"
+       isAbstract="false" artifactName="MO4_GenDrawingCreI">
+     <OperationInputProperty propName="mo4_name_extension" compoundObjectConstant=""
+         srcPropName="mo4_name_extension" compoundObjectType="" fieldType="SimpleProperty"
+         description=""/>
+     <OperationInputProperty propName="mo4_drawing_type" compoundObjectConstant=""
+         srcPropName="mo4_drawing_type" compoundObjectType="" fieldType="SimpleProperty"
+         description=""/>
+   </OperationInputType>
+   <OperationInputType typeName="MO4_GenDrawingMasterCreI" parentTypeName="Drawing MasterCreI"
+       typeClassName="MO4_GenDrawingMasterCreI" description="CreateInput object for &quot;MO4_GenDrawingMaster&quot; business object"
+       isAbstract="false" artifactName="MO4_GenDrawingMasterCreI"/>
+   <OperationInputType typeName="MO4_GenDrawingMasterSCreI" parentTypeName="DrawingMasterCreI"
+       typeClassName="MO4_GenDrawingMasterSCreI" description="CreateInput object for &quot;MO4_GenDrawingMasterS&quot; business object"
+       isAbstract="false" artifactName="MO4_GenDrawingMasterSCreI"/>
+   <OperationInputType typeName="MO4_GenDrawingMasterSSvAI" parentTypeName="DrawingMasterSvAI"
+       typeClassName="MO4_GenDrawingMasterSSvAI" description="SaveAsInput object for &quot;MO4_GenDrawingMasterS&quot; business object"
+       isAbstract="false" artifactName="MO4_GenDrawingMasterSSvAI"/>
+   <OperationInputType typeName="MO4_GenDrawingMasterSvAI" parentTypeName="Drawing MasterSvAI"
+       typeClassName="MO4_GenDrawingMasterSvAI" description="SaveAsInput object for &quot;MO4_GenDrawingMaster&quot; business object"
+       isAbstract="false" artifactName="MO4_GenDrawingMasterSvAI"/>
+   <OperationInputType typeName="MO4_GenDrawingRevMasterSCreI" parentTypeName="DrawingVerMasterCreI"
+       typeClassName="MO4_GenDrawingRevMasterSCreI" description="CreateInput object for &quot;MO4_GenDrawingRevMasterS&quot; business object"
+       isAbstract="false" artifactName="MO4_GenDrawingRevMasterSCreI"/>
+   <OperationInputType typeName="MO4_GenDrawingRevMasterSSvAI" parentTypeName="DrawingVerMasterSvAI"
+       typeClassName="MO4_GenDrawingRevMasterSSvAI" description="SaveAsInput object for &quot;MO4_GenDrawingRevMasterS&quot; business object"
+       isAbstract="false" artifactName="MO4_GenDrawingRevMasterSSvAI"/>
+   <OperationInputType typeName="MO4_GenDrawingRevisionCreI" parentTypeName="Drawing RevisionCreI"
+       typeClassName="MO4_GenDrawingRevisionCreI" description="CreateInput object for &quot;MO4_GenDrawingRevision&quot; business object"
+       isAbstract="false" artifactName="MO4_GenDrawingRevisionCreI">
+     <OperationInputProperty propName="mo4_name_extension" compoundObjectConstant=""
+         srcPropName="mo4_name_extension" compoundObjectType="" fieldType="SimpleProperty"
+         description=""/>
+     <OperationInputProperty propName="mo4_external" compoundObjectConstant="" srcPropName="mo4_external"
+         compoundObjectType="" fieldType="SimpleProperty" description=""/>
+   </OperationInputType>
+   <OperationInputType typeName="MO4_GenDrawingRevisionRevI" parentTypeName="Drawing RevisionRevI"
+       typeClassName="MO4_GenDrawingRevisionRevI" description="ReviseInput object for &quot;MO4_GenDrawingRevision&quot; business object"
+       isAbstract="false" artifactName="MO4_GenDrawingRevisionRevI"/>
+   <OperationInputType typeName="MO4_GenDrawingRevisionSvAI" parentTypeName="Drawing RevisionSvAI"
+       typeClassName="MO4_GenDrawingRevisionSvAI" description="SaveAsInput object for &quot;MO4_GenDrawingRevision&quot; business object"
+       isAbstract="false" artifactName="MO4_GenDrawingRevisionSvAI"/>
+   <OperationInputType typeName="MO4_GenDrawingRevision_alt0CreI" parentTypeName="Drawing Revision MasterCreI"
+       typeClassName="MO4_GenDrawingRevision_alt0CreI" description="CreateInput object for &quot;MO4_GenDrawingRevisionMaster&quot; business object"
+       isAbstract="false" artifactName="MO4_GenDrawingRevision_alt0CreI"/>
+   <OperationInputType typeName="MO4_GenDrawingRevision_alt0SvAI" parentTypeName="Drawing Revision MasterSvAI"
+       typeClassName="MO4_GenDrawingRevision_alt0SvAI" description="SaveAsInput object for &quot;MO4_GenDrawingRevisionMaster&quot; business object"
+       isAbstract="false" artifactName="MO4_GenDrawingRevision_alt0SvAI"/>
+   <OperationInputType typeName="MO4_GenDrawingSvAI" parentTypeName="DrawingSvAI"
+       typeClassName="MO4_GenDrawingSvAI" description="SaveAsInput object for &quot;MO4_GenDrawing&quot; business object"
+       isAbstract="false" artifactName="MO4_GenDrawingSvAI"/>
    <OperationInputType typeName="MO4_MoreloClassCreI" parentTypeName="WorkspaceObjectCreI"
        typeClassName="MO4_MoreloClassCreI" description="CreateInput object for &quot;MO4_MoreloClass&quot; business object"
        isAbstract="true" artifactName="MO4_MoreloClassCreI"/>
@@ -373,6 +605,14 @@
          description=""/>
      <OperationInputProperty propName="mo4_article_number" compoundObjectConstant=""
          srcPropName="mo4_article_number" compoundObjectType="" fieldType="SimpleProperty"
+         description=""/>
+     <OperationInputProperty propName="mo4_object_name" compoundObjectConstant=""
+         srcPropName="mo4_object_name" compoundObjectType="" fieldType="SimpleProperty"
+         description=""/>
+     <OperationInputProperty propName="mo4_lhd_rhd" compoundObjectConstant="" srcPropName="mo4_lhd_rhd"
+         compoundObjectType="" fieldType="SimpleProperty" description=""/>
+     <OperationInputProperty propName="mo4_homologation" compoundObjectConstant=""
+         srcPropName="mo4_homologation" compoundObjectType="" fieldType="SimpleProperty"
          description=""/>
    </OperationInputType>
    <OperationInputType typeName="MO4_PartMasterCreI" parentTypeName="Part MasterCreI"
@@ -399,8 +639,11 @@
      <OperationInputProperty propName="mo4_name_extension" compoundObjectConstant=""
          srcPropName="mo4_name_extension" compoundObjectType="" fieldType="SimpleProperty"
          description=""/>
-     <OperationInputProperty propName="mo4_article_number" compoundObjectConstant=""
-         srcPropName="mo4_article_number" compoundObjectType="" fieldType="SimpleProperty"
+     <OperationInputProperty propName="mo4_object_name" compoundObjectConstant=""
+         srcPropName="mo4_object_name" compoundObjectType="" fieldType="SimpleProperty"
+         description=""/>
+     <OperationInputProperty propName="mo4_approval_number" compoundObjectConstant=""
+         srcPropName="mo4_approval_number" compoundObjectType="" fieldType="SimpleProperty"
          description=""/>
    </OperationInputType>
    <OperationInputType typeName="MO4_PartRevisionMasterCreI" parentTypeName="Part Revision MasterCreI"
@@ -429,9 +672,6 @@
          description=""/>
      <OperationInputProperty propName="mo4_id" compoundObjectConstant="" srcPropName="mo4_id"
          compoundObjectType="" fieldType="SimpleProperty" description=""/>
-     <OperationInputProperty propName="mo4_article_number" compoundObjectConstant=""
-         srcPropName="mo4_article_number" compoundObjectType="" fieldType="SimpleProperty"
-         description=""/>
      <OperationInputProperty propName="mo4_rim_type" compoundObjectConstant="" srcPropName="mo4_rim_type"
          compoundObjectType="" fieldType="SimpleProperty" description=""/>
      <OperationInputProperty propName="mo4_length" compoundObjectConstant="" srcPropName="mo4_length"
@@ -445,6 +685,9 @@
          compoundObjectType="" fieldType="SimpleProperty" description=""/>
      <OperationInputProperty propName="mo4_size" compoundObjectConstant="" srcPropName="mo4_size"
          compoundObjectType="" fieldType="SimpleProperty" description=""/>
+     <OperationInputProperty propName="mo4MO4_rim_data" compoundObjectConstant=""
+         srcPropName="MO4_rim_data" compoundObjectType="" fieldType="SimpleProperty"
+         description=""/>
    </OperationInputType>
    <OperationInputType typeName="MO4_RimSvAI" parentTypeName="MO4_MoreloClassSvAI"
        typeClassName="MO4_RimSvAI" description="SaveAsInput object for &quot;MO4_Rim&quot; business object"
@@ -475,6 +718,12 @@
        typeClassName="Form" description="MasterForm object for &quot;MO4_DesignRevision&quot; business object"
        isAbstract="false" artifactName="MO4_DesignRevisionMaster" functionality="MO4morelo"
        formStorageClassName="MO4_DesignRevMasterS"/>
+   <TcForm typeName="MO4_DrawingMaster" parentTypeName="MO4_GenDrawingMaster" typeClassName="Form"
+       description="MasterForm object for &quot;MO4_Drawing&quot; business object"
+       isAbstract="false" artifactName="MO4_DrawingMaster" formStorageClassName="MO4_DrawingMasterS"/>
+   <TcForm typeName="MO4_DrawingRevisionMaster" parentTypeName="MO4_GenDrawingRevisionMaster"
+       typeClassName="Form" description="MasterForm object for &quot;MO4_DrawingRevision&quot; business object"
+       isAbstract="false" artifactName="MO4_DrawingRevisionMaster" formStorageClassName="MO4_DrawingRevMasterS"/>
    <TcForm typeName="MO4_Eng_DesignMaster" parentTypeName="MO4_DesignMaster" typeClassName="Form"
        description="MasterForm object for &quot;MO4_Eng_Design&quot; business object"
        isAbstract="false" artifactName="MO4_Eng_DesignMaster" functionality="MO4morelo"
@@ -491,6 +740,12 @@
        typeClassName="Form" description="MasterForm object for &quot;MO4_Eng_PartRevision&quot; business object"
        isAbstract="false" artifactName="MO4_Eng_PartRevisionMaster" functionality="MO4morelo"
        formStorageClassName="MO4_Eng_PartRevMasterS"/>
+   <TcForm typeName="MO4_GenDrawingMaster" parentTypeName="Drawing Master" typeClassName="Form"
+       description="MasterForm object for &quot;MO4_GenDrawing&quot; business object"
+       isAbstract="false" artifactName="MO4_GenDrawingMaster" formStorageClassName="MO4_GenDrawingMasterS"/>
+   <TcForm typeName="MO4_GenDrawingRevisionMaster" parentTypeName="Drawing Revision Master"
+       typeClassName="Form" description="MasterForm object for &quot;MO4_GenDrawingRevision&quot; business object"
+       isAbstract="false" artifactName="MO4_GenDrawingRevisionMaster" formStorageClassName="MO4_GenDrawingRevMasterS"/>
    <TcForm typeName="MO4_PartMaster" parentTypeName="Part Master" typeClassName="Form"
        description="MasterForm object for &quot;MO4_Part&quot; business object" isAbstract="false"
        artifactName="MO4_PartMaster" functionality="MO4morelo" formStorageClassName="MO4_PartMasterS"/>
@@ -499,9 +754,17 @@
        isAbstract="false" artifactName="MO4_PartRevisionMaster" functionality="MO4morelo"
        formStorageClassName="MO4_PartRevMasterS"/>
    <TcStandardType typeName="MO4_Board" parentTypeName="MO4_MoreloClass" typeClassName="MO4_Board"
-       description="" isAbstract="false" artifactName="MO4_Board" functionality="MO4morelo"/>
+       description="" isAbstract="false" artifactName="MO4_Board" functionality="MO4morelo">
+     <TcProperty propName="MO4_board_data" propTypeName="Relation" propValueType="PROP_untyped_relation"
+         propMaxStringLength="0" isArray="true" arrayLength="-1" description="" referencedTypeConstant=""
+         referencedType=""/>
+   </TcStandardType>
    <TcStandardType typeName="MO4_Cover" parentTypeName="MO4_MoreloClass" typeClassName="MO4_Cover"
-       description="Cover for a Board" isAbstract="false" artifactName="MO4_Cover"/>
+       description="Cover for a Board" isAbstract="false" artifactName="MO4_Cover">
+     <TcProperty propName="MO4_cover_data" propTypeName="Relation" propValueType="PROP_untyped_relation"
+         propMaxStringLength="0" isArray="true" arrayLength="-1" description="" referencedTypeConstant=""
+         referencedType=""/>
+   </TcStandardType>
    <TcStandardType typeName="MO4_Design" parentTypeName="Design" typeClassName="MO4_Design"
        description="" isAbstract="true" artifactName="MO4_Design" functionality="MO4morelo"/>
    <TcStandardType typeName="MO4_DesignMasterS" parentTypeName="DesignMaster" typeClassName="MO4_DesignMasterS"
@@ -513,6 +776,17 @@
    <TcStandardType typeName="MO4_DesignRevision" parentTypeName="Design Revision"
        typeClassName="MO4_DesignRevision" description="ItemRevision object for &quot;MO4_Design&quot;  business object"
        isAbstract="true" artifactName="MO4_DesignRevision" functionality="MO4morelo"/>
+   <TcStandardType typeName="MO4_Drawing" parentTypeName="MO4_GenDrawing" typeClassName="MO4_Drawing"
+       description="" isAbstract="false" artifactName="MO4_Drawing"/>
+   <TcStandardType typeName="MO4_DrawingMasterS" parentTypeName="MO4_GenDrawingMasterS"
+       typeClassName="MO4_DrawingMasterS" description="Form Storage object for &quot;MO4_DrawingMaster&quot; business object"
+       isAbstract="false" artifactName="MO4_DrawingMasterS"/>
+   <TcStandardType typeName="MO4_DrawingRevMasterS" parentTypeName="MO4_GenDrawingRevMasterS"
+       typeClassName="MO4_DrawingRevMasterS" description="Form Storage object for &quot;MO4_DrawingRevMaster&quot; business object"
+       isAbstract="false" artifactName="MO4_DrawingRevMasterS"/>
+   <TcStandardType typeName="MO4_DrawingRevision" parentTypeName="MO4_GenDrawingRevision"
+       typeClassName="MO4_DrawingRevision" description="ItemRevision object for &quot;MO4_Drawing&quot;  business object"
+       isAbstract="false" artifactName="MO4_DrawingRevision"/>
    <TcStandardType typeName="MO4_Eng_Design" parentTypeName="MO4_Design" typeClassName="MO4_Eng_Design"
        description="" isAbstract="false" artifactName="MO4_Eng_Design" functionality="MO4morelo"/>
    <TcStandardType typeName="MO4_Eng_DesignMasterS" parentTypeName="MO4_DesignMasterS"
@@ -545,6 +819,17 @@
          propMaxStringLength="0" isArray="true" arrayLength="-1" description="" referencedTypeConstant=""
          referencedType=""/>
    </TcStandardType>
+   <TcStandardType typeName="MO4_GenDrawing" parentTypeName="Drawing" typeClassName="MO4_GenDrawing"
+       description="" isAbstract="false" artifactName="MO4_GenDrawing"/>
+   <TcStandardType typeName="MO4_GenDrawingMasterS" parentTypeName="DrawingMaster"
+       typeClassName="MO4_GenDrawingMasterS" description="Form Storage object for &quot;MO4_GenDrawingMaster&quot; business object"
+       isAbstract="false" artifactName="MO4_GenDrawingMasterS"/>
+   <TcStandardType typeName="MO4_GenDrawingRevMasterS" parentTypeName="DrawingVerMaster"
+       typeClassName="MO4_GenDrawingRevMasterS" description="Form Storage object for &quot;MO4_GenDrawingRevMaster&quot; business object"
+       isAbstract="false" artifactName="MO4_GenDrawingRevMasterS"/>
+   <TcStandardType typeName="MO4_GenDrawingRevision" parentTypeName="Drawing Revision"
+       typeClassName="MO4_GenDrawingRevision" description="ItemRevision object for &quot;MO4_GenDrawing&quot;  business object"
+       isAbstract="false" artifactName="MO4_GenDrawingRevision"/>
    <TcStandardType typeName="MO4_MoreloClass" parentTypeName="WorkspaceObject" typeClassName="MO4_MoreloClass"
        description="" isAbstract="true" artifactName="MO4_MoreloClass" functionality="MO4morelo"/>
    <TcStandardType typeName="MO4_Part" parentTypeName="Part" typeClassName="MO4_Part"
@@ -559,7 +844,11 @@
        description="ItemRevision object for &quot;MO4_Part&quot;  business object"
        isAbstract="true" artifactName="MO4_PartRevision" functionality="MO4morelo"/>
    <TcStandardType typeName="MO4_Rim" parentTypeName="MO4_MoreloClass" typeClassName="MO4_Rim"
-       description="" isAbstract="false" artifactName="MO4_Rim"/>
+       description="" isAbstract="false" artifactName="MO4_Rim">
+     <TcProperty propName="MO4_rim_data" propTypeName="Relation" propValueType="PROP_untyped_relation"
+         propMaxStringLength="0" isArray="true" arrayLength="-1" description="" referencedTypeConstant=""
+         referencedType=""/>
+   </TcStandardType>
    <TcStandardType typeName="MO4_board_data" parentTypeName="ImanRelation" typeClassName="MO4_board_data"
        description="" isAbstract="false" artifactName="MO4_board_data"/>
    <TcStandardType typeName="MO4_cover_data" parentTypeName="ImanRelation" typeClassName="MO4_cover_data"
@@ -594,6 +883,16 @@
        value="MO4_DesignRevisionMasterCreI"/>
    <TcTypeConstantAttach constantName="CreateInput" typeName="MO4_DesignRevMasterS"
        value="MO4_DesignRevMasterSCreI"/>
+   <TcTypeConstantAttach constantName="CreateInput" typeName="MO4_Drawing" value="MO4_DrawingCreI"/>
+   <TcTypeConstantAttach constantName="CreateInput" typeName="MO4_DrawingMaster" value="MO4_DrawingMasterCreI"/>
+   <TcTypeConstantAttach constantName="CreateInput" typeName="MO4_DrawingMasterS"
+       value="MO4_DrawingMasterSCreI"/>
+   <TcTypeConstantAttach constantName="CreateInput" typeName="MO4_DrawingRevision"
+       value="MO4_DrawingRevisionCreI"/>
+   <TcTypeConstantAttach constantName="CreateInput" typeName="MO4_DrawingRevisionMaster"
+       value="MO4_DrawingRevisionMasterCreI"/>
+   <TcTypeConstantAttach constantName="CreateInput" typeName="MO4_DrawingRevMasterS"
+       value="MO4_DrawingRevMasterSCreI"/>
    <TcTypeConstantAttach constantName="CreateInput" typeName="MO4_Eng_Design" value="MO4_Eng_DesignCreI"/>
    <TcTypeConstantAttach constantName="CreateInput" typeName="MO4_Eng_DesignMaster"
        value="MO4_Eng_DesignMasterCreI"/>
@@ -616,6 +915,17 @@
        value="MO4_Eng_PartRevisionMasterCreI"/>
    <TcTypeConstantAttach constantName="CreateInput" typeName="MO4_Eng_PartRevMasterS"
        value="MO4_Eng_PartRevMasterSCreI"/>
+   <TcTypeConstantAttach constantName="CreateInput" typeName="MO4_GenDrawing" value="MO4_GenDrawingCreI"/>
+   <TcTypeConstantAttach constantName="CreateInput" typeName="MO4_GenDrawingMaster"
+       value="MO4_GenDrawingMasterCreI"/>
+   <TcTypeConstantAttach constantName="CreateInput" typeName="MO4_GenDrawingMasterS"
+       value="MO4_GenDrawingMasterSCreI"/>
+   <TcTypeConstantAttach constantName="CreateInput" typeName="MO4_GenDrawingRevision"
+       value="MO4_GenDrawingRevisionCreI"/>
+   <TcTypeConstantAttach constantName="CreateInput" typeName="MO4_GenDrawingRevisionMaster"
+       value="MO4_GenDrawingRevision_alt0CreI"/>
+   <TcTypeConstantAttach constantName="CreateInput" typeName="MO4_GenDrawingRevMasterS"
+       value="MO4_GenDrawingRevMasterSCreI"/>
    <TcTypeConstantAttach constantName="CreateInput" typeName="MO4_MoreloClass" value="MO4_MoreloClassCreI"/>
    <TcTypeConstantAttach constantName="CreateInput" typeName="MO4_Part" value="MO4_PartCreI"/>
    <TcTypeConstantAttach constantName="CreateInput" typeName="MO4_PartMaster" value="MO4_PartMasterCreI"/>
@@ -632,12 +942,15 @@
    <TcTypeConstantAttach constantName="DisplayName" typeName="MO4_Design" value="$item_id+&quot;-&quot;+$object_name"/>
    <TcTypeConstantAttach constantName="DisplayName" typeName="MO4_DesignRevision"
        value="$item_id+&quot;/&quot;+$item_revision_id+&quot;-&quot;+$object_name"/>
-   <TcTypeConstantAttach constantName="DisplayName" typeName="MO4_Eng_Design" value="$item_id+&quot;-&quot;+$object_name"/>
+   <TcTypeConstantAttach constantName="DisplayName" typeName="MO4_Drawing" value="$item_id+&quot;,&quot;+$object_name+&quot;,&quot;+$mo4_drawing_type"/>
+   <TcTypeConstantAttach constantName="DisplayName" typeName="MO4_DrawingRevision"
+       value="$item_id+&quot;,&quot;+$item_revision_id+&quot;,&quot;+$object_name+&quot;,&quot;+$mo4_drawing_type_cp"/>
+   <TcTypeConstantAttach constantName="DisplayName" typeName="MO4_Eng_Design" value="$item_id+&quot;,&quot;+$object_name+&quot;,&quot;+$mo4_lhd_rhd+&quot;,&quot;+$mo4_object_name"/>
    <TcTypeConstantAttach constantName="DisplayName" typeName="MO4_Eng_DesignRevision"
-       value="$item_id+&quot;/&quot;+$item_revision_id+&quot;-&quot;+$object_name+&quot; &quot;+$mo4_name_extension"/>
-   <TcTypeConstantAttach constantName="DisplayName" typeName="MO4_Eng_Part" value="$item_id+&quot;-&quot;+$object_name+&quot; &quot;+$mo4_name_extension"/>
+       value="$item_id+&quot;,&quot;+$item_revision_id+&quot;,&quot;+$object_name+&quot;,&quot;+$mo4_lhd_rhd_cp+&quot;,&quot;+$mo4_object_name"/>
+   <TcTypeConstantAttach constantName="DisplayName" typeName="MO4_Eng_Part" value="$item_id+&quot;,&quot;+$object_name+&quot;,&quot;+$mo4_lhd_rhd+&quot;,&quot;+$mo4_object_name"/>
    <TcTypeConstantAttach constantName="DisplayName" typeName="MO4_Eng_PartRevision"
-       value="$item_id+&quot;/&quot;+$item_revision_id+&quot;-&quot;+$object_name+&quot; &quot;+$mo4_name_extension"/>
+       value="$item_id+&quot;,&quot;+$item_revision_id+&quot;,&quot;+$object_name+&quot;,&quot;+$mo4_lhd_rhd_cp+&quot;,&quot;+$mo4_object_name"/>
    <TcTypeConstantAttach constantName="DisplayName" typeName="MO4_PartRevision" value="$item_id+&quot;/&quot;+$item_revision_id+&quot;-&quot;+$object_name"/>
    <TcTypeConstantAttach constantName="DisplayName" typeName="MO4_Rim" value="$object_name+&quot;-ID=&quot;+$mo4_id"/>
    <TcTypeConstantAttach constantName="Fnd0Icon" typeName="MO4_Board" value="MO4_Board.png"/>
@@ -649,25 +962,37 @@
    <TcTypeConstantAttach constantName="Fnd0Icon" typeName="MO4_Eng_PartRevision" value="MO4_Eng_PartRevision.png"/>
    <TcTypeConstantAttach constantName="Fnd0Icon" typeName="MO4_Rim" value="MO4_Rim.png"/>
    <TcTypeConstantAttach constantName="ItemRevision" typeName="MO4_Design" value="MO4_DesignRevision"/>
+   <TcTypeConstantAttach constantName="ItemRevision" typeName="MO4_Drawing" value="MO4_DrawingRevision"/>
    <TcTypeConstantAttach constantName="ItemRevision" typeName="MO4_Eng_Design" value="MO4_Eng_DesignRevision"/>
    <TcTypeConstantAttach constantName="ItemRevision" typeName="MO4_Eng_Part" value="MO4_Eng_PartRevision"/>
+   <TcTypeConstantAttach constantName="ItemRevision" typeName="MO4_GenDrawing" value="MO4_GenDrawingRevision"/>
    <TcTypeConstantAttach constantName="ItemRevision" typeName="MO4_Part" value="MO4_PartRevision"/>
    <TcTypeConstantAttach constantName="MasterForm" typeName="MO4_Design" value="MO4_DesignMaster"/>
    <TcTypeConstantAttach constantName="MasterForm" typeName="MO4_DesignRevision" value="MO4_DesignRevisionMaster"/>
+   <TcTypeConstantAttach constantName="MasterForm" typeName="MO4_Drawing" value="MO4_DrawingMaster"/>
+   <TcTypeConstantAttach constantName="MasterForm" typeName="MO4_DrawingRevision"
+       value="MO4_DrawingRevisionMaster"/>
    <TcTypeConstantAttach constantName="MasterForm" typeName="MO4_Eng_Design" value="MO4_Eng_DesignMaster"/>
    <TcTypeConstantAttach constantName="MasterForm" typeName="MO4_Eng_DesignRevision"
        value="MO4_Eng_DesignRevisionMaster"/>
    <TcTypeConstantAttach constantName="MasterForm" typeName="MO4_Eng_Part" value="MO4_Eng_PartMaster"/>
    <TcTypeConstantAttach constantName="MasterForm" typeName="MO4_Eng_PartRevision"
        value="MO4_Eng_PartRevisionMaster"/>
+   <TcTypeConstantAttach constantName="MasterForm" typeName="MO4_GenDrawing" value="MO4_GenDrawingMaster"/>
+   <TcTypeConstantAttach constantName="MasterForm" typeName="MO4_GenDrawingRevision"
+       value="MO4_GenDrawingRevisionMaster"/>
    <TcTypeConstantAttach constantName="MasterForm" typeName="MO4_Part" value="MO4_PartMaster"/>
    <TcTypeConstantAttach constantName="MasterForm" typeName="MO4_PartRevision" value="MO4_PartRevisionMaster"/>
    <TcTypeConstantAttach constantName="ReviseInput" typeName="MO4_DesignRevision"
        value="MO4_DesignRevisionRevI"/>
+   <TcTypeConstantAttach constantName="ReviseInput" typeName="MO4_DrawingRevision"
+       value="MO4_DrawingRevisionRevI"/>
    <TcTypeConstantAttach constantName="ReviseInput" typeName="MO4_Eng_DesignRevision"
        value="MO4_Eng_DesignRevisionRevI"/>
    <TcTypeConstantAttach constantName="ReviseInput" typeName="MO4_Eng_PartRevision"
        value="MO4_Eng_PartRevisionRevI"/>
+   <TcTypeConstantAttach constantName="ReviseInput" typeName="MO4_GenDrawingRevision"
+       value="MO4_GenDrawingRevisionRevI"/>
    <TcTypeConstantAttach constantName="ReviseInput" typeName="MO4_PartRevision" value="MO4_PartRevisionRevI"/>
    <TcTypeConstantAttach constantName="SaveAsInput" typeName="MO4_Board" value="MO4_BoardSvAI"/>
    <TcTypeConstantAttach constantName="SaveAsInput" typeName="MO4_board_data" value="MO4_board_dataSvAI"/>
@@ -682,6 +1007,16 @@
        value="MO4_DesignRevisionMasterSvAI"/>
    <TcTypeConstantAttach constantName="SaveAsInput" typeName="MO4_DesignRevMasterS"
        value="MO4_DesignRevMasterSSvAI"/>
+   <TcTypeConstantAttach constantName="SaveAsInput" typeName="MO4_Drawing" value="MO4_DrawingSvAI"/>
+   <TcTypeConstantAttach constantName="SaveAsInput" typeName="MO4_DrawingMaster" value="MO4_DrawingMasterSvAI"/>
+   <TcTypeConstantAttach constantName="SaveAsInput" typeName="MO4_DrawingMasterS"
+       value="MO4_DrawingMasterSSvAI"/>
+   <TcTypeConstantAttach constantName="SaveAsInput" typeName="MO4_DrawingRevision"
+       value="MO4_DrawingRevisionSvAI"/>
+   <TcTypeConstantAttach constantName="SaveAsInput" typeName="MO4_DrawingRevisionMaster"
+       value="MO4_DrawingRevisionMasterSvAI"/>
+   <TcTypeConstantAttach constantName="SaveAsInput" typeName="MO4_DrawingRevMasterS"
+       value="MO4_DrawingRevMasterSSvAI"/>
    <TcTypeConstantAttach constantName="SaveAsInput" typeName="MO4_Eng_Design" value="MO4_Eng_DesignSvAI"/>
    <TcTypeConstantAttach constantName="SaveAsInput" typeName="MO4_Eng_DesignMaster"
        value="MO4_Eng_DesignMasterSvAI"/>
@@ -704,6 +1039,17 @@
        value="MO4_Eng_PartRevisionMasterSvAI"/>
    <TcTypeConstantAttach constantName="SaveAsInput" typeName="MO4_Eng_PartRevMasterS"
        value="MO4_Eng_PartRevMasterSSvAI"/>
+   <TcTypeConstantAttach constantName="SaveAsInput" typeName="MO4_GenDrawing" value="MO4_GenDrawingSvAI"/>
+   <TcTypeConstantAttach constantName="SaveAsInput" typeName="MO4_GenDrawingMaster"
+       value="MO4_GenDrawingMasterSvAI"/>
+   <TcTypeConstantAttach constantName="SaveAsInput" typeName="MO4_GenDrawingMasterS"
+       value="MO4_GenDrawingMasterSSvAI"/>
+   <TcTypeConstantAttach constantName="SaveAsInput" typeName="MO4_GenDrawingRevision"
+       value="MO4_GenDrawingRevisionSvAI"/>
+   <TcTypeConstantAttach constantName="SaveAsInput" typeName="MO4_GenDrawingRevisionMaster"
+       value="MO4_GenDrawingRevision_alt0SvAI"/>
+   <TcTypeConstantAttach constantName="SaveAsInput" typeName="MO4_GenDrawingRevMasterS"
+       value="MO4_GenDrawingRevMasterSSvAI"/>
    <TcTypeConstantAttach constantName="SaveAsInput" typeName="MO4_MoreloClass" value="MO4_MoreloClassSvAI"/>
    <TcTypeConstantAttach constantName="SaveAsInput" typeName="MO4_Part" value="MO4_PartSvAI"/>
    <TcTypeConstantAttach constantName="SaveAsInput" typeName="MO4_PartMaster" value="MO4_PartMasterSvAI"/>
@@ -719,11 +1065,31 @@
        propertyName="mo4_covering_1" value="true"/>
    <TcPropertyConstantAttach constantName="Enabled" typeName="Fnd0RecipeContainer"
        propertyName="mo4_covering_2" value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="MO4_Board" propertyName="mo4_article_number_cp"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="MO4_Board" propertyName="MO4_board_data"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="MO4_Board" propertyName="mo4_grain_angel"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="MO4_Board" propertyName="mo4_length"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="MO4_Board" propertyName="mo4_length_net"
+       value="true"/>
    <TcPropertyConstantAttach constantName="Enabled" typeName="MO4_Board" propertyName="mo4_material_code"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="MO4_Board" propertyName="mo4_size"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="MO4_Board" propertyName="mo4_width"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="MO4_Board" propertyName="mo4_width_net"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="MO4_Cover" propertyName="mo4_article_number_cp"
        value="true"/>
    <TcPropertyConstantAttach constantName="Enabled" typeName="MO4_Cover" propertyName="mo4_bom_aligned"
        value="true"/>
    <TcPropertyConstantAttach constantName="Enabled" typeName="MO4_Cover" propertyName="mo4_cleanness"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="MO4_Cover" propertyName="MO4_cover_data"
        value="true"/>
    <TcPropertyConstantAttach constantName="Enabled" typeName="MO4_Cover" propertyName="mo4_gloss_level"
        value="true"/>
@@ -733,25 +1099,63 @@
        value="true"/>
    <TcPropertyConstantAttach constantName="Enabled" typeName="MO4_Cover" propertyName="mo4_material_code"
        value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="MO4_Cover" propertyName="mo4_orientation"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="MO4_Cover" propertyName="mo4_surface"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="MO4_Design" propertyName="mo4_lhd_rhd"
+       value="true"/>
    <TcPropertyConstantAttach constantName="Enabled" typeName="MO4_Design" propertyName="mo4_name_extension"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="MO4_Design" propertyName="mo4_object_name"
        value="true"/>
    <TcPropertyConstantAttach constantName="Enabled" typeName="MO4_DesignRevision"
        propertyName="mo4_name_extension" value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="MO4_DesignRevision"
+       propertyName="mo4_object_name" value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="MO4_DrawingRevision"
+       propertyName="mo4_drawing_type_cp" value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="MO4_Eng_DesignRevision"
+       propertyName="mo4_lhd_rhd_cp" value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="MO4_Eng_PartRevision"
+       propertyName="mo4_article_number_cp" value="true"/>
    <TcPropertyConstantAttach constantName="Enabled" typeName="MO4_Eng_PartRevision"
        propertyName="MO4_board_data" value="true"/>
    <TcPropertyConstantAttach constantName="Enabled" typeName="MO4_Eng_PartRevision"
+       propertyName="mo4_color" value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="MO4_Eng_PartRevision"
        propertyName="MO4_cover_data" value="true"/>
    <TcPropertyConstantAttach constantName="Enabled" typeName="MO4_Eng_PartRevision"
+       propertyName="mo4_homologation_cp" value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="MO4_Eng_PartRevision"
+       propertyName="mo4_lhd_rhd_cp" value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="MO4_Eng_PartRevision"
        propertyName="MO4_rim_data" value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="MO4_GenDrawing" propertyName="mo4_drawing_type"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="MO4_GenDrawing" propertyName="mo4_name_extension"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="MO4_GenDrawingRevision"
+       propertyName="mo4_external" value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="MO4_GenDrawingRevision"
+       propertyName="mo4_name_extension" value="true"/>
    <TcPropertyConstantAttach constantName="Enabled" typeName="MO4_Part" propertyName="mo4_article_number"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="MO4_Part" propertyName="mo4_homologation"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="MO4_Part" propertyName="mo4_lhd_rhd"
        value="true"/>
    <TcPropertyConstantAttach constantName="Enabled" typeName="MO4_Part" propertyName="mo4_name_extension"
        value="true"/>
-   <TcPropertyConstantAttach constantName="Enabled" typeName="MO4_PartRevision" propertyName="mo4_article_number"
+   <TcPropertyConstantAttach constantName="Enabled" typeName="MO4_Part" propertyName="mo4_object_name"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="MO4_PartRevision" propertyName="mo4_approval_number"
        value="true"/>
    <TcPropertyConstantAttach constantName="Enabled" typeName="MO4_PartRevision" propertyName="mo4_name_extension"
        value="true"/>
-   <TcPropertyConstantAttach constantName="Enabled" typeName="MO4_Rim" propertyName="mo4_article_number"
+   <TcPropertyConstantAttach constantName="Enabled" typeName="MO4_PartRevision" propertyName="mo4_object_name"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="MO4_Rim" propertyName="mo4_article_number_cp"
        value="true"/>
    <TcPropertyConstantAttach constantName="Enabled" typeName="MO4_Rim" propertyName="mo4_bom_aligned"
        value="true"/>
@@ -762,6 +1166,8 @@
    <TcPropertyConstantAttach constantName="Enabled" typeName="MO4_Rim" propertyName="mo4_length_excess"
        value="true"/>
    <TcPropertyConstantAttach constantName="Enabled" typeName="MO4_Rim" propertyName="mo4_material_code"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="MO4_Rim" propertyName="MO4_rim_data"
        value="true"/>
    <TcPropertyConstantAttach constantName="Enabled" typeName="MO4_Rim" propertyName="mo4_rim_type"
        value="true"/>
@@ -785,11 +1191,31 @@
        propertyName="mo4_covering_1" value="Write"/>
    <TcPropertyConstantAttach constantName="Modifiable" typeName="Fnd0RecipeContainer"
        propertyName="mo4_covering_2" value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="MO4_Board" propertyName="mo4_article_number_cp"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="MO4_Board" propertyName="MO4_board_data"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="MO4_Board" propertyName="mo4_grain_angel"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="MO4_Board" propertyName="mo4_length"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="MO4_Board" propertyName="mo4_length_net"
+       value="Write"/>
    <TcPropertyConstantAttach constantName="Modifiable" typeName="MO4_Board" propertyName="mo4_material_code"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="MO4_Board" propertyName="mo4_size"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="MO4_Board" propertyName="mo4_width"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="MO4_Board" propertyName="mo4_width_net"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="MO4_Cover" propertyName="mo4_article_number_cp"
        value="Write"/>
    <TcPropertyConstantAttach constantName="Modifiable" typeName="MO4_Cover" propertyName="mo4_bom_aligned"
        value="Write"/>
    <TcPropertyConstantAttach constantName="Modifiable" typeName="MO4_Cover" propertyName="mo4_cleanness"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="MO4_Cover" propertyName="MO4_cover_data"
        value="Write"/>
    <TcPropertyConstantAttach constantName="Modifiable" typeName="MO4_Cover" propertyName="mo4_gloss_level"
        value="Write"/>
@@ -799,25 +1225,63 @@
        value="Write"/>
    <TcPropertyConstantAttach constantName="Modifiable" typeName="MO4_Cover" propertyName="mo4_material_code"
        value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="MO4_Cover" propertyName="mo4_orientation"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="MO4_Cover" propertyName="mo4_surface"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="MO4_Design" propertyName="mo4_lhd_rhd"
+       value="Write"/>
    <TcPropertyConstantAttach constantName="Modifiable" typeName="MO4_Design" propertyName="mo4_name_extension"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="MO4_Design" propertyName="mo4_object_name"
        value="Write"/>
    <TcPropertyConstantAttach constantName="Modifiable" typeName="MO4_DesignRevision"
        propertyName="mo4_name_extension" value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="MO4_DesignRevision"
+       propertyName="mo4_object_name" value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="MO4_DrawingRevision"
+       propertyName="mo4_drawing_type_cp" value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="MO4_Eng_DesignRevision"
+       propertyName="mo4_lhd_rhd_cp" value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="MO4_Eng_PartRevision"
+       propertyName="mo4_article_number_cp" value="Write"/>
    <TcPropertyConstantAttach constantName="Modifiable" typeName="MO4_Eng_PartRevision"
        propertyName="MO4_board_data" value="Write"/>
    <TcPropertyConstantAttach constantName="Modifiable" typeName="MO4_Eng_PartRevision"
+       propertyName="mo4_color" value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="MO4_Eng_PartRevision"
        propertyName="MO4_cover_data" value="Write"/>
    <TcPropertyConstantAttach constantName="Modifiable" typeName="MO4_Eng_PartRevision"
+       propertyName="mo4_homologation_cp" value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="MO4_Eng_PartRevision"
+       propertyName="mo4_lhd_rhd_cp" value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="MO4_Eng_PartRevision"
        propertyName="MO4_rim_data" value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="MO4_GenDrawing" propertyName="mo4_drawing_type"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="MO4_GenDrawing" propertyName="mo4_name_extension"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="MO4_GenDrawingRevision"
+       propertyName="mo4_external" value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="MO4_GenDrawingRevision"
+       propertyName="mo4_name_extension" value="Write"/>
    <TcPropertyConstantAttach constantName="Modifiable" typeName="MO4_Part" propertyName="mo4_article_number"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="MO4_Part" propertyName="mo4_homologation"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="MO4_Part" propertyName="mo4_lhd_rhd"
        value="Write"/>
    <TcPropertyConstantAttach constantName="Modifiable" typeName="MO4_Part" propertyName="mo4_name_extension"
        value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="MO4_Part" propertyName="mo4_object_name"
+       value="Write"/>
    <TcPropertyConstantAttach constantName="Modifiable" typeName="MO4_PartRevision"
-       propertyName="mo4_article_number" value="Write"/>
+       propertyName="mo4_approval_number" value="Write"/>
    <TcPropertyConstantAttach constantName="Modifiable" typeName="MO4_PartRevision"
        propertyName="mo4_name_extension" value="Write"/>
-   <TcPropertyConstantAttach constantName="Modifiable" typeName="MO4_Rim" propertyName="mo4_article_number"
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="MO4_PartRevision"
+       propertyName="mo4_object_name" value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="MO4_Rim" propertyName="mo4_article_number_cp"
        value="Write"/>
    <TcPropertyConstantAttach constantName="Modifiable" typeName="MO4_Rim" propertyName="mo4_bom_aligned"
        value="Write"/>
@@ -828,6 +1292,8 @@
    <TcPropertyConstantAttach constantName="Modifiable" typeName="MO4_Rim" propertyName="mo4_length_excess"
        value="Write"/>
    <TcPropertyConstantAttach constantName="Modifiable" typeName="MO4_Rim" propertyName="mo4_material_code"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="MO4_Rim" propertyName="MO4_rim_data"
        value="Write"/>
    <TcPropertyConstantAttach constantName="Modifiable" typeName="MO4_Rim" propertyName="mo4_rim_type"
        value="Write"/>
@@ -851,6 +1317,33 @@
        value="true"/>
    <TcPropertyConstantAttach constantName="Visible" typeName="MO4_DesignRevisionCreI"
        propertyName="mo4_name_extension" value="true"/>
+   <TcCompoundPropertyRule destTypeName="MO4_Board" destPropertyName="mo4_article_number_cp"
+       sourceTypeName="MO4_Eng_Part" sourcePropertyName="mo4_article_number" isReadOnly="false"
+       pathToSource="GRMS2P(MO4_board_data,MO4_Eng_PartRevision).REF(items_tag,MO4_Eng_Part).mo4_article_number"
+       description=""/>
+   <TcCompoundPropertyRule destTypeName="MO4_Cover" destPropertyName="mo4_article_number_cp"
+       sourceTypeName="MO4_Eng_Part" sourcePropertyName="mo4_article_number" isReadOnly="false"
+       pathToSource="GRMS2P(MO4_cover_data,MO4_Eng_PartRevision).REF(items_tag,MO4_Eng_Part).mo4_article_number"
+       description=""/>
+   <TcCompoundPropertyRule destTypeName="MO4_DrawingRevision" destPropertyName="mo4_drawing_type_cp"
+       sourceTypeName="MO4_Drawing" sourcePropertyName="mo4_drawing_type" isReadOnly="false"
+       pathToSource="REF(items_tag,MO4_Drawing).mo4_drawing_type" description=""/>
+   <TcCompoundPropertyRule destTypeName="MO4_Eng_DesignRevision" destPropertyName="mo4_lhd_rhd_cp"
+       sourceTypeName="MO4_Eng_Design" sourcePropertyName="mo4_lhd_rhd" isReadOnly="false"
+       pathToSource="REF(items_tag,MO4_Eng_Design).mo4_lhd_rhd" description=""/>
+   <TcCompoundPropertyRule destTypeName="MO4_Eng_PartRevision" destPropertyName="mo4_article_number_cp"
+       sourceTypeName="MO4_Eng_Part" sourcePropertyName="mo4_article_number" isReadOnly="false"
+       pathToSource="REF(items_tag,MO4_Eng_Part).mo4_article_number" description=""/>
+   <TcCompoundPropertyRule destTypeName="MO4_Eng_PartRevision" destPropertyName="mo4_homologation_cp"
+       sourceTypeName="MO4_Eng_Part" sourcePropertyName="mo4_homologation" isReadOnly="false"
+       pathToSource="REF(items_tag,MO4_Eng_Part).mo4_homologation" description=""/>
+   <TcCompoundPropertyRule destTypeName="MO4_Eng_PartRevision" destPropertyName="mo4_lhd_rhd_cp"
+       sourceTypeName="MO4_Eng_Part" sourcePropertyName="mo4_lhd_rhd" isReadOnly="false"
+       pathToSource="REF(items_tag,MO4_Eng_Part).mo4_lhd_rhd" description=""/>
+   <TcCompoundPropertyRule destTypeName="MO4_Rim" destPropertyName="mo4_article_number_cp"
+       sourceTypeName="MO4_Eng_Part" sourcePropertyName="mo4_article_number" isReadOnly="false"
+       pathToSource="GRMS2P(MO4_rim_data,MO4_Eng_PartRevision).REF(items_tag,MO4_Eng_Part).mo4_article_number"
+       description=""/>
    <TcGRMRule primaryTypeName="MO4_Eng_PartRevision" secondaryTypeName="MO4_Board"
        relationTypeName="MO4_board_data" conditionName="isTrue" primaryCardinality="-1"
        secondaryCardinality="-1" secured="false" attachability="Unrestricted" changeability="Changeable"
@@ -876,6 +1369,7 @@
        languageType="ANSI_C" libraryName="libMO4Extensions" description="">
      <TcExtensionValidity parameter="TYPE:MO4_Eng_DesignRevision:finalizeCreateInput#Teamcenter::CreateInput,*:2"/>
      <TcExtensionValidity parameter="TYPE:MO4_Eng_PartRevision:finalizeCreateInput#Teamcenter::CreateInput,*:2"/>
+     <TcExtensionValidity parameter="TYPE:MO4_DrawingRevision:finalizeCreateInput#Teamcenter::CreateInput,*:2"/>
    </TcExtension>
    <TcExtension name="MO4_register_epm_handlers" internal="false" cannedExtension="false"
        languageType="CPlusPlus" libraryName="libMO4Extensions" description="">
@@ -885,6 +1379,7 @@
        libraryName="libMO4Extensions" description="">
      <TcExtensionValidity parameter="TYPE:MO4_Eng_DesignRevision:IMAN_save:3"/>
      <TcExtensionValidity parameter="TYPE:MO4_Eng_PartRevision:IMAN_save:3"/>
+     <TcExtensionValidity parameter="TYPE:MO4_DrawingRevision:IMAN_save:3"/>
    </TcExtension>
    <TcExtensionAttach extensionName="MO4_checkin" operationName="RES_checkin" isActive="true"
        extendableElementName="ImanReservation" extendableElementType="Type" extensionPointType="PostAction"
@@ -896,6 +1391,9 @@
        extendableElementName="MO4_Rim" extendableElementType="Type" extensionPointType="PreAction"
        conditionName="isTrue" description=""/>
    <TcExtensionAttach extensionName="MO4_init_name_extension" operationName="finalizeCreateInput#Teamcenter::CreateInput,*"
+       isActive="true" extendableElementName="MO4_DrawingRevision" extendableElementType="Type"
+       extensionPointType="PreAction" conditionName="isTrue" description=""/>
+   <TcExtensionAttach extensionName="MO4_init_name_extension" operationName="finalizeCreateInput#Teamcenter::CreateInput,*"
        isActive="true" extendableElementName="MO4_Eng_DesignRevision" extendableElementType="Type"
        extensionPointType="PreAction" conditionName="isTrue" description=""/>
    <TcExtensionAttach extensionName="MO4_init_name_extension" operationName="finalizeCreateInput#Teamcenter::CreateInput,*"
@@ -904,6 +1402,9 @@
    <TcExtensionAttach extensionName="MO4_register_epm_handlers" operationName="BMF_SESSION_register_epm_handlers"
        isActive="true" extendableElementName="Session" extendableElementType="Type"
        extensionPointType="BaseAction" conditionName="isTrue" description=""/>
+   <TcExtensionAttach extensionName="MO4_update_item" operationName="IMAN_save" isActive="true"
+       extendableElementName="MO4_DrawingRevision" extendableElementType="Type" extensionPointType="PostAction"
+       conditionName="isTrue" description=""/>
    <TcExtensionAttach extensionName="MO4_update_item" operationName="IMAN_save" isActive="true"
        extendableElementName="MO4_Eng_DesignRevision" extendableElementType="Type"
        extensionPointType="PostAction" conditionName="isTrue" description=""/>
@@ -947,20 +1448,6 @@
    <TcNamingRuleAttach ruleName="MO4_PartRevision_Rule" typeName="MO4_Part" propertyName="item_revision_id"
        case="Mix" conditionName="isTrue" override="false" ruleType="RevisionNamingRule"
        description=""/>
-   <TcLOV name="MO4GeneralTolerancesLOV" lovType="ListOfValuesString" usage="Exhaustive"
-       description="" isManagedExternally="true"/>
-   <TcLOV name="MO4_BoardLOV" lovType="ListOfValuesString" usage="Suggestive" description=""
-       isManagedExternally="true"/>
-   <TcLOV name="MO4_BurrFreeLOV" lovType="ListOfValuesString" usage="Exhaustive" description="">
-     <TcLOVValue value="Yes" description="" conditionName="isTrue"/>
-     <TcLOVValue value="No" description="" conditionName="isTrue"/>
-     <TcLOVValue value="Norm" description="" conditionName="isTrue"/>
-   </TcLOV>
-   <TcLOV name="MO4_ChipFreeLOV" lovType="ListOfValuesString" usage="Exhaustive" description="">
-     <TcLOVValue value="Yes" description="" conditionName="isTrue"/>
-     <TcLOVValue value="No" description="" conditionName="isTrue"/>
-     <TcLOVValue value="Norm" description="" conditionName="isTrue"/>
-   </TcLOV>
    <TcLOV name="MO4_CleannessLOV" lovType="ListOfValuesString" usage="Exhaustive"
        description="">
      <TcLOVValue value="Yes" description="" conditionName="isTrue"/>
@@ -969,36 +1456,129 @@
    </TcLOV>
    <TcLOV name="MO4_ColorLOV" lovType="ListOfValuesString" usage="Exhaustive" description=""
        isManagedExternally="true"/>
-   <TcLOV name="MO4_CoverLOV" lovType="ListOfValuesString" usage="Suggestive" description=""
+   <TcLOV name="MO4_DriverLOV" lovType="ListOfValuesString" usage="Exhaustive" description="">
+     <TcLOVValue value="-" description="" conditionName="isTrue"/>
+     <TcLOVValue value="LHD" description="" conditionName="isTrue"/>
+     <TcLOVValue value="RHD" description="" conditionName="isTrue"/>
+   </TcLOV>
+   <TcLOV name="MO4_DrwNameLOV" lovType="ListOfValuesString" usage="Suggestive" description=""
        isManagedExternally="true"/>
-   <TcLOV name="MO4_DocumentTypeLOV" lovType="ListOfValuesString" usage="Exhaustive"
-       description="" isManagedExternally="true"/>
-   <TcLOV name="MO4_FinishLOV" lovType="ListOfValuesString" usage="Exhaustive" description=""
+   <TcLOV name="MO4_DrwTypeLOV" lovType="ListOfValuesString" usage="Exhaustive" description=""
        isManagedExternally="true"/>
    <TcLOV name="MO4_GlossLevelLOV" lovType="ListOfValuesString" usage="Exhaustive"
        description="" isManagedExternally="true"/>
-   <TcLOV name="MO4_MaterialLOV" lovType="ListOfValuesString" usage="Suggestive" description=""
+   <TcLOV name="MO4_GrainAngelLOV" lovType="ListOfValuesInteger" usage="Exhaustive"
+       description="">
+     <TcLOVValue value="0" description="" conditionName="isTrue"/>
+     <TcLOVValue value="90" description="" conditionName="isTrue"/>
+     <TcLOVValue value="180" description="" conditionName="isTrue"/>
+   </TcLOV>
+   <TcLOV name="MO4_Name2LOV" lovType="ListOfValuesString" usage="Suggestive" description=""
        isManagedExternally="true"/>
    <TcLOV name="MO4_NamingLOV" lovType="ListOfValuesString" usage="Suggestive" description=""
        isManagedExternally="true"/>
-   <TcLOV name="MO4_RimLOV" lovType="ListOfValuesString" usage="Suggestive" description=""
-       isManagedExternally="true"/>
-   <TcLOV name="MO4_RimTypeLOV" lovType="ListOfValuesString" usage="Exhaustive" description=""
-       isManagedExternally="true"/>
-   <TcLOVAttach lovName="MO4_BoardLOV" typeName="MO4_Board">
-     <TcLOVAttachPropertyInfo valuePropertyName="mo4_material_code" conditionName="isTrue"
-         override="false" level="0"/>
-   </TcLOVAttach>
+   <TcLOV name="MO4_OrientationLOV" lovType="ListOfValuesInteger" usage="Exhaustive"
+       description="">
+     <TcLOVValue value="0" description="" conditionName="isTrue"/>
+     <TcLOVValue value="90" description="" conditionName="isTrue"/>
+     <TcLOVValue value="180" description="" conditionName="isTrue"/>
+   </TcLOV>
+   <TcLOV name="MO4_RimTypeALOV" lovType="ListOfValuesString" usage="Exhaustive" description="">
+     <TcLOVValue value="A1" description="" conditionName="isTrue"/>
+     <TcLOVValue value="A2" description="" conditionName="isTrue"/>
+     <TcLOVValue value="A3" description="" conditionName="isTrue"/>
+   </TcLOV>
+   <TcLOV name="MO4_RimTypeBLOV" lovType="ListOfValuesString" usage="Exhaustive" description="">
+     <TcLOVValue value="B1" description="" conditionName="isTrue"/>
+     <TcLOVValue value="B2" description="" conditionName="isTrue"/>
+     <TcLOVValue value="B3" description="" conditionName="isTrue"/>
+   </TcLOV>
+   <TcLOV name="MO4_RimTypeCLOV" lovType="ListOfValuesString" usage="Exhaustive" description="">
+     <TcLOVValue value="C1" description="" conditionName="isTrue"/>
+     <TcLOVValue value="C2" description="" conditionName="isTrue"/>
+     <TcLOVValue value="C3" description="" conditionName="isTrue"/>
+   </TcLOV>
+   <TcLOV name="MO4_RimTypeLOV" lovType="ListOfValuesString" usage="Exhaustive" description="">
+     <TcLOVValue value="A" description="" conditionName="isTrue"/>
+     <TcLOVValue value="B" description="" conditionName="isTrue"/>
+     <TcLOVValue value="C" description="" conditionName="isTrue"/>
+   </TcLOV>
+   <TcLOV name="MO4_SurfaceLOV" lovType="ListOfValuesString" usage="Exhaustive" description="">
+     <TcLOVValue value="primed" description="" conditionName="isTrue"/>
+     <TcLOVValue value="powder coated" description="" conditionName="isTrue"/>
+     <TcLOVValue value="varnish" description="" conditionName="isTrue"/>
+     <TcLOVValue value="galvanized" description="" conditionName="isTrue"/>
+     <TcLOVValue value="hot-dip galvanized" description="" conditionName="isTrue"/>
+     <TcLOVValue value="leathered" description="only wood, GFK" conditionName="isTrue"/>
+     <TcLOVValue value="upholstered" description="only wood" conditionName="isTrue"/>
+     <TcLOVValue value="polished" description="" conditionName="isTrue"/>
+     <TcLOVValue value="brushed" description="" conditionName="isTrue"/>
+     <TcLOVValue value="etched" description="" conditionName="isTrue"/>
+     <TcLOVValue value="chromed" description="" conditionName="isTrue"/>
+     <TcLOVValue value="laminated" description="" conditionName="isTrue"/>
+     <TcLOVValue value="anodized" description="" conditionName="isTrue"/>
+     <TcLOVValue value="raw" description="" conditionName="isTrue"/>
+     <TcLOVValue value="veneered" description="" conditionName="isTrue"/>
+     <TcLOVValue value="milled and fluted" description="" conditionName="isTrue"/>
+     <TcLOVValue value="milled" description="" conditionName="isTrue"/>
+     <TcLOVValue value="sheathed" description="" conditionName="isTrue"/>
+   </TcLOV>
+   <TcLOVValueSubLOVAttach targetLOVName="MO4_RimTypeLOV" targetValue="A" subLOVName="MO4_RimTypeALOV"
+       conditionName="isTrue"/>
+   <TcLOVValueSubLOVAttach targetLOVName="MO4_RimTypeLOV" targetValue="B" subLOVName="MO4_RimTypeBLOV"
+       conditionName="isTrue"/>
+   <TcLOVValueSubLOVAttach targetLOVName="MO4_RimTypeLOV" targetValue="C" subLOVName="MO4_RimTypeCLOV"
+       conditionName="isTrue"/>
    <TcLOVAttach lovName="MO4_CleannessLOV" typeName="MO4_Cover">
      <TcLOVAttachPropertyInfo valuePropertyName="mo4_cleanness" conditionName="isTrue"
          override="false" level="0"/>
    </TcLOVAttach>
-   <TcLOVAttach lovName="MO4_CoverLOV" typeName="MO4_Cover">
-     <TcLOVAttachPropertyInfo valuePropertyName="mo4_material_code" conditionName="isTrue"
+   <TcLOVAttach lovName="MO4_ColorLOV" typeName="MO4_Eng_PartRevision">
+     <TcLOVAttachPropertyInfo valuePropertyName="mo4_color" conditionName="isTrue"
+         override="false" level="0"/>
+   </TcLOVAttach>
+   <TcLOVAttach lovName="MO4_DriverLOV" typeName="MO4_Design">
+     <TcLOVAttachPropertyInfo valuePropertyName="mo4_lhd_rhd" conditionName="isTrue"
+         override="false" level="0"/>
+   </TcLOVAttach>
+   <TcLOVAttach lovName="MO4_DriverLOV" typeName="MO4_Eng_Part">
+     <TcLOVAttachPropertyInfo valuePropertyName="mo4_lhd_rhd" conditionName="isTrue"
+         override="false" level="0"/>
+   </TcLOVAttach>
+   <TcLOVAttach lovName="MO4_DrwNameLOV" typeName="MO4_GenDrawing">
+     <TcLOVAttachPropertyInfo valuePropertyName="object_name" conditionName="isTrue"
+         override="false" level="0"/>
+   </TcLOVAttach>
+   <TcLOVAttach lovName="MO4_DrwNameLOV" typeName="MO4_GenDrawingRevision">
+     <TcLOVAttachPropertyInfo valuePropertyName="object_name" conditionName="isTrue"
+         override="false" level="0"/>
+   </TcLOVAttach>
+   <TcLOVAttach lovName="MO4_DrwTypeLOV" typeName="MO4_GenDrawing">
+     <TcLOVAttachPropertyInfo valuePropertyName="mo4_drawing_type" conditionName="isTrue"
          override="false" level="0"/>
    </TcLOVAttach>
    <TcLOVAttach lovName="MO4_GlossLevelLOV" typeName="MO4_Cover">
      <TcLOVAttachPropertyInfo valuePropertyName="mo4_gloss_level" conditionName="isTrue"
+         override="false" level="0"/>
+   </TcLOVAttach>
+   <TcLOVAttach lovName="MO4_GrainAngelLOV" typeName="MO4_Board">
+     <TcLOVAttachPropertyInfo valuePropertyName="mo4_grain_angel" conditionName="isTrue"
+         override="false" level="0"/>
+   </TcLOVAttach>
+   <TcLOVAttach lovName="MO4_Name2LOV" typeName="MO4_Design">
+     <TcLOVAttachPropertyInfo valuePropertyName="mo4_object_name" conditionName="isTrue"
+         override="false" level="0"/>
+   </TcLOVAttach>
+   <TcLOVAttach lovName="MO4_Name2LOV" typeName="MO4_DesignRevision">
+     <TcLOVAttachPropertyInfo valuePropertyName="mo4_object_name" conditionName="isTrue"
+         override="false" level="0"/>
+   </TcLOVAttach>
+   <TcLOVAttach lovName="MO4_Name2LOV" typeName="MO4_Part">
+     <TcLOVAttachPropertyInfo valuePropertyName="mo4_object_name" conditionName="isTrue"
+         override="false" level="0"/>
+   </TcLOVAttach>
+   <TcLOVAttach lovName="MO4_Name2LOV" typeName="MO4_PartRevision">
+     <TcLOVAttachPropertyInfo valuePropertyName="mo4_object_name" conditionName="isTrue"
          override="false" level="0"/>
    </TcLOVAttach>
    <TcLOVAttach lovName="MO4_NamingLOV" typeName="MO4_Design">
@@ -1006,10 +1586,6 @@
          override="false" level="0"/>
    </TcLOVAttach>
    <TcLOVAttach lovName="MO4_NamingLOV" typeName="MO4_DesignRevision">
-     <TcLOVAttachPropertyInfo valuePropertyName="object_name" conditionName="isTrue"
-         override="false" level="0"/>
-   </TcLOVAttach>
-   <TcLOVAttach lovName="MO4_NamingLOV" typeName="MO4_Eng_Design">
      <TcLOVAttachPropertyInfo valuePropertyName="object_name" conditionName="isTrue"
          override="false" level="0"/>
    </TcLOVAttach>
@@ -1021,12 +1597,16 @@
      <TcLOVAttachPropertyInfo valuePropertyName="object_name" conditionName="isTrue"
          override="false" level="0"/>
    </TcLOVAttach>
-   <TcLOVAttach lovName="MO4_RimLOV" typeName="MO4_Rim">
-     <TcLOVAttachPropertyInfo valuePropertyName="mo4_material_code" conditionName="isTrue"
+   <TcLOVAttach lovName="MO4_OrientationLOV" typeName="MO4_Cover">
+     <TcLOVAttachPropertyInfo valuePropertyName="mo4_orientation" conditionName="isTrue"
          override="false" level="0"/>
    </TcLOVAttach>
    <TcLOVAttach lovName="MO4_RimTypeLOV" typeName="MO4_Rim">
      <TcLOVAttachPropertyInfo valuePropertyName="mo4_rim_type" conditionName="isTrue"
+         override="false" level="0"/>
+   </TcLOVAttach>
+   <TcLOVAttach lovName="MO4_SurfaceLOV" typeName="MO4_Cover">
+     <TcLOVAttachPropertyInfo valuePropertyName="mo4_surface" conditionName="isTrue"
          override="false" level="0"/>
    </TcLOVAttach>
    <Functionality name="MO4morelo" displayName="Morelo" enabledForVerificationRules="false"

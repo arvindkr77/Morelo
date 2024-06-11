@@ -20,15 +20,16 @@ All Rights Reserved.
     <page titleKey="tc_xrt_Overview">
         <column>
             <section titleKey="tc_xrt_properties">
-				<property name="object_name" modifiable="false"/>
-				<property name="mo4_id"/>
-				<property name="mo4_article_number"/>
-				<property name="mo4_material_code"/>
-				<property name="mo4_bom_aligned"/>
-				<property name="mo4_cleanness"/>
-				<property name="mo4_gloss_level"/>
-				<property name="mo4_grain_relevance"/>
-				<property name="object_desc"/>
+                  <property name="object_name" modifiable="false"/>
+                  <property name="object_desc"/> 
+                  <property name="mo4_id"/>
+                  <property name="mo4_article_number_cp"/>
+                  <property name="mo4_material_code"/>
+                  <property name="mo4_bom_aligned"/>
+                  <property name="mo4_cleanness"/>
+                  <property name="mo4_gloss_level"/>
+                  <property name="mo4_grain_relevance"/>
+                  <property name="mo4_surface"/>				
                 <separator/>
                 <property name="owning_user" renderingHint="objectlink" modifiable="false"/>
                 <property name="checked_out" modifiable="false"/>

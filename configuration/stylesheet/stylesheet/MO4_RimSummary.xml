@@ -22,9 +22,8 @@ All Rights Reserved.
               <section titleKey="tc_xrt_properties">
                   <property name="object_name" modifiable="false"/>
                   <property name="object_desc" modifiable="false"/>
-                  <property name="object_name" modifiable="false"/>
                   <property name="mo4_id"/>
-                  <property name="mo4_article_number"/>				
+                  <property name="mo4_article_number_cp"/>				
                   <property name="mo4_material_code"/>
                   <property name="mo4_bom_aligned"/>
                   <property name="mo4_rim_type"/>

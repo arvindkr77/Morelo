@@ -56,6 +56,18 @@
         <value>Awp0MO4_Eng_PartRevisionSummary</value>
       </context>
     </preference>
+    <preference name="AWC_MO4_Drawing.SUMMARYRENDERING" type="String" array="false" disabled="false" protectionScope="User" envEnabled="false">
+      <preference_description>Morelo Drawing summary stylesheet</preference_description>
+      <context name="Teamcenter">
+        <value>Awp0MO4_DrawingSummary</value>
+      </context>
+    </preference>
+    <preference name="AWC_MO4_DrawingRevision.SUMMARYRENDERING" type="String" array="false" disabled="false" protectionScope="User" envEnabled="false">
+      <preference_description>Morelo Drawing Revision summary stylesheet</preference_description>
+      <context name="Teamcenter">
+        <value>Awp0MO4_DrawingRevisionSummary</value>
+      </context>
+    </preference>	
   </category>
   <category name="General">
     <category_description>No description available for this category.</category_description>
@@ -143,16 +155,46 @@
         <value>MO4_Eng_PartRevision</value>
       </context>
     </preference>
+    <preference name="MO4_Drawing.SUMMARYRENDERING" type="String" array="true" disabled="false" protectionScope="Site" envEnabled="false">
+      <preference_description>This is an internal preference.</preference_description>
+      <context name="Teamcenter">
+        <value>MO4_DrawingSummary</value>
+      </context>
+    </preference>
+    <preference name="MO4_DrawingSummary.SUMMARY_REGISTEREDTO" type="String" array="true" disabled="false" protectionScope="Site" envEnabled="false">
+      <preference_description>This is an internal preference.</preference_description>
+      <context name="Teamcenter">
+        <value>MO4_Drawing</value>
+      </context>
+    </preference>	
+    <preference name="MO4_DrawingRevision.SUMMARYRENDERING" type="String" array="true" disabled="false" protectionScope="Site" envEnabled="false">
+      <preference_description>This is an internal preference.</preference_description>
+      <context name="Teamcenter">
+        <value>MO4_DrawingRevisionSummary</value>
+      </context>
+    </preference>
+    <preference name="MO4_DrawingRevisionSummary.SUMMARY_REGISTEREDTO" type="String" array="true" disabled="false" protectionScope="Site" envEnabled="false">
+      <preference_description>This is an internal preference.</preference_description>
+      <context name="Teamcenter">
+        <value>MO4_DrawingRevision</value>
+      </context>
+    </preference>
     <preference name="MO4_Eng_PartRevision_DefaultChildProperties" type="String" array="true" disabled="false" protectionScope="User" envEnabled="false">
       <preference_description>This is an internal preference.</preference_description>
       <context name="Teamcenter">
-        <value>MO4_Categorized</value>
+        <value>TC_Is_Represented_By</value>
+        <value>MO4_board_data</value>
+        <value>MO4_cover_data</value>
+        <value>MO4_rim_data</value>
       </context>
     </preference>
     <preference name="MO4_Eng_PartRevision_PseudoFolder" type="String" array="true" disabled="false" protectionScope="User" envEnabled="false">
       <preference_description>This is an internal preference.</preference_description>
       <context name="Teamcenter">
-        <value>MO4_Categorized</value>
+        <value>TC_Is_Represented_By</value>
+        <value>MO4_board_data</value>
+        <value>MO4_cover_data</value>
+        <value>MO4_rim_data</value>
       </context>
     </preference>	
     <preference name="Pma0_Part_Design_Type" type="String" array="true" disabled="false" protectionScope="Site" envEnabled="false">

@@ -21,7 +21,9 @@ Unpublished - All Rights Reserved
         <column>
             <section titleKey="tc_xrt_properties" title="Properties">
                 <property name="object_name"/>
+                <property name="mo4_object_name"/>
                 <property name="mo4_name_extension"/>
+                <property name="mo4_lhd_rhd_cp"/>
                 <property name="object_desc"/>
                 <property name="release_status_list" renderingHint="label"/>
                 <property name="date_released" renderingHint="label"/>

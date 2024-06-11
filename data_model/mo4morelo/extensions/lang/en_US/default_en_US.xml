@@ -8,8 +8,14 @@
    <key locale="en_US" id="BusinessObject{::}MO4_DesignMaster" status="Approved">Design Master</key>
    <key locale="en_US" id="BusinessObject{::}MO4_DesignRevMasterS" status="Approved">Design Revision Master Storage</key>
    <key locale="en_US" id="BusinessObject{::}MO4_DesignRevisionMaster" status="Approved">Design Revision Master</key>
-   <key locale="en_US" id="BusinessObject{::}MO4_DesignRevision" status="Approved">Design Revision</key>
-   <key locale="en_US" id="BusinessObject{::}MO4_Design" status="Approved">Design</key>
+   <key locale="en_US" id="BusinessObject{::}MO4_DesignRevision" status="Approved">Morelo Design Revision</key>
+   <key locale="en_US" id="BusinessObject{::}MO4_Design" status="Approved">Morelo Design</key>
+   <key locale="en_US" id="BusinessObject{::}MO4_DrawingMasterS" status="Approved">Drawing Master Storage</key>
+   <key locale="en_US" id="BusinessObject{::}MO4_DrawingMaster" status="Approved">Drawing Master</key>
+   <key locale="en_US" id="BusinessObject{::}MO4_DrawingRevMasterS" status="Approved">Drawing Revision Master Storage</key>
+   <key locale="en_US" id="BusinessObject{::}MO4_DrawingRevisionMaster" status="Approved">Drawing Revision Master</key>
+   <key locale="en_US" id="BusinessObject{::}MO4_DrawingRevision" status="Approved">Morelo Drawing Revision</key>
+   <key locale="en_US" id="BusinessObject{::}MO4_Drawing" status="Approved">Morelo Drawing</key>
    <key locale="en_US" id="BusinessObject{::}MO4_Eng_DesignMasterS" status="Approved">Eng Design Master Storage</key>
    <key locale="en_US" id="BusinessObject{::}MO4_Eng_DesignMaster" status="Approved">Eng Design Master</key>
    <key locale="en_US" id="BusinessObject{::}MO4_Eng_DesignRevMasterS" status="Approved">Eng Design Revision Master Storage</key>
@@ -22,46 +28,114 @@
    <key locale="en_US" id="BusinessObject{::}MO4_Eng_PartRevisionMaster" status="Approved">Eng Part Revision Master</key>
    <key locale="en_US" id="BusinessObject{::}MO4_Eng_PartRevision" status="Approved">Engineering Part Revision</key>
    <key locale="en_US" id="BusinessObject{::}MO4_Eng_Part" status="Approved">Engineering Part</key>
+   <key locale="en_US" id="BusinessObject{::}MO4_GenDrawingMasterS" status="Approved">Gen Drawing Master Storage</key>
+   <key locale="en_US" id="BusinessObject{::}MO4_GenDrawingMaster" status="Approved">Gen Drawing Master</key>
+   <key locale="en_US" id="BusinessObject{::}MO4_GenDrawingRevMasterS" status="Approved">Gen Drawing Revision Master Storage</key>
+   <key locale="en_US" id="BusinessObject{::}MO4_GenDrawingRevisionMaster" status="Approved">Gen Drawing Revision Master</key>
+   <key locale="en_US" id="BusinessObject{::}MO4_GenDrawingRevision" status="Approved">Generic Drawing Revision</key>
+   <key locale="en_US" id="BusinessObject{::}MO4_GenDrawing" status="Approved">Generic Drawing</key>
    <key locale="en_US" id="BusinessObject{::}MO4_MoreloClass" status="Approved">Morelo Class</key>
    <key locale="en_US" id="BusinessObject{::}MO4_PartMasterS" status="Approved">Part Master Storage</key>
    <key locale="en_US" id="BusinessObject{::}MO4_PartMaster" status="Approved">Part Master</key>
    <key locale="en_US" id="BusinessObject{::}MO4_PartRevMasterS" status="Approved">Part Revision Master Storage</key>
    <key locale="en_US" id="BusinessObject{::}MO4_PartRevisionMaster" status="Approved">Part Revision Master</key>
-   <key locale="en_US" id="BusinessObject{::}MO4_PartRevision" status="Approved">Part Revision</key>
-   <key locale="en_US" id="BusinessObject{::}MO4_Part" status="Approved">Part</key>
+   <key locale="en_US" id="BusinessObject{::}MO4_PartRevision" status="Approved">Morelo Part Revision</key>
+   <key locale="en_US" id="BusinessObject{::}MO4_Part" status="Approved">Morelo Part</key>
    <key locale="en_US" id="BusinessObject{::}MO4_Rim" status="Approved">Rim</key>
    <key locale="en_US" id="BusinessObject{::}MO4_board_data" status="Approved">Board Data</key>
    <key locale="en_US" id="BusinessObject{::}MO4_cover_data" status="Approved">Cover Data</key>
    <key locale="en_US" id="BusinessObject{::}MO4_rim_data" status="Approved">Rim Data</key>
    <key locale="en_US" id="ConditionDescription{::}MO4_WFFilter_Design" status="Approved">This condition checks the type of object is Design Revision.</key>
-   <key locale="en_US" id="LOVValue{::}MO4_BurrFreeLOV{::}Norm" status="Approved">Norm</key>
-   <key locale="en_US" id="LOVValue{::}MO4_BurrFreeLOV{::}No" status="Approved">No</key>
-   <key locale="en_US" id="LOVValue{::}MO4_BurrFreeLOV{::}Yes" status="Approved">Yes</key>
-   <key locale="en_US" id="LOVValue{::}MO4_ChipFreeLOV{::}Norm" status="Approved">Norm</key>
-   <key locale="en_US" id="LOVValue{::}MO4_ChipFreeLOV{::}No" status="Approved">No</key>
-   <key locale="en_US" id="LOVValue{::}MO4_ChipFreeLOV{::}Yes" status="Approved">Yes</key>
+   <key locale="en_US" id="LOVValueDescription{::}MO4_SurfaceLOV{::}leathered" status="Approved">only wood, GFK</key>
+   <key locale="en_US" id="LOVValueDescription{::}MO4_SurfaceLOV{::}upholstered" status="Approved">only wood</key>
    <key locale="en_US" id="LOVValue{::}MO4_CleannessLOV{::}Norm" status="Approved">Norm</key>
    <key locale="en_US" id="LOVValue{::}MO4_CleannessLOV{::}No" status="Approved">No</key>
    <key locale="en_US" id="LOVValue{::}MO4_CleannessLOV{::}Yes" status="Approved">Yes</key>
+   <key locale="en_US" id="LOVValue{::}MO4_DriverLOV{::}-" status="Approved">-</key>
+   <key locale="en_US" id="LOVValue{::}MO4_DriverLOV{::}LHD" status="Approved">LHD</key>
+   <key locale="en_US" id="LOVValue{::}MO4_DriverLOV{::}RHD" status="Approved">RHD</key>
+   <key locale="en_US" id="LOVValue{::}MO4_GrainAngelLOV{::}0" status="Approved">0</key>
+   <key locale="en_US" id="LOVValue{::}MO4_GrainAngelLOV{::}180" status="Approved">180</key>
+   <key locale="en_US" id="LOVValue{::}MO4_GrainAngelLOV{::}90" status="Approved">90</key>
+   <key locale="en_US" id="LOVValue{::}MO4_RimTypeALOV{::}A1" status="Approved">A1</key>
+   <key locale="en_US" id="LOVValue{::}MO4_RimTypeALOV{::}A2" status="Approved">A2</key>
+   <key locale="en_US" id="LOVValue{::}MO4_RimTypeALOV{::}A3" status="Approved">A3</key>
+   <key locale="en_US" id="LOVValue{::}MO4_RimTypeBLOV{::}B1" status="Approved">B1</key>
+   <key locale="en_US" id="LOVValue{::}MO4_RimTypeBLOV{::}B2" status="Approved">B2</key>
+   <key locale="en_US" id="LOVValue{::}MO4_RimTypeBLOV{::}B3" status="Approved">B3</key>
+   <key locale="en_US" id="LOVValue{::}MO4_RimTypeCLOV{::}C1" status="Approved">C1</key>
+   <key locale="en_US" id="LOVValue{::}MO4_RimTypeCLOV{::}C2" status="Approved">C2</key>
+   <key locale="en_US" id="LOVValue{::}MO4_RimTypeCLOV{::}C3" status="Approved">C3</key>
+   <key locale="en_US" id="LOVValue{::}MO4_RimTypeLOV{::}A" status="Approved">A</key>
+   <key locale="en_US" id="LOVValue{::}MO4_RimTypeLOV{::}B" status="Approved">B</key>
+   <key locale="en_US" id="LOVValue{::}MO4_RimTypeLOV{::}C" status="Approved">C</key>
+   <key locale="en_US" id="LOVValue{::}MO4_SurfaceLOV{::}anodized" status="Approved">anodized</key>
+   <key locale="en_US" id="LOVValue{::}MO4_SurfaceLOV{::}brushed" status="Approved">brushed</key>
+   <key locale="en_US" id="LOVValue{::}MO4_SurfaceLOV{::}chromed" status="Approved">chromed</key>
+   <key locale="en_US" id="LOVValue{::}MO4_SurfaceLOV{::}etched" status="Approved">etched</key>
+   <key locale="en_US" id="LOVValue{::}MO4_SurfaceLOV{::}galvanized" status="Approved">galvanized</key>
+   <key locale="en_US" id="LOVValue{::}MO4_SurfaceLOV{::}hot-dip galvanized" status="Approved">hot-dip galvanized</key>
+   <key locale="en_US" id="LOVValue{::}MO4_SurfaceLOV{::}laminated" status="Approved">laminated</key>
+   <key locale="en_US" id="LOVValue{::}MO4_SurfaceLOV{::}leathered" status="Approved">leathered</key>
+   <key locale="en_US" id="LOVValue{::}MO4_SurfaceLOV{::}milled and fluted" status="Approved">milled and fluted</key>
+   <key locale="en_US" id="LOVValue{::}MO4_SurfaceLOV{::}milled" status="Approved">milled</key>
+   <key locale="en_US" id="LOVValue{::}MO4_SurfaceLOV{::}polished" status="Approved">polished</key>
+   <key locale="en_US" id="LOVValue{::}MO4_SurfaceLOV{::}powder coated" status="Approved">powder coated</key>
+   <key locale="en_US" id="LOVValue{::}MO4_SurfaceLOV{::}primed" status="Approved">primed</key>
+   <key locale="en_US" id="LOVValue{::}MO4_SurfaceLOV{::}raw" status="Approved">raw</key>
+   <key locale="en_US" id="LOVValue{::}MO4_SurfaceLOV{::}sheathed" status="Approved">sheathed</key>
+   <key locale="en_US" id="LOVValue{::}MO4_SurfaceLOV{::}upholstered" status="Approved">upholstered</key>
+   <key locale="en_US" id="LOVValue{::}MO4_SurfaceLOV{::}varnish" status="Approved">varnish</key>
+   <key locale="en_US" id="LOVValue{::}MO4_SurfaceLOV{::}veneered" status="Approved">veneered</key>
    <key locale="en_US" id="Property{::}Fnd0RecipeContainer{::}mo4_covering_1" status="Approved">Covering 1</key>
    <key locale="en_US" id="Property{::}Fnd0RecipeContainer{::}mo4_covering_2" status="Approved">covering 2</key>
+   <key locale="en_US" id="Property{::}MO4_Board{::}mo4_article_number_cp" status="Approved">Article Number</key>
+   <key locale="en_US" id="Property{::}MO4_Board{::}mo4_grain_angel" status="Approved">Grain Angel</key>
+   <key locale="en_US" id="Property{::}MO4_Board{::}mo4_length_net" status="Approved">Net Length</key>
+   <key locale="en_US" id="Property{::}MO4_Board{::}mo4_length" status="Approved">Length</key>
    <key locale="en_US" id="Property{::}MO4_Board{::}mo4_material_code" status="Approved">Material Code</key>
-   <key locale="en_US" id="Property{::}MO4_Cover{::}mo4_article_number" status="Approved">Article Number</key>
+   <key locale="en_US" id="Property{::}MO4_Board{::}mo4_size" status="Approved">Size</key>
+   <key locale="en_US" id="Property{::}MO4_Board{::}mo4_width_net" status="Approved">Net Width</key>
+   <key locale="en_US" id="Property{::}MO4_Board{::}mo4_width" status="Approved">Width</key>
+   <key locale="en_US" id="Property{::}MO4_Cover{::}mo4_article_number_cp" status="Approved">Article Number</key>
    <key locale="en_US" id="Property{::}MO4_Cover{::}mo4_bom_aligned" status="Approved">BOM Aligned</key>
    <key locale="en_US" id="Property{::}MO4_Cover{::}mo4_cleanness" status="Approved">Cleanness</key>
    <key locale="en_US" id="Property{::}MO4_Cover{::}mo4_gloss_level" status="Approved">Gloss Level</key>
    <key locale="en_US" id="Property{::}MO4_Cover{::}mo4_grain_relevance" status="Approved">Grain Relevance</key>
    <key locale="en_US" id="Property{::}MO4_Cover{::}mo4_id" status="Approved">ID</key>
    <key locale="en_US" id="Property{::}MO4_Cover{::}mo4_material_code" status="Approved">Material Code</key>
+   <key locale="en_US" id="Property{::}MO4_Cover{::}mo4_orientation" status="Approved">Orientation</key>
+   <key locale="en_US" id="Property{::}MO4_Cover{::}mo4_surface" status="Approved">Surface</key>
    <key locale="en_US" id="Property{::}MO4_DesignRevision{::}mo4_name_extension" status="Approved">Name extension</key>
+   <key locale="en_US" id="Property{::}MO4_DesignRevision{::}mo4_object_name" status="Approved">Name 2</key>
+   <key locale="en_US" id="Property{::}MO4_Design{::}mo4_lhd_rhd" status="Approved">LHD/RHD</key>
    <key locale="en_US" id="Property{::}MO4_Design{::}mo4_name_extension" status="Approved">Name Extension</key>
+   <key locale="en_US" id="Property{::}MO4_Design{::}mo4_object_name" status="Approved">Name 2</key>
+   <key locale="en_US" id="Property{::}MO4_DrawingRevision{::}mo4_drawing_type_cp"
+       status="Approved">Drawing Type</key>
+   <key locale="en_US" id="Property{::}MO4_Eng_DesignRevision{::}mo4_lhd_rhd_cp" status="Approved">LHD/RHD</key>
    <key locale="en_US" id="Property{::}MO4_Eng_DesignRevision{::}object_desc" status="Approved">Description</key>
    <key locale="en_US" id="Property{::}MO4_Eng_Design{::}object_desc" status="Approved">Description</key>
-   <key locale="en_US" id="Property{::}MO4_PartRevision{::}mo4_article_number" status="Approved">Article Number</key>
+   <key locale="en_US" id="Property{::}MO4_Eng_PartRevision{::}mo4_article_number_cp"
+       status="Approved">Article Number</key>
+   <key locale="en_US" id="Property{::}MO4_Eng_PartRevision{::}mo4_color" status="Approved">Color</key>
+   <key locale="en_US" id="Property{::}MO4_Eng_PartRevision{::}mo4_homologation_cp"
+       status="Approved">Homologation Relevant</key>
+   <key locale="en_US" id="Property{::}MO4_Eng_PartRevision{::}mo4_lhd_rhd_cp" status="Approved">LHD/RHD</key>
+   <key locale="en_US" id="Property{::}MO4_GenDrawingRevision{::}mo4_external" status="Approved">External</key>
+   <key locale="en_US" id="Property{::}MO4_GenDrawingRevision{::}mo4_name_extension"
+       status="Approved">Name Extension</key>
+   <key locale="en_US" id="Property{::}MO4_GenDrawing{::}mo4_drawing_type" status="Approved">Drawing Type</key>
+   <key locale="en_US" id="Property{::}MO4_GenDrawing{::}mo4_name_extension" status="Approved">Name Extension</key>
+   <key locale="en_US" id="Property{::}MO4_PartRevision{::}mo4_approval_number" status="Approved">Approval Number</key>
    <key locale="en_US" id="Property{::}MO4_PartRevision{::}mo4_name_extension" status="Approved">Name Extension</key>
+   <key locale="en_US" id="Property{::}MO4_PartRevision{::}mo4_object_name" status="Approved">Name 2</key>
    <key locale="en_US" id="Property{::}MO4_Part{::}mo4_article_number" status="Approved">Article Number</key>
+   <key locale="en_US" id="Property{::}MO4_Part{::}mo4_homologation" status="Approved">Homologation Relevant</key>
+   <key locale="en_US" id="Property{::}MO4_Part{::}mo4_lhd_rhd" status="Approved">LHD/RHD</key>
    <key locale="en_US" id="Property{::}MO4_Part{::}mo4_name_extension" status="Approved">Name Extension</key>
-   <key locale="en_US" id="Property{::}MO4_Rim{::}mo4_article_number" status="Approved">Article Number</key>
+   <key locale="en_US" id="Property{::}MO4_Part{::}mo4_object_name" status="Approved">Name 2</key>
+   <key locale="en_US" id="Property{::}MO4_Rim{::}mo4_article_number_cp" status="Approved">Article Number</key>
    <key locale="en_US" id="Property{::}MO4_Rim{::}mo4_bom_aligned" status="Approved">BOM Aligned</key>
    <key locale="en_US" id="Property{::}MO4_Rim{::}mo4_id" status="Approved">ID</key>
    <key locale="en_US" id="Property{::}MO4_Rim{::}mo4_length_excess" status="Approved">Length (excess)</key>

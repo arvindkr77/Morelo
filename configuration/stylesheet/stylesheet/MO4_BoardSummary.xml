@@ -23,7 +23,14 @@ All Rights Reserved.
                   <property name="object_name" modifiable="false"/>
                   <property name="object_desc" modifiable="false"/>
                   <property name="mo4_material_code"/>
-                  <separator/>
+                  <property name="mo4_article_number_cp"/>
+                  <property name="mo4_length"/>
+                  <property name="mo4_width"/>
+                  <property name="mo4_size"/>
+                  <property name="mo4_length_net"/>
+                  <property name="mo4_width_net"/> 
+                  <property name="mo4_grain_angel"/>
+                 <separator/>
                   <property name="owning_user" renderingHint="objectlink" modifiable="false"/>
                   <property name="checked_out" modifiable="false"/>
                   <property name="checked_out_user" renderingHint="objectlink" modifiable="false"/>

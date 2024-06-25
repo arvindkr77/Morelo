@@ -63,16 +63,16 @@ Unpublished - All Rights Reserved
             <section title="Board Data">
                 <objectSet source="MO4_board_data.MO4_Board" defaultdisplay="tableDisplay" sortdirection="ascending" sortby="object_name">
                     <tableDisplay>
-                  <property name="object_name" modifiable="false"/>
-                  <property name="object_desc" modifiable="false"/>
-                  <property name="mo4_material_code"/>
-                  <property name="mo4_article_number_cp"/>
-                  <property name="mo4_length"/>
-                  <property name="mo4_width"/>
-                  <property name="mo4_size"/>
-                  <property name="mo4_length_net"/>
-                  <property name="mo4_width_net"/> 
-                  <property name="mo4_grain_angel"/>
+					  <property name="object_name" modifiable="false"/>
+					  <property name="object_desc" modifiable="false"/>
+					  <property name="mo4_material_code"/>
+					  <property name="mo4_article_number_cp"/>
+					  <property name="mo4_length"/>
+					  <property name="mo4_width"/>
+					  <property name="mo4_size"/>
+					  <property name="mo4_length_net"/>
+					  <property name="mo4_width_net"/> 
+					  <property name="mo4_grain_angel"/>
                     </tableDisplay>
 					<listDisplay/>
 					<command actionKey="newBusinessObjectContextualAction" commandId="com.teamcenter.rac.common.AddNew" renderingHint="commandbutton"/>
@@ -83,16 +83,16 @@ Unpublished - All Rights Reserved
             <section title="Cover Data">
                 <objectSet source="MO4_cover_data.MO4_Cover" defaultdisplay="tableDisplay" sortdirection="ascending" sortby="object_name">
                     <tableDisplay>
-                  <property name="object_name" modifiable="false"/>
-                  <property name="object_desc" modifiable="false"/>
-                  <property name="mo4_id"/>
-                  <property name="mo4_article_number_cp"/>
-                  <property name="mo4_material_code"/>
-                  <property name="mo4_bom_aligned"/>
-                  <property name="mo4_cleanness"/>
-                  <property name="mo4_gloss_level"/>
-                  <property name="mo4_grain_relevance"/>
-                  <property name="mo4_surface"/>
+					  <property name="object_name" modifiable="false"/>
+					  <property name="object_desc" modifiable="false"/>
+					  <property name="mo4_id"/>
+					  <property name="mo4_article_number_cp"/>
+					  <property name="mo4_material_code"/>
+					  <property name="mo4_bom_aligned"/>
+					  <property name="mo4_cleanness"/>
+					  <property name="mo4_gloss_level"/>
+					  <property name="mo4_grain_relevance"/>
+					  <property name="mo4_surface"/>
                     </tableDisplay>
 					<listDisplay/>
 					<command actionKey="newBusinessObjectContextualAction" commandId="com.teamcenter.rac.common.AddNew" renderingHint="commandbutton"/>
@@ -103,18 +103,18 @@ Unpublished - All Rights Reserved
             <section title="Rim Data">
                 <objectSet source="MO4_rim_data.MO4_Rim" defaultdisplay="tableDisplay" sortdirection="ascending" sortby="object_name">
                     <tableDisplay>
-                  <property name="object_name" modifiable="false"/>
-                  <property name="object_desc" modifiable="false"/>
-                  <property name="mo4_id"/>
-                  <property name="mo4_article_number_cp"/>				
-                  <property name="mo4_material_code"/>
-                  <property name="mo4_bom_aligned"/>
-                  <property name="mo4_rim_type"/>
-                  <property name="mo4_length"/>
-                  <property name="mo4_length_excess"/>
-                  <property name="mo4_size"/>
-                  <property name="mo4_width_max"/>
-                  <property name="mo4_width_min"/>
+					  <property name="object_name" modifiable="false"/>
+					  <property name="object_desc" modifiable="false"/>
+					  <property name="mo4_id"/>
+					  <property name="mo4_article_number_cp"/>				
+					  <property name="mo4_material_code"/>
+					  <property name="mo4_bom_aligned"/>
+					  <property name="mo4_rim_type"/>
+					  <property name="mo4_length"/>
+					  <property name="mo4_length_excess"/>
+					  <property name="mo4_size"/>
+					  <property name="mo4_high_max"/>
+					  <property name="mo4_high_min"/>
                     </tableDisplay>
 					<listDisplay/>
 					<command actionKey="newBusinessObjectContextualAction" commandId="com.teamcenter.rac.common.AddNew" renderingHint="commandbutton"/>

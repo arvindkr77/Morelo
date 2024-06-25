@@ -179,6 +179,12 @@
         <value>MO4_DrawingRevision</value>
       </context>
     </preference>
+    <preference name="MO4_AddHighPref" type="String" array="false" disabled="false" protectionScope="User" envEnabled="false">
+      <preference_description>mo4_high_max value of Rim = mo4_high_min value + MO4_AddHighPref value</preference_description>
+      <context name="Teamcenter">
+        <value>0</value>
+      </context>
+    </preference>
     <preference name="MO4_Eng_PartRevision_DefaultChildProperties" type="String" array="true" disabled="false" protectionScope="User" envEnabled="false">
       <preference_description>This is an internal preference.</preference_description>
       <context name="Teamcenter">

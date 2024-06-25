@@ -264,21 +264,21 @@
          isUnique="false" isPublicRead="true" isPublicWrite="true" isCandidateKey="false"
          isTransient="false" exportAsString="false" noBackpointer="false" initialValue="NULL"
          lowerBoundValue="" upperBoundValue=""/>
-     <TcAttribute attributeName="mo4_width_min" description="" attributeType="POM_double"
-         maxStringLength="0" isArray="false" followOnExport="false" isNullsAllowed="true"
-         isUnique="false" isPublicRead="true" isPublicWrite="true" isCandidateKey="false"
-         isTransient="false" exportAsString="false" noBackpointer="false" initialValue="NULL"
-         lowerBoundValue="" upperBoundValue=""/>
-     <TcAttribute attributeName="mo4_width_max" description="" attributeType="POM_double"
-         maxStringLength="0" isArray="false" followOnExport="false" isNullsAllowed="true"
-         isUnique="false" isPublicRead="true" isPublicWrite="true" isCandidateKey="false"
-         isTransient="false" exportAsString="false" noBackpointer="false" initialValue="NULL"
-         lowerBoundValue="" upperBoundValue=""/>
      <TcAttribute attributeName="mo4_size" description="" attributeType="POM_double"
          maxStringLength="0" isArray="false" followOnExport="false" isNullsAllowed="true"
          isUnique="false" isPublicRead="true" isPublicWrite="true" isCandidateKey="false"
          isTransient="false" exportAsString="false" noBackpointer="false" initialValue="NULL"
          lowerBoundValue="" upperBoundValue=""/>
+     <TcAttribute attributeName="mo4_high_min" description="" attributeType="POM_double"
+         maxStringLength="0" isArray="false" followOnExport="false" isNullsAllowed="true"
+         isUnique="false" isPublicRead="true" isPublicWrite="true" isCandidateKey="false"
+         isTransient="false" exportAsString="false" noBackpointer="false" initialValue=""
+         lowerBoundValue="" upperBoundValue=""/>
+     <TcAttribute attributeName="mo4_high_max" description="" attributeType="POM_double"
+         maxStringLength="0" isArray="false" followOnExport="false" isNullsAllowed="true"
+         isUnique="false" isPublicRead="true" isPublicWrite="true" isCandidateKey="false"
+         isTransient="false" exportAsString="false" noBackpointer="false" lowerBoundValue=""
+         upperBoundValue=""/>
    </TcClass>
    <TcClass className="MO4_board_data" parentClassName="ImanRelation" isExportable="false"
        isUninstantiable="false" isUninheritable="false" description=""/>
@@ -679,15 +679,15 @@
      <OperationInputProperty propName="mo4_length_excess" compoundObjectConstant=""
          srcPropName="mo4_length_excess" compoundObjectType="" fieldType="SimpleProperty"
          description=""/>
-     <OperationInputProperty propName="mo4_width_min" compoundObjectConstant="" srcPropName="mo4_width_min"
-         compoundObjectType="" fieldType="SimpleProperty" description=""/>
-     <OperationInputProperty propName="mo4_width_max" compoundObjectConstant="" srcPropName="mo4_width_max"
-         compoundObjectType="" fieldType="SimpleProperty" description=""/>
      <OperationInputProperty propName="mo4_size" compoundObjectConstant="" srcPropName="mo4_size"
          compoundObjectType="" fieldType="SimpleProperty" description=""/>
      <OperationInputProperty propName="mo4MO4_rim_data" compoundObjectConstant=""
          srcPropName="MO4_rim_data" compoundObjectType="" fieldType="SimpleProperty"
          description=""/>
+     <OperationInputProperty propName="mo4_high_min" compoundObjectConstant="" srcPropName="mo4_high_min"
+         compoundObjectType="" fieldType="SimpleProperty" description=""/>
+     <OperationInputProperty propName="mo4_high_max" compoundObjectConstant="" srcPropName="mo4_high_max"
+         compoundObjectType="" fieldType="SimpleProperty" description=""/>
    </OperationInputType>
    <OperationInputType typeName="MO4_RimSvAI" parentTypeName="MO4_MoreloClassSvAI"
        typeClassName="MO4_RimSvAI" description="SaveAsInput object for &quot;MO4_Rim&quot; business object"
@@ -757,13 +757,13 @@
        description="" isAbstract="false" artifactName="MO4_Board" functionality="MO4morelo">
      <TcProperty propName="MO4_board_data" propTypeName="Relation" propValueType="PROP_untyped_relation"
          propMaxStringLength="0" isArray="true" arrayLength="-1" description="" referencedTypeConstant=""
-         referencedType=""/>
+         referencedType="" fnd0ReferencingAttrName=""/>
    </TcStandardType>
    <TcStandardType typeName="MO4_Cover" parentTypeName="MO4_MoreloClass" typeClassName="MO4_Cover"
        description="Cover for a Board" isAbstract="false" artifactName="MO4_Cover">
      <TcProperty propName="MO4_cover_data" propTypeName="Relation" propValueType="PROP_untyped_relation"
          propMaxStringLength="0" isArray="true" arrayLength="-1" description="" referencedTypeConstant=""
-         referencedType=""/>
+         referencedType="" fnd0ReferencingAttrName=""/>
    </TcStandardType>
    <TcStandardType typeName="MO4_Design" parentTypeName="Design" typeClassName="MO4_Design"
        description="" isAbstract="true" artifactName="MO4_Design" functionality="MO4morelo"/>
@@ -811,13 +811,13 @@
        isAbstract="false" artifactName="MO4_Eng_PartRevision" functionality="MO4morelo">
      <TcProperty propName="MO4_board_data" propTypeName="Relation" propValueType="PROP_untyped_relation"
          propMaxStringLength="0" isArray="true" arrayLength="-1" description="" referencedTypeConstant=""
-         referencedType=""/>
+         referencedType="" fnd0ReferencingAttrName=""/>
      <TcProperty propName="MO4_cover_data" propTypeName="Relation" propValueType="PROP_untyped_relation"
          propMaxStringLength="0" isArray="true" arrayLength="-1" description="" referencedTypeConstant=""
-         referencedType=""/>
+         referencedType="" fnd0ReferencingAttrName=""/>
      <TcProperty propName="MO4_rim_data" propTypeName="Relation" propValueType="PROP_untyped_relation"
          propMaxStringLength="0" isArray="true" arrayLength="-1" description="" referencedTypeConstant=""
-         referencedType=""/>
+         referencedType="" fnd0ReferencingAttrName=""/>
    </TcStandardType>
    <TcStandardType typeName="MO4_GenDrawing" parentTypeName="Drawing" typeClassName="MO4_GenDrawing"
        description="" isAbstract="false" artifactName="MO4_GenDrawing"/>
@@ -847,7 +847,7 @@
        description="" isAbstract="false" artifactName="MO4_Rim">
      <TcProperty propName="MO4_rim_data" propTypeName="Relation" propValueType="PROP_untyped_relation"
          propMaxStringLength="0" isArray="true" arrayLength="-1" description="" referencedTypeConstant=""
-         referencedType=""/>
+         referencedType="" fnd0ReferencingAttrName=""/>
    </TcStandardType>
    <TcStandardType typeName="MO4_board_data" parentTypeName="ImanRelation" typeClassName="MO4_board_data"
        description="" isAbstract="false" artifactName="MO4_board_data"/>
@@ -1159,6 +1159,10 @@
        value="true"/>
    <TcPropertyConstantAttach constantName="Enabled" typeName="MO4_Rim" propertyName="mo4_bom_aligned"
        value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="MO4_Rim" propertyName="mo4_high_max"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="MO4_Rim" propertyName="mo4_high_min"
+       value="true"/>
    <TcPropertyConstantAttach constantName="Enabled" typeName="MO4_Rim" propertyName="mo4_id"
        value="true"/>
    <TcPropertyConstantAttach constantName="Enabled" typeName="MO4_Rim" propertyName="mo4_length"
@@ -1172,10 +1176,6 @@
    <TcPropertyConstantAttach constantName="Enabled" typeName="MO4_Rim" propertyName="mo4_rim_type"
        value="true"/>
    <TcPropertyConstantAttach constantName="Enabled" typeName="MO4_Rim" propertyName="mo4_size"
-       value="true"/>
-   <TcPropertyConstantAttach constantName="Enabled" typeName="MO4_Rim" propertyName="mo4_width_max"
-       value="true"/>
-   <TcPropertyConstantAttach constantName="Enabled" typeName="MO4_Rim" propertyName="mo4_width_min"
        value="true"/>
    <TcPropertyConstantAttach constantName="InitialValue" typeName="MO4_Cover" propertyName="mo4_id"
        value="1"/>
@@ -1285,6 +1285,10 @@
        value="Write"/>
    <TcPropertyConstantAttach constantName="Modifiable" typeName="MO4_Rim" propertyName="mo4_bom_aligned"
        value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="MO4_Rim" propertyName="mo4_high_max"
+       value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="MO4_Rim" propertyName="mo4_high_min"
+       value="Write"/>
    <TcPropertyConstantAttach constantName="Modifiable" typeName="MO4_Rim" propertyName="mo4_id"
        value="Write"/>
    <TcPropertyConstantAttach constantName="Modifiable" typeName="MO4_Rim" propertyName="mo4_length"
@@ -1298,10 +1302,6 @@
    <TcPropertyConstantAttach constantName="Modifiable" typeName="MO4_Rim" propertyName="mo4_rim_type"
        value="Write"/>
    <TcPropertyConstantAttach constantName="Modifiable" typeName="MO4_Rim" propertyName="mo4_size"
-       value="Write"/>
-   <TcPropertyConstantAttach constantName="Modifiable" typeName="MO4_Rim" propertyName="mo4_width_max"
-       value="Write"/>
-   <TcPropertyConstantAttach constantName="Modifiable" typeName="MO4_Rim" propertyName="mo4_width_min"
        value="Write"/>
    <TcPropertyConstantAttach constantName="Required" typeName="MO4_Cover" propertyName="mo4_id"
        value="true"/>
@@ -1499,9 +1499,9 @@
      <TcLOVValue value="C3" description="" conditionName="isTrue"/>
    </TcLOV>
    <TcLOV name="MO4_RimTypeLOV" lovType="ListOfValuesString" usage="Exhaustive" description="">
-     <TcLOVValue value="A" description="" conditionName="isTrue"/>
-     <TcLOVValue value="B" description="" conditionName="isTrue"/>
-     <TcLOVValue value="C" description="" conditionName="isTrue"/>
+     <TcLOVValue value="ABS" description="" conditionName="isTrue"/>
+     <TcLOVValue value="AUFK" description="" conditionName="isTrue"/>
+     <TcLOVValue value="ESK" description="" conditionName="isTrue"/>
    </TcLOV>
    <TcLOV name="MO4_SurfaceLOV" lovType="ListOfValuesString" usage="Exhaustive" description="">
      <TcLOVValue value="primed" description="" conditionName="isTrue"/>
@@ -1523,11 +1523,11 @@
      <TcLOVValue value="milled" description="" conditionName="isTrue"/>
      <TcLOVValue value="sheathed" description="" conditionName="isTrue"/>
    </TcLOV>
-   <TcLOVValueSubLOVAttach targetLOVName="MO4_RimTypeLOV" targetValue="A" subLOVName="MO4_RimTypeALOV"
+   <TcLOVValueSubLOVAttach targetLOVName="MO4_RimTypeLOV" targetValue="ABS" subLOVName="MO4_RimTypeALOV"
        conditionName="isTrue"/>
-   <TcLOVValueSubLOVAttach targetLOVName="MO4_RimTypeLOV" targetValue="B" subLOVName="MO4_RimTypeBLOV"
+   <TcLOVValueSubLOVAttach targetLOVName="MO4_RimTypeLOV" targetValue="AUFK" subLOVName="MO4_RimTypeBLOV"
        conditionName="isTrue"/>
-   <TcLOVValueSubLOVAttach targetLOVName="MO4_RimTypeLOV" targetValue="C" subLOVName="MO4_RimTypeCLOV"
+   <TcLOVValueSubLOVAttach targetLOVName="MO4_RimTypeLOV" targetValue="ESK" subLOVName="MO4_RimTypeCLOV"
        conditionName="isTrue"/>
    <TcLOVAttach lovName="MO4_CleannessLOV" typeName="MO4_Cover">
      <TcLOVAttachPropertyInfo valuePropertyName="mo4_cleanness" conditionName="isTrue"

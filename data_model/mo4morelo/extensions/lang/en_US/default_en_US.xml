@@ -66,9 +66,9 @@
    <key locale="en_US" id="LOVValue{::}MO4_RimTypeCLOV{::}C1" status="Approved">C1</key>
    <key locale="en_US" id="LOVValue{::}MO4_RimTypeCLOV{::}C2" status="Approved">C2</key>
    <key locale="en_US" id="LOVValue{::}MO4_RimTypeCLOV{::}C3" status="Approved">C3</key>
-   <key locale="en_US" id="LOVValue{::}MO4_RimTypeLOV{::}A" status="Approved">A</key>
-   <key locale="en_US" id="LOVValue{::}MO4_RimTypeLOV{::}B" status="Approved">B</key>
-   <key locale="en_US" id="LOVValue{::}MO4_RimTypeLOV{::}C" status="Approved">C</key>
+   <key locale="en_US" id="LOVValue{::}MO4_RimTypeLOV{::}ABS" status="Approved">ABS</key>
+   <key locale="en_US" id="LOVValue{::}MO4_RimTypeLOV{::}AUFK" status="Approved">AUFK</key>
+   <key locale="en_US" id="LOVValue{::}MO4_RimTypeLOV{::}ESK" status="Approved">ESK</key>
    <key locale="en_US" id="LOVValue{::}MO4_SurfaceLOV{::}anodized" status="Approved">anodized</key>
    <key locale="en_US" id="LOVValue{::}MO4_SurfaceLOV{::}brushed" status="Approved">brushed</key>
    <key locale="en_US" id="LOVValue{::}MO4_SurfaceLOV{::}chromed" status="Approved">chromed</key>
@@ -137,13 +137,13 @@
    <key locale="en_US" id="Property{::}MO4_Part{::}mo4_object_name" status="Approved">Name 2</key>
    <key locale="en_US" id="Property{::}MO4_Rim{::}mo4_article_number_cp" status="Approved">Article Number</key>
    <key locale="en_US" id="Property{::}MO4_Rim{::}mo4_bom_aligned" status="Approved">BOM Aligned</key>
+   <key locale="en_US" id="Property{::}MO4_Rim{::}mo4_high_max" status="Approved">High (max)</key>
+   <key locale="en_US" id="Property{::}MO4_Rim{::}mo4_high_min" status="Approved">High (min)</key>
    <key locale="en_US" id="Property{::}MO4_Rim{::}mo4_id" status="Approved">ID</key>
    <key locale="en_US" id="Property{::}MO4_Rim{::}mo4_length_excess" status="Approved">Length (excess)</key>
    <key locale="en_US" id="Property{::}MO4_Rim{::}mo4_length" status="Approved">Length</key>
    <key locale="en_US" id="Property{::}MO4_Rim{::}mo4_material_code" status="Approved">Material Code</key>
    <key locale="en_US" id="Property{::}MO4_Rim{::}mo4_rim_type" status="Approved">Type</key>
    <key locale="en_US" id="Property{::}MO4_Rim{::}mo4_size" status="Approved">Size</key>
-   <key locale="en_US" id="Property{::}MO4_Rim{::}mo4_width_max" status="Approved">High (max)</key>
-   <key locale="en_US" id="Property{::}MO4_Rim{::}mo4_width_min" status="Approved">High (min)</key>
 </Add>
 </TcBusinessDataLocalization>

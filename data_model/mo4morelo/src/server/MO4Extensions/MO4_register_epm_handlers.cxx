@@ -27,6 +27,8 @@ int MO4_register_epm_handlers( METHOD_message_t * /*msg*/, va_list /*args*/ )
 
     iRetCode = EPM_register_action_handler( "MO4-create-part-for-design", "This is a custom action handler", MO4_ah_create_part_for_design);
 
+    if (!iRetCode) iRetCode = EPM_register_action_handler( "MO4-create-design-for-part", "This is a custom action handler", MO4_ah_create_design_for_part);
+
     TC_write_syslog("<==%s\n", pcFunctionName);
 
     return iRetCode;

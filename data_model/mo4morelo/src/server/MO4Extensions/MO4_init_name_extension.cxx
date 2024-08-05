@@ -16,8 +16,6 @@
 
 #include <ug_va_copy.h>
 #include <tccore/aom_prop.h>
-#include <tccore/item.h>
-#include <fclasses/tc_string.h>
 #include <base_utils/ScopedSmPtr.hxx>
 #include <base_utils/IFail.hxx>
 #include <base_utils/TcResultStatus.hxx>
@@ -44,12 +42,11 @@ int MO4_init_name_extension( METHOD_message_t * /*msg*/, va_list args )
         bool isNull = true;
         string sNameExtension;
         string sName2;
-        tag_t tItem = NULLTAG;
-        char *itemType = NULL;
 
         stat = createInput->getString("mo4_name_extension", sNameExtension, isNull);
         if (isNull)
         {
+            tag_t tItem = NULLTAG;
             stat = createInput->getTag("items_tag", tItem, isNull);
             if (!isNull)
             {
@@ -62,16 +59,13 @@ int MO4_init_name_extension( METHOD_message_t * /*msg*/, va_list args )
         stat = createInput->getString("mo4_object_name", sName2, isNull);
         if (isNull)
         {
+            tag_t tItem = NULLTAG;
             stat = createInput->getTag("items_tag", tItem, isNull);
             if (!isNull)
             {
                 scoped_smptr<char> spcName2;
-                ifail = ITEM_ask_type2(tItem, &itemType);
-                if(ifail == ITK_ok && tc_strcmp(itemType,"MO4_Drawing") !=0)
-                {
-					stat = AOM_ask_value_string(tItem, "mo4_object_name", &spcName2);
-					stat = createInput->setString("mo4_object_name", spcName2.getString(), false);
-                }
+                stat = AOM_ask_value_string(tItem, "mo4_object_name", &spcName2);
+                stat = createInput->setString("mo4_object_name", spcName2.getString(), false);
             }
         }
     }

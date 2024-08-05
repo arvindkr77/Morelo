@@ -27,11 +27,9 @@ int MO4_update_item( METHOD_message_t * /*msg*/, va_list args )
     int ifail = ITK_ok;
     tag_t tRev = NULLTAG;
     tag_t tItem = NULLTAG;
-    char *itemType = NULL;
     logical lIsChangedName = false;
     logical lIsChangedExt = false;
     logical lIsChangedName2 = false;
-    logical lIsDrwType = false;
     logical lModifiable = true;
     va_list largs;
 
@@ -42,13 +40,6 @@ int MO4_update_item( METHOD_message_t * /*msg*/, va_list args )
     va_end(largs);
 
     ifail = ITEM_ask_item_of_rev(tRev, &tItem);
-    if (ifail == ITK_ok)
-    	ifail = ITEM_ask_type2(tItem, &itemType);
-
-    TC_write_syslog("itemType=%s\n", itemType);
-
-    if(tc_strcmp(itemType,"MO4_Drawing") == 0)
-    	lIsDrwType = true;
 
     if (ifail == ITK_ok && tRev != NULLTAG && tItem != NULLTAG)
     {
@@ -58,7 +49,6 @@ int MO4_update_item( METHOD_message_t * /*msg*/, va_list args )
         char* valueNameItem = NULL;
         char* valueName2Rev = NULL;
         char* valueName2Item = NULL;
-
         ifail = AOM_ask_value_string(tRev, "mo4_name_extension", &valueExtRev);
         if (ifail == ITK_ok)
             ifail = AOM_ask_value_string(tItem, "mo4_name_extension", &valueExtItem);
@@ -79,9 +69,9 @@ int MO4_update_item( METHOD_message_t * /*msg*/, va_list args )
         }
         TC_write_syslog("lIsChangedName = %d\n", lIsChangedName);
 
-        if (ifail == ITK_ok && lIsDrwType == false)
+        if (ifail == ITK_ok)
             ifail = AOM_ask_value_string(tRev, "mo4_object_name", &valueName2Rev);
-        if (ifail == ITK_ok && lIsDrwType == false)
+        if (ifail == ITK_ok)
             ifail = AOM_ask_value_string(tItem, "mo4_object_name", &valueName2Item);
         if (ifail == ITK_ok && valueName2Rev != NULL && valueName2Item != NULL && tc_strcmp(valueName2Rev, valueName2Item) != 0)
         {
@@ -100,7 +90,7 @@ int MO4_update_item( METHOD_message_t * /*msg*/, va_list args )
                 ifail = AOM_set_value_string(tItem, "mo4_name_extension", valueExtRev);
             if (ifail == ITK_ok && lIsChangedName)
                 ifail = AOM_set_value_string(tItem, "object_name", valueNameRev);
-            if (ifail == ITK_ok && lIsChangedName2 && lIsDrwType == false)
+            if (ifail == ITK_ok && lIsChangedName2)
                 ifail = AOM_set_value_string(tItem, "mo4_object_name", valueName2Rev);
             if (ifail == ITK_ok)
                 ifail = AOM_save_with_extensions(tItem);

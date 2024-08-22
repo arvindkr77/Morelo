@@ -135,7 +135,6 @@
    <key locale="en_US" id="Property{::}MO4_Part{::}mo4_lhd_rhd" status="Approved">LHD/RHD</key>
    <key locale="en_US" id="Property{::}MO4_Part{::}mo4_name_extension" status="Approved">Name Extension</key>
    <key locale="en_US" id="Property{::}MO4_Part{::}mo4_object_name" status="Approved">Name 2</key>
-   <key locale="en_US" id="Property{::}MO4_Rim{::}mo4_article_number_cp" status="Approved">Article Number</key>
    <key locale="en_US" id="Property{::}MO4_Rim{::}mo4_bom_aligned" status="Approved">BOM Aligned</key>
    <key locale="en_US" id="Property{::}MO4_Rim{::}mo4_high_max" status="Approved">High (max)</key>
    <key locale="en_US" id="Property{::}MO4_Rim{::}mo4_high_min" status="Approved">High (min)</key>

@@ -286,7 +286,7 @@ int MO4_getEngPartRevForBOM(tag_t targetObject, tag_t* engPartObject)
 		}
 		else
 		{
-			MO4_logError("Searched Searched Engineering Part for <%s> <%s> for checked out: No or more than one found.", typeName, objName);
+			MO4_logError("Searched Engineering Part for <%s> <%s> for checked out: No or more than one found.", typeName, objName);
 			ifail = MO4_ENGPART_MORE_THAN_ONE_FOUND_ERROR;
 		}
 	}
@@ -300,7 +300,7 @@ int MO4_getEngPartRevForBOM(tag_t targetObject, tag_t* engPartObject)
 }
 
 // function sets "mo4_bom_aligned" at Rim or Cover to true
-int MO4_activateBomAlignedAndSetArticleNoAttr(tag_t targetObject, tag_t matObject)
+int MO4_activateBomAligned(tag_t targetObject, tag_t matObject)
 {
 	int ifail = ITK_ok;
 	logical isModifiable = false;
@@ -312,14 +312,16 @@ int MO4_activateBomAlignedAndSetArticleNoAttr(tag_t targetObject, tag_t matObjec
 
 	if (!ifail)
 		ifail = POM_modifiable(targetObject, &isModifiable);
+
 	if (!ifail && !isModifiable)
 		ifail = AOM_refresh(targetObject, POM_modify_lock);
+
 	if (!ifail)
 		ifail = AOM_set_value_logical(targetObject, MO4_BOM_ALIGNED_ATTR, TRUE);
-	if (!ifail)
-		ifail = AOM_set_value_string(targetObject, MO4_ARTICLE_NO_ATTR, itemId);
+
 	if (!ifail)
 		ifail = AOM_save_without_extensions(targetObject);
+
 	if (!isModifiable)
 		ifail = AOM_refresh(targetObject, POM_no_lock);
 
@@ -366,7 +368,7 @@ int MO4_checkin( METHOD_message_t * /*msg*/, va_list args )
 		 if (matCode && tc_strlen(matCode) >1)
 		 {
 			 MO4_logDebug("Found Material Code: <%s>.", matCode);
-			 ifail = MO4_findPartviaAttributeValue(MO4_ENG_PART_TYPE_NAME, OBJECT_NAME_ATTR, matCode, &matObject);
+			 ifail = MO4_findPartviaAttributeValue(MO4_ENG_PART_TYPE_NAME, MO4_ARTICLE_NO_ATTR, matCode, &matObject);
 
 			 /* Create BOM */
 			 if (matObject && bomAligned == false)
@@ -377,9 +379,9 @@ int MO4_checkin( METHOD_message_t * /*msg*/, va_list args )
 				 if (engPartObject)
 				 {
 					 ifail = MO4_addMaterialToBOM(engPartObject, matObject, id);
-					 /* Set BOM Aligned attribute and Article No*/
+					 /* Set BOM Aligned attribute to True */
 					 if (!ifail)
-						 ifail = MO4_activateBomAlignedAndSetArticleNoAttr(targetObject, matObject);
+						 ifail = MO4_activateBomAligned(targetObject, matObject);
 				 }
 			 } /* Update BOM */
 			 else if (matObject && bomAligned == true)
@@ -389,10 +391,8 @@ int MO4_checkin( METHOD_message_t * /*msg*/, va_list args )
 				 ifail = MO4_getEngPartRevForBOM(targetObject, &engPartObject);
 				 if (engPartObject)
 				 {
-					 ifail = MO4_updateMaterialInBOM(engPartObject, matObject, id);
-					 /* Set BOM Aligned attribute and Article No*/
 					 if (!ifail)
-						 ifail = MO4_activateBomAlignedAndSetArticleNoAttr(targetObject, matObject);
+						 ifail = MO4_updateMaterialInBOM(engPartObject, matObject, id);
 				 }
 			 }
 			 else /* no material object */

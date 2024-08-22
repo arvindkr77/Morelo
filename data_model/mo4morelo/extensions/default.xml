@@ -1155,8 +1155,6 @@
        value="true"/>
    <TcPropertyConstantAttach constantName="Enabled" typeName="MO4_PartRevision" propertyName="mo4_object_name"
        value="true"/>
-   <TcPropertyConstantAttach constantName="Enabled" typeName="MO4_Rim" propertyName="mo4_article_number_cp"
-       value="true"/>
    <TcPropertyConstantAttach constantName="Enabled" typeName="MO4_Rim" propertyName="mo4_bom_aligned"
        value="true"/>
    <TcPropertyConstantAttach constantName="Enabled" typeName="MO4_Rim" propertyName="mo4_high_max"
@@ -1281,8 +1279,6 @@
        propertyName="mo4_name_extension" value="Write"/>
    <TcPropertyConstantAttach constantName="Modifiable" typeName="MO4_PartRevision"
        propertyName="mo4_object_name" value="Write"/>
-   <TcPropertyConstantAttach constantName="Modifiable" typeName="MO4_Rim" propertyName="mo4_article_number_cp"
-       value="Write"/>
    <TcPropertyConstantAttach constantName="Modifiable" typeName="MO4_Rim" propertyName="mo4_bom_aligned"
        value="Write"/>
    <TcPropertyConstantAttach constantName="Modifiable" typeName="MO4_Rim" propertyName="mo4_high_max"
@@ -1340,10 +1336,6 @@
    <TcCompoundPropertyRule destTypeName="MO4_Eng_PartRevision" destPropertyName="mo4_lhd_rhd_cp"
        sourceTypeName="MO4_Eng_Part" sourcePropertyName="mo4_lhd_rhd" isReadOnly="false"
        pathToSource="REF(items_tag,MO4_Eng_Part).mo4_lhd_rhd" description=""/>
-   <TcCompoundPropertyRule destTypeName="MO4_Rim" destPropertyName="mo4_article_number_cp"
-       sourceTypeName="MO4_Eng_Part" sourcePropertyName="mo4_article_number" isReadOnly="false"
-       pathToSource="GRMS2P(MO4_rim_data,MO4_Eng_PartRevision).REF(items_tag,MO4_Eng_Part).mo4_article_number"
-       description=""/>
    <TcGRMRule primaryTypeName="MO4_Eng_PartRevision" secondaryTypeName="MO4_Board"
        relationTypeName="MO4_board_data" conditionName="isTrue" primaryCardinality="-1"
        secondaryCardinality="-1" secured="false" attachability="Unrestricted" changeability="Changeable"
@@ -1465,6 +1457,10 @@
        isManagedExternally="true"/>
    <TcLOV name="MO4_DrwTypeLOV" lovType="ListOfValuesString" usage="Exhaustive" description=""
        isManagedExternally="true"/>
+   <LOVDynamic name="MO4_EngPartHavingArticleNoLOV" description="Find all Engineering Part where its Article Number has value."
+       usage="Exhaustive" queryClause="SELECT qid FROM MO4_Eng_Part WHERE &quot;mo4_article_number&quot; IS_NOT_NULL &quot;IS_NOT_NULL&quot;"
+       dataType="PROP_string" queryType="MO4_Eng_Part" lovValueAttribute="mo4_article_number"
+       lovValueDescriptionAttribute=""/>
    <TcLOV name="MO4_GlossLevelLOV" lovType="ListOfValuesString" usage="Exhaustive"
        description="" isManagedExternally="true"/>
    <TcLOV name="MO4_GrainAngelLOV" lovType="ListOfValuesInteger" usage="Exhaustive"
@@ -1555,6 +1551,10 @@
    </TcLOVAttach>
    <TcLOVAttach lovName="MO4_DrwTypeLOV" typeName="MO4_GenDrawing">
      <TcLOVAttachPropertyInfo valuePropertyName="mo4_drawing_type" conditionName="isTrue"
+         override="false" level="0"/>
+   </TcLOVAttach>
+   <TcLOVAttach lovName="MO4_EngPartHavingArticleNoLOV" typeName="MO4_Rim">
+     <TcLOVAttachPropertyInfo valuePropertyName="mo4_material_code" conditionName="isTrue"
          override="false" level="0"/>
    </TcLOVAttach>
    <TcLOVAttach lovName="MO4_GlossLevelLOV" typeName="MO4_Cover">

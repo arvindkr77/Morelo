@@ -24,6 +24,7 @@ All Rights Reserved.
             <section titleKey="tc_xrt_ItemProperties">
                 <property name="object_name"/>
                 <property name="mo4_object_name"/>
+				<property name="mo4_part_type"/>
                 <property name="mo4_name_extension"/>
                 <property name="mo4_article_number"/>
                 <property name="mo4_lhd_rhd"/>

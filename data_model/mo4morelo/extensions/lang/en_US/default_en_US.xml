@@ -122,6 +122,7 @@
    <key locale="en_US" id="Property{::}MO4_Eng_PartRevision{::}mo4_homologation_cp"
        status="Approved">Homologation Relevant</key>
    <key locale="en_US" id="Property{::}MO4_Eng_PartRevision{::}mo4_lhd_rhd_cp" status="Approved">LHD/RHD</key>
+   <key locale="en_US" id="Property{::}MO4_Eng_Part{::}mo4_part_type" status="Approved">Part Type</key>
    <key locale="en_US" id="Property{::}MO4_GenDrawingRevision{::}mo4_external" status="Approved">External</key>
    <key locale="en_US" id="Property{::}MO4_GenDrawingRevision{::}mo4_name_extension"
        status="Approved">Name Extension</key>

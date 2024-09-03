@@ -140,7 +140,13 @@
    <TcClass className="MO4_Eng_DesignRevision" parentClassName="MO4_DesignRevision"
        isExportable="false" isUninstantiable="false" isUninheritable="false" description=""/>
    <TcClass className="MO4_Eng_Part" parentClassName="MO4_Part" isExportable="false"
-       isUninstantiable="false" isUninheritable="false" description=""/>
+       isUninstantiable="false" isUninheritable="false" description="">
+     <TcAttribute attributeName="mo4_part_type" description="" attributeType="POM_string"
+         maxStringLength="24" isArray="false" followOnExport="false" isNullsAllowed="true"
+         isUnique="false" isPublicRead="true" isPublicWrite="true" isCandidateKey="false"
+         isTransient="false" exportAsString="false" noBackpointer="false" initialValue="Engineering"
+         lowerBoundValue="" upperBoundValue=""/>
+   </TcClass>
    <TcClass className="MO4_Eng_PartMasterS" parentClassName="MO4_PartMasterS" isExportable="false"
        isUninstantiable="false" isUninheritable="false" description=""/>
    <TcClass className="MO4_Eng_PartRevMasterS" parentClassName="MO4_PartRevMasterS"
@@ -490,7 +496,10 @@
        isAbstract="false" artifactName="MO4_Eng_DesignSvAI"/>
    <OperationInputType typeName="MO4_Eng_PartCreI" parentTypeName="MO4_PartCreI" typeClassName="MO4_Eng_PartCreI"
        description="CreateInput object for &quot;MO4_Eng_Part&quot; business object"
-       isAbstract="false" artifactName="MO4_Eng_PartCreI"/>
+       isAbstract="false" artifactName="MO4_Eng_PartCreI">
+     <OperationInputProperty propName="mo4_part_type" compoundObjectConstant="" srcPropName="mo4_part_type"
+         compoundObjectType="" fieldType="SimpleProperty" description=""/>
+   </OperationInputType>
    <OperationInputType typeName="MO4_Eng_PartMasterCreI" parentTypeName="MO4_PartMasterCreI"
        typeClassName="MO4_Eng_PartMasterCreI" description="CreateInput object for &quot;MO4_Eng_PartMaster&quot; business object"
        isAbstract="false" artifactName="MO4_Eng_PartMasterCreI"/>
@@ -1117,6 +1126,8 @@
        propertyName="mo4_drawing_type_cp" value="true"/>
    <TcPropertyConstantAttach constantName="Enabled" typeName="MO4_Eng_DesignRevision"
        propertyName="mo4_lhd_rhd_cp" value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="MO4_Eng_Part" propertyName="mo4_part_type"
+       value="true"/>
    <TcPropertyConstantAttach constantName="Enabled" typeName="MO4_Eng_PartRevision"
        propertyName="mo4_article_number_cp" value="true"/>
    <TcPropertyConstantAttach constantName="Enabled" typeName="MO4_Eng_PartRevision"
@@ -1241,6 +1252,8 @@
        propertyName="mo4_drawing_type_cp" value="Write"/>
    <TcPropertyConstantAttach constantName="Modifiable" typeName="MO4_Eng_DesignRevision"
        propertyName="mo4_lhd_rhd_cp" value="Write"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="MO4_Eng_Part" propertyName="mo4_part_type"
+       value="Write"/>
    <TcPropertyConstantAttach constantName="Modifiable" typeName="MO4_Eng_PartRevision"
        propertyName="mo4_article_number_cp" value="Write"/>
    <TcPropertyConstantAttach constantName="Modifiable" typeName="MO4_Eng_PartRevision"
@@ -1479,6 +1492,8 @@
      <TcLOVValue value="90" description="" conditionName="isTrue"/>
      <TcLOVValue value="180" description="" conditionName="isTrue"/>
    </TcLOV>
+   <TcLOV name="MO4_PartTypeLOV" lovType="ListOfValuesString" usage="Exhaustive" description=""
+       isManagedExternally="true"/>
    <TcLOV name="MO4_RimTypeALOV" lovType="ListOfValuesString" usage="Exhaustive" description="">
      <TcLOVValue value="A1" description="" conditionName="isTrue"/>
      <TcLOVValue value="A2" description="" conditionName="isTrue"/>
@@ -1553,6 +1568,10 @@
      <TcLOVAttachPropertyInfo valuePropertyName="mo4_drawing_type" conditionName="isTrue"
          override="false" level="0"/>
    </TcLOVAttach>
+   <TcLOVAttach lovName="MO4_EngPartHavingArticleNoLOV" typeName="MO4_Cover">
+     <TcLOVAttachPropertyInfo valuePropertyName="mo4_material_code" conditionName="isTrue"
+         override="false" level="0"/>
+   </TcLOVAttach>
    <TcLOVAttach lovName="MO4_EngPartHavingArticleNoLOV" typeName="MO4_Rim">
      <TcLOVAttachPropertyInfo valuePropertyName="mo4_material_code" conditionName="isTrue"
          override="false" level="0"/>
@@ -1599,6 +1618,10 @@
    </TcLOVAttach>
    <TcLOVAttach lovName="MO4_OrientationLOV" typeName="MO4_Cover">
      <TcLOVAttachPropertyInfo valuePropertyName="mo4_orientation" conditionName="isTrue"
+         override="false" level="0"/>
+   </TcLOVAttach>
+   <TcLOVAttach lovName="MO4_PartTypeLOV" typeName="MO4_Eng_Part">
+     <TcLOVAttachPropertyInfo valuePropertyName="mo4_part_type" conditionName="isTrue"
          override="false" level="0"/>
    </TcLOVAttach>
    <TcLOVAttach lovName="MO4_RimTypeLOV" typeName="MO4_Rim">

@@ -331,6 +331,12 @@ int MO4_activateBomAligned(tag_t targetObject, tag_t matObject)
 	return ifail;
 }
 
+/*
+ * When Rim or Cover is checked in, the Material code on Rim/ is used to find Engineering Part where
+ * Article Number of Engineering Part is equal to Material Code of Rim/Cover. This Engineering Part is
+ * then added as BOM child to Engineering Part which parent of Rim/Cover. If the Engineering Part found
+ * is already added as BOM child then it is replaced with new Engineering Part.
+ */
 int MO4_checkin( METHOD_message_t * /*msg*/, va_list args )
 {
 	int ifail = ITK_ok;

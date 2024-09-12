@@ -10,7 +10,7 @@
  * @file 
  *
  *   This file contains the implementation for the Extension MO4_checkin
- *
+ *   HFR
  */
 
 #include <MO4Extensions/MO4_checkin.hxx>

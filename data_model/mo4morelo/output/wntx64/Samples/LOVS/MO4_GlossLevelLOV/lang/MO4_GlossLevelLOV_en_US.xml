@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TcBusinessDataLocalization xmlns="http://teamcenter.com/BusinessModel/TcBusinessDataLocalization" batchXSDVersion="1.0" Date="Thu Jun 06 07:51:44 AM 2024">
+
+<Add>
+	<key locale="en_US" id="LOVValue{::}MO4_GlossLevelLOV{::}Test01" status="Approved"></key>
+	<key locale="en_US" id="LOVValue{::}MO4_GlossLevelLOV{::}Test02" status="Approved"></key>
+	<key locale="en_US" id="LOVValue{::}MO4_GlossLevelLOV{::}Test03" status="Approved"></key>
+</Add>
+ 
+</TcBusinessDataLocalization>

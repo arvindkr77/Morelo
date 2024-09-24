@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TcBusinessDataLocalization xmlns="http://teamcenter.com/BusinessModel/TcBusinessDataLocalization" batchXSDVersion="1.0" Date="Fri Jun 07 02:32:55 AM 2024">
+<!--This file can be used to update the LOV Value and Description localizations for LOV: MO4_DrwTypeLOV. 
+1. Please ensure that the LOV has been deployed to the Teamcenter Server. 
+2. Modify the LOV data file at <BMIDE Project Folder>\output\wntx64\Samples\LOVS\MO4_DrwTypeLOV\MO4_DrwTypeLOV.xml by replacing the commented code with your values. 
+3. Modify the localization files in the lang folder by replacing the commented code with your values. 
+4. Run the command: 
+bmide_manage_batch_lovs -u=<username> -p=<password> -g=<group> -option=update -file=<BMIDE Project Folder>\output\wntx64\Samples\LOVS\MO4_DrwTypeLOV\MO4_DrwTypeLOV.xml.-->
+
+  <Add>
+	<key locale="en_US" id="LOVValue{::}MO4_DrwTypeLOV{::}Part" status="Approved"></key>
+	<key locale="en_US" id="LOVValue{::}MO4_DrwTypeLOV{::}Assembly" status="Approved"></key>
+	<key locale="en_US" id="LOVValue{::}MO4_DrwTypeLOV{::}Prototype" status="Approved"></key>
+	<key locale="en_US" id="LOVValue{::}MO4_DrwTypeLOV{::}Manufacturing" status="Approved"></key>
+	<key locale="en_US" id="LOVValue{::}MO4_DrwTypeLOV{::}Assembly Drawing" status="Approved"></key>
+	<key locale="en_US" id="LOVValue{::}MO4_DrwTypeLOV{::}Appraisal" status="Approved"></key>
+	<key locale="en_US" id="LOVValue{::}MO4_DrwTypeLOV{::}Service" status="Approved"></key>	
+  </Add>
+</TcBusinessDataLocalization>

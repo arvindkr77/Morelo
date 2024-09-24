@@ -28,4 +28,5 @@
 #define MO4_MATERIAL_NOT_FOUND_ERROR 			(EMH_USER_error_base + 105)
 #define MO4_MATERIAL_MORE_THAN_ONE_FOUND_ERROR  (EMH_USER_error_base + 106)
 #define MO4_INVALID_PARAMETER_ERROR  			(EMH_USER_error_base + 107)
+#define MO4_MATERIAL_FOUND_ERROR 			    (EMH_USER_error_base + 108)
 #endif /* MO4_ERRORS_HXX_ */

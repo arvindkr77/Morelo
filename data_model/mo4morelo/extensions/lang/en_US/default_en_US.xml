@@ -45,7 +45,7 @@
    <key locale="en_US" id="BusinessObject{::}MO4_board_data" status="Approved">Board Data</key>
    <key locale="en_US" id="BusinessObject{::}MO4_cover_data" status="Approved">Cover Data</key>
    <key locale="en_US" id="BusinessObject{::}MO4_rim_data" status="Approved">Rim Data</key>
-   <key locale="en_US" id="ConditionDescription{::}MO4_WFFilter_Design" status="Approved">This condition checks the type of object is Design Revision.</key>
+   <key locale="en_US" id="ConditionDescription{::}MO4_WFFilter_Design" status="Approved">This condition checks the type of object is Engineering Design Revision.</key>
    <key locale="en_US" id="LOVValueDescription{::}MO4_RimTypeLOV{::}ABS" status="Approved">Abschlagkante</key>
    <key locale="en_US" id="LOVValueDescription{::}MO4_RimTypeLOV{::}AUFK" status="Approved">Aufkantung</key>
    <key locale="en_US" id="LOVValueDescription{::}MO4_RimTypeLOV{::}ESK" status="Approved">Einschlagkante</key>
@@ -60,15 +60,6 @@
    <key locale="en_US" id="LOVValue{::}MO4_GrainAngelLOV{::}0" status="Approved">0</key>
    <key locale="en_US" id="LOVValue{::}MO4_GrainAngelLOV{::}180" status="Approved">180</key>
    <key locale="en_US" id="LOVValue{::}MO4_GrainAngelLOV{::}90" status="Approved">90</key>
-   <key locale="en_US" id="LOVValue{::}MO4_RimTypeALOV{::}A1" status="Approved">A1</key>
-   <key locale="en_US" id="LOVValue{::}MO4_RimTypeALOV{::}A2" status="Approved">A2</key>
-   <key locale="en_US" id="LOVValue{::}MO4_RimTypeALOV{::}A3" status="Approved">A3</key>
-   <key locale="en_US" id="LOVValue{::}MO4_RimTypeBLOV{::}B1" status="Approved">B1</key>
-   <key locale="en_US" id="LOVValue{::}MO4_RimTypeBLOV{::}B2" status="Approved">B2</key>
-   <key locale="en_US" id="LOVValue{::}MO4_RimTypeBLOV{::}B3" status="Approved">B3</key>
-   <key locale="en_US" id="LOVValue{::}MO4_RimTypeCLOV{::}C1" status="Approved">C1</key>
-   <key locale="en_US" id="LOVValue{::}MO4_RimTypeCLOV{::}C2" status="Approved">C2</key>
-   <key locale="en_US" id="LOVValue{::}MO4_RimTypeCLOV{::}C3" status="Approved">C3</key>
    <key locale="en_US" id="LOVValue{::}MO4_RimTypeLOV{::}ABS" status="Approved">ABS</key>
    <key locale="en_US" id="LOVValue{::}MO4_RimTypeLOV{::}AUFK" status="Approved">AUFK</key>
    <key locale="en_US" id="LOVValue{::}MO4_RimTypeLOV{::}ESK" status="Approved">ESK</key>

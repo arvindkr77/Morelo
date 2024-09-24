@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TcBusinessDataLocalization xmlns="http://teamcenter.com/BusinessModel/TcBusinessDataLocalization" batchXSDVersion="1.0" Date="Thu May 30 02:44:38 AM 2024">
+<!--This file can be used to update the LOV Value and Description localizations for LOV: MO4_ColorLOV. 
+1. Please ensure that the LOV has been deployed to the Teamcenter Server. 
+2. Modify the LOV data file at <BMIDE Project Folder>\output\wntx64\Samples\LOVS\MO4_ColorLOV\MO4_ColorLOV.xml by replacing the commented code with your values. 
+3. Modify the localization files in the lang folder by replacing the commented code with your values. 
+4. Run the command: 
+bmide_manage_batch_lovs -u=<username> -p=<password> -g=<group> -option=update -file=<BMIDE Project Folder>\output\wntx64\Samples\LOVS\MO4_ColorLOV\MO4_ColorLOV.xml.-->
+
+  <Add>
+	<key locale="en_US" id="LOVValue{::}MO4_ColorLOV{::}RAL 9001" status="Approved"></key>
+	<key locale="en_US" id="LOVValue{::}MO4_ColorLOV{::}RAL 9002" status="Approved"></key>
+	<key locale="en_US" id="LOVValue{::}MO4_ColorLOV{::}RAL 9010" status="Approved"></key>
+	<key locale="en_US" id="LOVValue{::}MO4_ColorLOV{::}RAL 9016" status="Approved"></key>
+	<key locale="en_US" id="LOVValue{::}MO4_ColorLOV{::}RAL 7021" status="Approved"></key>
+	<key locale="en_US" id="LOVValue{::}MO4_ColorLOV{::}RAL 7039" status="Approved"></key>	
+	<key locale="en_US" id="LOVValue{::}MO4_ColorLOV{::}RAL 7040" status="Approved"></key>
+	<key locale="en_US" id="LOVValue{::}MO4_ColorLOV{::}RAL 7042" status="Approved"></key>
+	<key locale="en_US" id="LOVValue{::}MO4_ColorLOV{::}RAL 9005" status="Approved"></key>	
+	<key locale="en_US" id="LOVValue{::}MO4_ColorLOV{::}RAL 1001" status="Approved"></key>
+	<key locale="en_US" id="LOVValue{::}MO4_ColorLOV{::}RAL 7035" status="Approved"></key>
+	<key locale="en_US" id="LOVValue{::}MO4_ColorLOV{::}RAL 7016" status="Approved"></key>	
+	<key locale="en_US" id="LOVValue{::}MO4_ColorLOV{::}ARA" status="Approved"></key>
+	<key locale="en_US" id="LOVValue{::}MO4_ColorLOV{::}BEIGE" status="Approved"></key>
+	<key locale="en_US" id="LOVValue{::}MO4_ColorLOV{::}ESE" status="Approved"></key>
+	<key locale="en_US" id="LOVValue{::}MO4_ColorLOV{::}EIPEG" status="Approved"></key>
+	<key locale="en_US" id="LOVValue{::}MO4_ColorLOV{::}OPAL" status="Approved"></key>
+	<key locale="en_US" id="LOVValue{::}MO4_ColorLOV{::}PAL" status="Approved"></key>
+	<key locale="en_US" id="LOVValue{::}MO4_ColorLOV{::}BIA" status="Approved"></key>
+	<key locale="en_US" id="LOVValue{::}MO4_ColorLOV{::}OLI" status="Approved"></key>
+	<key locale="en_US" id="LOVValue{::}MO4_ColorLOV{::}SAM" status="Approved"></key>
+	<key locale="en_US" id="LOVValue{::}MO4_ColorLOV{::}KERALA" status="Approved"></key>
+	<key locale="en_US" id="LOVValue{::}MO4_ColorLOV{::}BRONCE" status="Approved"></key>
+	<key locale="en_US" id="LOVValue{::}MO4_ColorLOV{::}SAHARA" status="Approved"></key>
+	<key locale="en_US" id="LOVValue{::}MO4_ColorLOV{::}Cappuccino" status="Approved"></key>
+	<key locale="en_US" id="LOVValue{::}MO4_ColorLOV{::}CHROM" status="Approved"></key>
+  </Add>
+</TcBusinessDataLocalization>

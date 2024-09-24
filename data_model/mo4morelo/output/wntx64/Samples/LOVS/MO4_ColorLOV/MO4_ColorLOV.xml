@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TcBusinessData xmlns="http://teamcenter.com/BusinessModel/TcBusinessData" batchXSDVersion="1.0" Date="Thu May 30 02:44:38 AM 2024">
+
+<!--This file can be used to update the LOV values and sub-LOV attachments on LOV: MO4_ColorLOV.
+ 
+1. Please ensure that the LOV has been deployed to the Teamcenter Server.  
+2. Modify this file by replacing the commented code below with your values. 
+3. Modify the localization files in the lang folder by replacing the commented code with your values. 
+4. Run the command:
+set bmide_project_folder=C:\Siemens\Teamcenter\bmide\workspace\mo4morelo
+
+call bmide_manage_batch_lovs -u=infodba -p=infodba -g=dba -option=update -file=%bmide_project_folder%\output\wntx64\Samples\LOVS\MO4_ColorLOV\MO4_ColorLOV.xml
+
+-->
+<Add/>
+
+<Change>
+	<TcLOV name="MO4_ColorLOV" lovType="ListOfValuesString" usage="Exhaustive" description="" isManagedExternally="true">
+		<TcLOVValue value="RAL 9001" description="" conditionName="isTrue" />
+		<TcLOVValue value="RAL 9002" description="" conditionName="isTrue" />
+		<TcLOVValue value="RAL 9010" description="" conditionName="isTrue" />
+		<TcLOVValue value="RAL 9016" description="" conditionName="isTrue" />
+		<TcLOVValue value="RAL 7021" description="" conditionName="isTrue" />
+		<TcLOVValue value="RAL 7039" description="" conditionName="isTrue" />
+		<TcLOVValue value="RAL 7040" description="" conditionName="isTrue" />
+		<TcLOVValue value="RAL 7042" description="" conditionName="isTrue" />
+		<TcLOVValue value="RAL 9005" description="" conditionName="isTrue" />
+		<TcLOVValue value="RAL 1001" description="" conditionName="isTrue" />
+		<TcLOVValue value="RAL 7035" description="" conditionName="isTrue" />
+		<TcLOVValue value="RAL 7016" description="" conditionName="isTrue" />
+		<TcLOVValue value="ARA" description="" conditionName="isTrue" />
+		<TcLOVValue value="BEIGE" description="" conditionName="isTrue" />
+		<TcLOVValue value="ESE" description="" conditionName="isTrue" />
+		<TcLOVValue value="EIPEG" description="" conditionName="isTrue" />
+		<TcLOVValue value="OPAL" description="" conditionName="isTrue" />
+		<TcLOVValue value="PAL" description="" conditionName="isTrue" />
+		<TcLOVValue value="BIA" description="" conditionName="isTrue" />
+		<TcLOVValue value="OLI" description="" conditionName="isTrue" />
+		<TcLOVValue value="SAM" description="" conditionName="isTrue" />
+		<TcLOVValue value="KERALA" description="" conditionName="isTrue" />
+		<TcLOVValue value="BRONCE" description="" conditionName="isTrue" />
+		<TcLOVValue value="SAHARA" description="" conditionName="isTrue" />
+		<TcLOVValue value="Cappuccino" description="" conditionName="isTrue" />
+		<TcLOVValue value="CHROM" description="" conditionName="isTrue" />									
+    </TcLOV>
+</Change>
+
+</TcBusinessData>

@@ -30,6 +30,7 @@ int MO4_update_item( METHOD_message_t * /*msg*/, va_list args )
     logical lIsChangedName = false;
     logical lIsChangedExt = false;
     logical lIsChangedName2 = false;
+    logical lIsChangedName3 = false;
     logical lModifiable = true;
     va_list largs;
 
@@ -49,6 +50,9 @@ int MO4_update_item( METHOD_message_t * /*msg*/, va_list args )
         char* valueNameItem = NULL;
         char* valueName2Rev = NULL;
         char* valueName2Item = NULL;
+        char* valueName3Rev = NULL;
+        char* valueName3Item = NULL;
+
         ifail = AOM_ask_value_string(tRev, "mo4_name_extension", &valueExtRev);
         if (ifail == ITK_ok)
             ifail = AOM_ask_value_string(tItem, "mo4_name_extension", &valueExtItem);
@@ -79,7 +83,17 @@ int MO4_update_item( METHOD_message_t * /*msg*/, va_list args )
         }
         TC_write_syslog("lIsChangedName2 = %d\n", lIsChangedName2);
 
-        if (ifail == ITK_ok && (lIsChangedExt || lIsChangedName || lIsChangedName2))
+        if (ifail == ITK_ok)
+            ifail = AOM_ask_value_string(tRev, "mo4_name3", &valueName3Rev);
+        if (ifail == ITK_ok)
+            ifail = AOM_ask_value_string(tItem, "mo4_name3", &valueName3Item);
+        if (ifail == ITK_ok && valueName3Rev != NULL && valueName3Item != NULL && tc_strcmp(valueName3Rev, valueName3Item) != 0)
+        {
+            lIsChangedName3 = true;
+        }
+        TC_write_syslog("lIsChangedName3 = %d\n", lIsChangedName3);
+
+        if (ifail == ITK_ok && (lIsChangedExt || lIsChangedName || lIsChangedName2 || lIsChangedName3))
         {
             ifail = POM_modifiable(tItem, &lModifiable);
             if (ifail == ITK_ok && !lModifiable)
@@ -92,6 +106,8 @@ int MO4_update_item( METHOD_message_t * /*msg*/, va_list args )
                 ifail = AOM_set_value_string(tItem, "object_name", valueNameRev);
             if (ifail == ITK_ok && lIsChangedName2)
                 ifail = AOM_set_value_string(tItem, "mo4_object_name", valueName2Rev);
+            if (ifail == ITK_ok && lIsChangedName3)
+                ifail = AOM_set_value_string(tItem, "mo4_name3", valueName3Rev);
             if (ifail == ITK_ok)
                 ifail = AOM_save_with_extensions(tItem);
             if (!lModifiable)
@@ -99,12 +115,15 @@ int MO4_update_item( METHOD_message_t * /*msg*/, va_list args )
                 AOM_refresh(tItem, POM_no_lock);
             }
         }
+
         SAFE_SM_FREE(valueExtRev);
         SAFE_SM_FREE(valueExtItem);
         SAFE_SM_FREE(valueNameRev);
         SAFE_SM_FREE(valueNameItem);
         SAFE_SM_FREE(valueName2Rev);
         SAFE_SM_FREE(valueName2Item);
+        SAFE_SM_FREE(valueName3Rev);
+        SAFE_SM_FREE(valueName3Item);
     }
 
     TC_write_syslog("<==%s\n", pcFunctionName);

@@ -432,6 +432,9 @@
      <OperationInputProperty propName="mo4_object_name" compoundObjectConstant=""
          srcPropName="mo4_object_name" compoundObjectType="" fieldType="SimpleProperty"
          description=""/>
+     <OperationInputProperty propName="mo4_name_extension" compoundObjectConstant=""
+         srcPropName="mo4_name_extension" compoundObjectType="" fieldType="SimpleProperty"
+         description=""/>
    </OperationInputType>
    <OperationInputType typeName="MO4_DesignSvAI" parentTypeName="DesignSvAI" typeClassName="MO4_DesignSvAI"
        description="SaveAsInput object for &quot;MO4_Design&quot; business object"
@@ -477,7 +480,16 @@
        isAbstract="false" artifactName="MO4_DrawingSvAI"/>
    <OperationInputType typeName="MO4_Eng_DesignCreI" parentTypeName="MO4_DesignCreI"
        typeClassName="MO4_Eng_DesignCreI" description="CreateInput object for &quot;MO4_Eng_Design&quot; business object"
-       isAbstract="false" artifactName="MO4_Eng_DesignCreI"/>
+       isAbstract="false" artifactName="MO4_Eng_DesignCreI">
+     <OperationInputProperty propName="mo4_name_extension" compoundObjectConstant=""
+         srcPropName="mo4_name_extension" compoundObjectType="" fieldType="SimpleProperty"
+         description=""/>
+     <OperationInputProperty propName="mo4_name3" compoundObjectConstant="" srcPropName="mo4_name3"
+         compoundObjectType="" fieldType="SimpleProperty" description=""/>
+     <OperationInputProperty propName="mo4_object_name" compoundObjectConstant=""
+         srcPropName="mo4_object_name" compoundObjectType="" fieldType="SimpleProperty"
+         description=""/>
+   </OperationInputType>
    <OperationInputType typeName="MO4_Eng_DesignMasterCreI" parentTypeName="MO4_DesignMasterCreI"
        typeClassName="MO4_Eng_DesignMasterCreI" description="CreateInput object for &quot;MO4_Eng_DesignMaster&quot; business object"
        isAbstract="false" artifactName="MO4_Eng_DesignMasterCreI"/>
@@ -519,6 +531,14 @@
        isAbstract="false" artifactName="MO4_Eng_PartCreI">
      <OperationInputProperty propName="mo4_part_type" compoundObjectConstant="" srcPropName="mo4_part_type"
          compoundObjectType="" fieldType="SimpleProperty" description="Specific Type of Part:&#x0A;Standard Part&#x0A;Company Standard Part&#x0A;....."/>
+     <OperationInputProperty propName="mo4_name_extension" compoundObjectConstant=""
+         srcPropName="mo4_name_extension" compoundObjectType="" fieldType="SimpleProperty"
+         description=""/>
+     <OperationInputProperty propName="mo4_name3" compoundObjectConstant="" srcPropName="mo4_name3"
+         compoundObjectType="" fieldType="SimpleProperty" description=""/>
+     <OperationInputProperty propName="mo4_object_name" compoundObjectConstant=""
+         srcPropName="mo4_object_name" compoundObjectType="" fieldType="SimpleProperty"
+         description=""/>
    </OperationInputType>
    <OperationInputType typeName="MO4_Eng_PartMasterCreI" parentTypeName="MO4_PartMasterCreI"
        typeClassName="MO4_Eng_PartMasterCreI" description="CreateInput object for &quot;MO4_Eng_PartMaster&quot; business object"
@@ -634,6 +654,9 @@
      <OperationInputProperty propName="mo4_object_name" compoundObjectConstant=""
          srcPropName="mo4_object_name" compoundObjectType="" fieldType="SimpleProperty"
          description=""/>
+     <OperationInputProperty propName="mo4_name_extension" compoundObjectConstant=""
+         srcPropName="mo4_name_extension" compoundObjectType="" fieldType="SimpleProperty"
+         description=""/>
    </OperationInputType>
    <OperationInputType typeName="MO4_GenDrawingRevision_alt0CreI" parentTypeName="Drawing Revision MasterCreI"
        typeClassName="MO4_GenDrawingRevision_alt0CreI" description="CreateInput object for &quot;MO4_GenDrawingRevisionMaster&quot; business object"
@@ -644,13 +667,8 @@
    <OperationInputType typeName="MO4_GenDrawingSvAI" parentTypeName="DrawingSvAI"
        typeClassName="MO4_GenDrawingSvAI" description="SaveAsInput object for &quot;MO4_GenDrawing&quot; business object"
        isAbstract="false" artifactName="MO4_GenDrawingSvAI">
-     <OperationInputProperty propName="mo4_name3" compoundObjectConstant="" srcPropName="mo4_name3"
-         compoundObjectType="" fieldType="SimpleProperty" description=""/>
      <OperationInputProperty propName="mo4_drawing_type" compoundObjectConstant=""
          srcPropName="mo4_drawing_type" compoundObjectType="" fieldType="SimpleProperty"
-         description=""/>
-     <OperationInputProperty propName="mo4_object_name" compoundObjectConstant=""
-         srcPropName="mo4_object_name" compoundObjectType="" fieldType="SimpleProperty"
          description=""/>
    </OperationInputType>
    <OperationInputType typeName="MO4_MoreloClassCreI" parentTypeName="WorkspaceObjectCreI"
@@ -718,6 +736,9 @@
          compoundObjectType="" fieldType="SimpleProperty" description=""/>
      <OperationInputProperty propName="mo4_object_name" compoundObjectConstant=""
          srcPropName="mo4_object_name" compoundObjectType="" fieldType="SimpleProperty"
+         description=""/>
+     <OperationInputProperty propName="mo4_name_extension" compoundObjectConstant=""
+         srcPropName="mo4_name_extension" compoundObjectType="" fieldType="SimpleProperty"
          description=""/>
    </OperationInputType>
    <OperationInputType typeName="MO4_PartSvAI" parentTypeName="PartSvAI" typeClassName="MO4_PartSvAI"
@@ -925,9 +946,15 @@
      <OperationInputProperty propName="mo4_covering_2" compoundObjectConstant="" srcPropName="mo4_covering_2"
          compoundObjectType="" fieldType="SimpleProperty" description=""/>
    </TcPropertyAttach>
-   <Condition name="MO4_WFFilter_Design" expression="u.fnd0ConditionHelper.fnd0isSubTypeOf(o,&quot;MO4_DesignRevision&quot;)"
-       secured="false" description="This condition checks the type of object is Design Revision.">
-     <ConditionParameter name="o" parameterTypeName="MO4_DesignRevision"/>
+   <Condition name="MO4_WFFilter_Design" expression="u.fnd0ConditionHelper.fnd0isSubTypeOf(o,&quot;MO4_Eng_DesignRevision&quot;)"
+       secured="false" description="This condition checks the type of object is Engineering Design Revision.">
+     <ConditionParameter name="o" parameterTypeName="MO4_Eng_DesignRevision"/>
+     <ConditionParameter name="t" parameterTypeName="ImanType"/>
+     <ConditionParameter name="u" parameterTypeName="UserSession"/>
+   </Condition>
+   <Condition name="MO4_WFFilter_Part" expression="u.fnd0ConditionHelper.fnd0isSubTypeOf(o,&quot;MO4_Eng_PartRevision&quot;)"
+       secured="false" description="">
+     <ConditionParameter name="o" parameterTypeName="MO4_Eng_PartRevision"/>
      <ConditionParameter name="t" parameterTypeName="ImanType"/>
      <ConditionParameter name="u" parameterTypeName="UserSession"/>
    </Condition>
@@ -1400,6 +1427,50 @@
        value="false"/>
    <TcPropertyConstantAttach constantName="Visible" typeName="MO4_DesignRevisionCreI"
        propertyName="mo4_name_extension" value="true"/>
+   <TcPropertyConstantAttach constantName="Visible" typeName="MO4_Drawing" propertyName="mo4_name3"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Visible" typeName="MO4_Drawing" propertyName="mo4_name_extension"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Visible" typeName="MO4_Drawing" propertyName="mo4_object_name"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Visible" typeName="MO4_DrawingCreI" propertyName="mo4_name3"
+       value="false"/>
+   <TcPropertyConstantAttach constantName="Visible" typeName="MO4_DrawingCreI" propertyName="mo4_name_extension"
+       value="false"/>
+   <TcPropertyConstantAttach constantName="Visible" typeName="MO4_DrawingCreI" propertyName="mo4_object_name"
+       value="false"/>
+   <TcPropertyConstantAttach constantName="Visible" typeName="MO4_DrawingRevisionMasterCreI"
+       propertyName="Drawing_Type" value="false"/>
+   <TcPropertyConstantAttach constantName="Visible" typeName="MO4_Eng_Design" propertyName="mo4_name3"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Visible" typeName="MO4_Eng_Design" propertyName="mo4_name_extension"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Visible" typeName="MO4_Eng_Design" propertyName="mo4_object_name"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Visible" typeName="MO4_Eng_DesignCreI"
+       propertyName="mo4_name3" value="false"/>
+   <TcPropertyConstantAttach constantName="Visible" typeName="MO4_Eng_DesignCreI"
+       propertyName="mo4_name_extension" value="false"/>
+   <TcPropertyConstantAttach constantName="Visible" typeName="MO4_Eng_DesignCreI"
+       propertyName="mo4_object_name" value="false"/>
+   <TcPropertyConstantAttach constantName="Visible" typeName="MO4_Eng_Part" propertyName="mo4_name3"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Visible" typeName="MO4_Eng_Part" propertyName="mo4_name_extension"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Visible" typeName="MO4_Eng_Part" propertyName="mo4_object_name"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Visible" typeName="MO4_Eng_PartCreI" propertyName="mo4_name3"
+       value="false"/>
+   <TcPropertyConstantAttach constantName="Visible" typeName="MO4_Eng_PartCreI" propertyName="mo4_name_extension"
+       value="false"/>
+   <TcPropertyConstantAttach constantName="Visible" typeName="MO4_Eng_PartCreI" propertyName="mo4_object_name"
+       value="false"/>
+   <TcPropertyConstantAttach constantName="Visible" typeName="MO4_Eng_PartRevisionCreI"
+       propertyName="mo4MO4_board_data" value="false"/>
+   <TcPropertyConstantAttach constantName="Visible" typeName="MO4_Eng_PartRevisionCreI"
+       propertyName="mo4MO4_cover_data" value="false"/>
+   <TcPropertyConstantAttach constantName="Visible" typeName="MO4_Eng_PartRevisionCreI"
+       propertyName="mo4MO4_rim_data" value="false"/>
    <TcPropertyConstantAttach constantName="Visible" typeName="MO4_GenDrawing" propertyName="mo4_name3"
        value="false"/>
    <TcPropertyConstantAttach constantName="Visible" typeName="MO4_GenDrawing" propertyName="mo4_name_extension"
@@ -1600,7 +1671,7 @@
      <TcLOVValue value="90" description="" conditionName="isTrue"/>
      <TcLOVValue value="180" description="" conditionName="isTrue"/>
    </TcLOV>
-   <TcLOV name="MO4_Name2LOV" lovType="ListOfValuesString" usage="Suggestive" description=""
+   <TcLOV name="MO4_Name2LOV" lovType="ListOfValuesString" usage="Exhaustive" description=""
        isManagedExternally="true"/>
    <TcLOV name="MO4_Name3LOV" lovType="ListOfValuesString" usage="Exhaustive" description=""
        isManagedExternally="true"/>
@@ -1614,21 +1685,6 @@
    </TcLOV>
    <TcLOV name="MO4_PartTypeLOV" lovType="ListOfValuesString" usage="Exhaustive" description=""
        isManagedExternally="true"/>
-   <TcLOV name="MO4_RimTypeALOV" lovType="ListOfValuesString" usage="Exhaustive" description="">
-     <TcLOVValue value="A1" description="" conditionName="isTrue"/>
-     <TcLOVValue value="A2" description="" conditionName="isTrue"/>
-     <TcLOVValue value="A3" description="" conditionName="isTrue"/>
-   </TcLOV>
-   <TcLOV name="MO4_RimTypeBLOV" lovType="ListOfValuesString" usage="Exhaustive" description="">
-     <TcLOVValue value="B1" description="" conditionName="isTrue"/>
-     <TcLOVValue value="B2" description="" conditionName="isTrue"/>
-     <TcLOVValue value="B3" description="" conditionName="isTrue"/>
-   </TcLOV>
-   <TcLOV name="MO4_RimTypeCLOV" lovType="ListOfValuesString" usage="Exhaustive" description="">
-     <TcLOVValue value="C1" description="" conditionName="isTrue"/>
-     <TcLOVValue value="C2" description="" conditionName="isTrue"/>
-     <TcLOVValue value="C3" description="" conditionName="isTrue"/>
-   </TcLOV>
    <TcLOV name="MO4_RimTypeLOV" lovType="ListOfValuesString" usage="Exhaustive" description="">
      <TcLOVValue value="ABS" description="Abschlagkante" conditionName="isTrue"/>
      <TcLOVValue value="AUFK" description="Aufkantung" conditionName="isTrue"/>
@@ -1654,12 +1710,6 @@
      <TcLOVValue value="milled" description="" conditionName="isTrue"/>
      <TcLOVValue value="sheathed" description="" conditionName="isTrue"/>
    </TcLOV>
-   <TcLOVValueSubLOVAttach targetLOVName="MO4_RimTypeLOV" targetValue="ABS" subLOVName="MO4_RimTypeALOV"
-       conditionName="isTrue"/>
-   <TcLOVValueSubLOVAttach targetLOVName="MO4_RimTypeLOV" targetValue="AUFK" subLOVName="MO4_RimTypeBLOV"
-       conditionName="isTrue"/>
-   <TcLOVValueSubLOVAttach targetLOVName="MO4_RimTypeLOV" targetValue="ESK" subLOVName="MO4_RimTypeCLOV"
-       conditionName="isTrue"/>
    <TcLOVAttach lovName="MO4_CleannessLOV" typeName="MO4_Cover">
      <TcLOVAttachPropertyInfo valuePropertyName="mo4_cleanness" conditionName="isTrue"
          override="false" level="0"/>
@@ -1674,6 +1724,10 @@
    </TcLOVAttach>
    <TcLOVAttach lovName="MO4_DrwTypeLOV" typeName="MO4_GenDrawing">
      <TcLOVAttachPropertyInfo valuePropertyName="mo4_drawing_type" conditionName="isTrue"
+         override="false" level="0"/>
+   </TcLOVAttach>
+   <TcLOVAttach lovName="MO4_EngPartHavingArticleNoLOV" typeName="MO4_Board">
+     <TcLOVAttachPropertyInfo valuePropertyName="mo4_material_code" conditionName="isTrue"
          override="false" level="0"/>
    </TcLOVAttach>
    <TcLOVAttach lovName="MO4_EngPartHavingArticleNoLOV" typeName="MO4_Cover">

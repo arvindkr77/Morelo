@@ -20,9 +20,9 @@ MO4EXTENSIONS_CXXS       = $(MO4EXTENSIONS_SRC)$(PS)*.c* $(MO4EXTENSIONS_DRV)$(P
 MO4EXTENSIONS_CXX_FLAGS  = $(CXX_FLAGS) -DIPLIB=mo4extensions
 MO4EXTENSIONS_LINK_FLAGS = $(LINK_FLAGS)
 MO4EXTENSIONS_INCLUDES   = -I$(BASE_PATH)$(PS)src$(PS)server -I$(PROJECT_DRV) \
-                                  -I$(TC_ROOT)$(PS)include -I$(TC_ROOT)$(PS)include_cpp -I$(TC_ROOT)$(PS)aw_include_cpp \
+                                  -I$(TC_ROOT)$(PS)include -I$(TC_ROOT)$(PS)include_cpp \
                                   
-MO4EXTENSIONS_LIB_PATH   = $(LP)$(PROJECT_BIN)  $(LIB_PATH) 
+MO4EXTENSIONS_LIB_PATH   = $(LP)$(PROJECT_BIN)  $(LIB_PATH)
 MO4EXTENSIONS_LIBS       = $(LIB_PREFIX)metaframework$(LIB_SUFFIX) \
                                   $(LIB_PREFIX)sa$(LIB_SUFFIX) \
                                   $(LIB_PREFIX)tccore$(LIB_SUFFIX) \
@@ -31,10 +31,11 @@ MO4EXTENSIONS_LIBS       = $(LIB_PREFIX)metaframework$(LIB_SUFFIX) \
                                   $(LIB_PREFIX)cfm$(LIB_SUFFIX) \
                                   $(LIB_PREFIX)epm$(LIB_SUFFIX) \
                                   $(LIB_PREFIX)bom$(LIB_SUFFIX) \
+                                  $(LIB_PREFIX)qry$(LIB_SUFFIX) \
                                   $(LIB_PREFIX)cxpom$(LIB_SUFFIX) \
                                   $(LIB_PREFIX)pom$(LIB_SUFFIX)  $(LIB_PREFIX)fclasses$(LIB_SUFFIX)  $(LIB_PREFIX)itk$(LIB_SUFFIX) \
                                   $(LIB_PREFIX)extensionframework$(LIB_SUFFIX) $(LIB_PREFIX)mld$(LIB_SUFFIX)  $(LIB_PREFIX)base_utils$(LIB_SUFFIX) $(SYSLIBS)
-                                                                   
+
 MO4EXTENSIONS_LD_FLAGS   = $(MO4EXTENSIONS_LINK_FLAGS) $(MO4EXTENSIONS_LIB_PATH)
 MO4EXTENSIONS_TARGET     = $(PROJECT_BIN)$(PS)libMO4Extensions
 MO4EXTENSIONS_AUTO_TARG  = $(MO4EXTENSIONS_DRV)$(PS)libmo4extensionsinitializemodule.cxx
@@ -70,7 +71,7 @@ $(MO4EXTENSIONS_TARGET).dll : $(MO4EXTENSIONS_CXXS)
 	@echo ________________________________________________________________________________
 
 
-	
+
 # ==================================================
 # UNIX Build Target
 # ==================================================
@@ -82,7 +83,7 @@ $(MO4EXTENSIONS_TARGET).so : $(MO4EXTENSIONS_CXXS)
 	@# files to the the desired obj folder.
 	@-rm *.$(OBJ_EXT)
 	@echo Compiling $(MO4EXTENSIONS_CXXS)
-	@$(COMPILE)  $(MO4EXTENSIONS_CXX_FLAGS) $(MO4EXTENSIONS_INCLUDES) -c $(MO4EXTENSIONS_CXXS) 
+	@$(COMPILE)  $(MO4EXTENSIONS_CXX_FLAGS) $(MO4EXTENSIONS_INCLUDES) -c $(MO4EXTENSIONS_CXXS)
 	@mv *.$(OBJ_EXT) $(MO4EXTENSIONS_OBJ)
 	@echo Linking $(MO4EXTENSIONS_TARGET).so
 	@$(LINK) $(MO4EXTENSIONS_LD_FLAGS) $(MO4EXTENSIONS_OBJ)$(PS)*.$(OBJ_EXT)  $(MO4EXTENSIONS_LIBS)  $(LARG_OUT) $(MO4EXTENSIONS_TARGET).so
@@ -95,9 +96,8 @@ MO4Extensions_clean:
 	@echo Cleaning C++ Server MO4Extensions
 	-$(DELETE_DIR)  $(MO4EXTENSIONS_OBJ)
 	-$(DELETE_DIR)  $(MO4EXTENSIONS_DRV)
-	-$(DELETE_FILE) $(PROJECT_BIN)$(PS)libMO4Extensions.*	
+	-$(DELETE_FILE) $(PROJECT_BIN)$(PS)libMO4Extensions.*
 	-$(DELETE_FILE) $(PROJECT_TC)$(PS)bin$(PS)libMO4Extensions.dll
-	-$(DELETE_FILE) $(PROJECT_TC)$(PS)lib$(PS)libMO4Extensions.lib	
-	-$(DELETE_FILE) $(PROJECT_TC)$(PS)lib$(PS)libMO4Extensions.so	
+	-$(DELETE_FILE) $(PROJECT_TC)$(PS)lib$(PS)libMO4Extensions.lib
+	-$(DELETE_FILE) $(PROJECT_TC)$(PS)lib$(PS)libMO4Extensions.so
 	@echo ________________________________________________________________________________
-

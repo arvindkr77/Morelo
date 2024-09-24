@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="us-ascii" standalone="yes"?>
+<!--
+===============================================================================
+                Copyright (c) 2003-2005 UGS Corporation
+                   Unpublished - All Rights Reserved
+===============================================================================
+File description:
+
+            Filename:
+            Module:
+
+            XML File defining ___ module text/error messages.
+            This was previously done in UIH/UIL/VIL format.
+@<DEL>@
+===============================================================================
+   Date      Name                    Description of Change
+
+18-Jun-2002  Anupam Tiwari           Updated for phase P8.1.0.1
+12-May-2005  roudebus                Update copyright, strip history
+$HISTORY$
+===============================================================================
+@<DEL>@ -->
+<textsrv filename="ue_errors.xml">
+    <errors module="ue" error_base="919000">
+        <error id="100">BOM not found.</error>
+        <error id="101">BOM more than one found.</error>
+        <error id="102">BOM line not found.</error>
+        <error id="103">Engineering Part not found.</error>
+        <error id="104">Engineering Part more than one found.</error>
+        <error id="105">Material not found.</error>
+        <error id="106">Material more than one found.</error>
+        <error id="107">Invalid parameter.</error>
+        <error id="108">Article Number is not unique.</error>
+    </errors>
+</textsrv>

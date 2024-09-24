@@ -37,6 +37,8 @@ int MO4_ah_create_part_for_design
 	char*			pcObjectType = NULL ;
 	char*			pcItemName = NULL;
 	char*           pcName2 = NULL;
+	char*           pcName3 = NULL;
+	char*           pcRevId = NULL;
 
 	char**			pcErrorMessages  = NULL;
 	char**			ppcAttributeNames = NULL;
@@ -68,13 +70,14 @@ int MO4_ah_create_part_for_design
 		if (!iRetCode) iRetCode = DESIGN_ask_part_required(ptAttachments, iAttachmentCount, &part_required_values, &error_codes, &pcErrorMessages);
 	}
 
-	ppcAttributeNames = (char **) MEM_alloc( sizeof(char *) * 4 );
-	ppcAttributeValues = (char **) MEM_alloc( sizeof(char *) * 4 );
+	ppcAttributeNames = (char **) MEM_alloc( sizeof(char *) * 5 );
+	ppcAttributeValues = (char **) MEM_alloc( sizeof(char *) * 5 );
 
 	tc_strdup("item_id", &(ppcAttributeNames[0]));
 	tc_strdup("object_name", &(ppcAttributeNames[1]));
 	tc_strdup("mo4_name_extension", &(ppcAttributeNames[2]));
 	tc_strdup("mo4_object_name", &(ppcAttributeNames[3]));
+	tc_strdup("mo4_name3", &(ppcAttributeNames[4]));
 
 	// Get the relation type tag of "TC_Is_Represented_By"
 	if (!iRetCode) iRetCode = GRM_find_relation_type("TC_Is_Represented_By", &tRelationType);
@@ -89,6 +92,7 @@ int MO4_ah_create_part_for_design
 			if (!iRetCode) iRetCode = AOM_ask_value_string(ptAttachments[i], "object_name", &pcItemName);
 			if (!iRetCode) iRetCode = AOM_ask_value_string(ptAttachments[i], "mo4_name_extension", &pcNameExt);
 			if (!iRetCode) iRetCode = AOM_ask_value_string(ptAttachments[i], "mo4_object_name", &pcName2);
+			if (!iRetCode) iRetCode = AOM_ask_value_string(ptAttachments[i], "mo4_name3", &pcName3);
 			TC_write_syslog("\npcObjectType = %s, pcItemId = %s, part_required_value = %d\n", pcObjectType, pcItemId, part_required_values[i]);
 
 			pcSearchItemId = (char*) MEM_alloc ( (strlen(pcItemId) + 3) * sizeof(char) );
@@ -101,11 +105,13 @@ int MO4_ah_create_part_for_design
 				tc_strdup((const char*) pcItemName, &(ppcAttributeValues[1]));
 				tc_strdup((const char*) pcNameExt, &(ppcAttributeValues[2]));
 				tc_strdup((const char*) pcName2, &(ppcAttributeValues[3]));
+				tc_strdup((const char*) pcName3, &(ppcAttributeValues[4]));
 
-				TC_write_syslog("\n%s = %s, %s = %s, %s = %s, %s = %s\n", ppcAttributeNames[0], ppcAttributeValues[0], ppcAttributeNames[1], ppcAttributeValues[1], ppcAttributeNames[2], ppcAttributeValues[2], ppcAttributeNames[3], ppcAttributeValues[3]);
+				TC_write_syslog("\n%s = %s, %s = %s, %s = %s, %s = %s, %s = %s\n", ppcAttributeNames[0], ppcAttributeValues[0], ppcAttributeNames[1], ppcAttributeValues[1],
+						ppcAttributeNames[2], ppcAttributeValues[2], ppcAttributeNames[3], ppcAttributeValues[3], ppcAttributeNames[4], ppcAttributeValues[4]);
 
 				// Create Engineering Part and then relate it with Selected Engineering Design Revision
-				if (!iRetCode) iRetCode = ITEM_create_item2("MO4_Eng_Part", 4, ppcAttributeNames, ppcAttributeValues, "A", &tNewEngPart, &tNewEngPartRev);
+				if (!iRetCode) iRetCode = ITEM_create_item2("MO4_Eng_Part", 5, ppcAttributeNames, ppcAttributeValues, pcRevId, &tNewEngPart, &tNewEngPartRev);
 				if (!iRetCode) iRetCode = AOM_save_with_extensions(tNewEngPart);
 
 				if(iRetCode == ITK_ok)
@@ -163,8 +169,10 @@ int MO4_ah_create_design_for_part
 	char*			pcNewDesignItemId = NULL;
 	char*			pcNameExt = NULL;
 	char*           pcName2 = NULL;
+	char*           pcName3 = NULL;
 	char*			pcObjectType = NULL ;
 	char*			pcItemName = NULL;
+	char*           pcRevId = NULL;
 
 	char**			pcErrorMessages  = NULL;
 	char**			ppcAttributeNames = NULL;
@@ -196,13 +204,14 @@ int MO4_ah_create_design_for_part
 		if (!iRetCode) iRetCode = PART_ask_design_required(ptAttachments, iAttachmentCount, &design_required_values, &error_codes, &pcErrorMessages);
 	}
 
-	ppcAttributeNames = (char **) MEM_alloc( sizeof(char *) * 4 );
-	ppcAttributeValues = (char **) MEM_alloc( sizeof(char *) * 4 );
+	ppcAttributeNames = (char **) MEM_alloc( sizeof(char *) * 5 );
+	ppcAttributeValues = (char **) MEM_alloc( sizeof(char *) * 5 );
 
 	tc_strdup("item_id", &(ppcAttributeNames[0]));
 	tc_strdup("object_name", &(ppcAttributeNames[1]));
 	tc_strdup("mo4_name_extension", &(ppcAttributeNames[2]));
 	tc_strdup("mo4_object_name", &(ppcAttributeNames[3]));
+	tc_strdup("mo4_name3", &(ppcAttributeNames[4]));
 
 	// Get the relation type tag of "TC_Is_Represented_By"
 	if (!iRetCode) iRetCode = GRM_find_relation_type("TC_Is_Represented_By", &tRelationType);
@@ -217,6 +226,7 @@ int MO4_ah_create_design_for_part
 			if (!iRetCode) iRetCode = AOM_ask_value_string(ptAttachments[i], "object_name", &pcItemName);
 			if (!iRetCode) iRetCode = AOM_ask_value_string(ptAttachments[i], "mo4_name_extension", &pcNameExt);
 			if (!iRetCode) iRetCode = AOM_ask_value_string(ptAttachments[i], "mo4_object_name", &pcName2);
+			if (!iRetCode) iRetCode = AOM_ask_value_string(ptAttachments[i], "mo4_name3", &pcName3);
 			TC_write_syslog("\npcObjectType = %s, pcItemId = %s, design_required_value = %d\n", pcObjectType, pcItemId, design_required_values[i]);
 
 			pcSearchItemId = (char*) MEM_alloc ( (strlen(pcItemId) + 3) * sizeof(char) );
@@ -229,11 +239,13 @@ int MO4_ah_create_design_for_part
 				tc_strdup((const char*) pcItemName, &(ppcAttributeValues[1]));
 				tc_strdup((const char*) pcNameExt, &(ppcAttributeValues[2]));
 				tc_strdup((const char*) pcName2, &(ppcAttributeValues[3]));
+				tc_strdup((const char*) pcName3, &(ppcAttributeValues[4]));
 
-				TC_write_syslog("\n%s = %s, %s = %s, %s = %s, %s = %s\n", ppcAttributeNames[0], ppcAttributeValues[0], ppcAttributeNames[1], ppcAttributeValues[1], ppcAttributeNames[2], ppcAttributeValues[2], ppcAttributeNames[3], ppcAttributeValues[3]);
+				TC_write_syslog("\n%s = %s, %s = %s, %s = %s, %s = %s, %s = %s\n", ppcAttributeNames[0], ppcAttributeValues[0], ppcAttributeNames[1], ppcAttributeValues[1],
+						ppcAttributeNames[2], ppcAttributeValues[2], ppcAttributeNames[3], ppcAttributeValues[3], ppcAttributeNames[4], ppcAttributeValues[4]);
 
 				// Create Engineering Design and then relate it with Selected Engineering Part Revision
-				if (!iRetCode) iRetCode = ITEM_create_item2("MO4_Eng_Design", 4, ppcAttributeNames, ppcAttributeValues, "A", &tNewEngDesign, &tNewEngDesignRev);
+				if (!iRetCode) iRetCode = ITEM_create_item2("MO4_Eng_Design", 5, ppcAttributeNames, ppcAttributeValues, pcRevId, &tNewEngDesign, &tNewEngDesignRev);
 				if (!iRetCode) iRetCode = AOM_save_with_extensions(tNewEngDesign);
 
 				if(iRetCode == ITK_ok)

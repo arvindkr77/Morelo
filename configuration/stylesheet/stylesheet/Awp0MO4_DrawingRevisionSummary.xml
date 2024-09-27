@@ -24,6 +24,8 @@
                 <property name="item_id" renderingHint="label"/>
                 <property name="item_revision_id" renderingHint="label"/>
                 <property name="object_name"/>
+                <property name="mo4_object_name"/>
+                <property name="mo4_name3"/>
                 <property name="mo4_name_extension"/>
                 <property name="mo4_drawing_type_cp"/>
                 <property name="mo4_external"/>

@@ -24,10 +24,10 @@
                 <property name="item_id" renderingHint="label"/>
                 <property name="object_name"/>
                 <property name="mo4_object_name"/>
+                <property name="mo4_name3"/>
                 <property name="mo4_name_extension"/>
-                <property name="mo4_lhd_rhd_cp"/>
                 <property name="object_desc"/>
-                <property name="object_type"/>
+                <property name="object_type"/>	
                 <content>
                     <inject type="dataset" src="Usp1ItemOwningSite"/>
                 </content>

@@ -22,15 +22,16 @@ All Rights Reserved.
               <section titleKey="tc_xrt_properties">
                   <property name="object_name" modifiable="false"/>
                   <property name="object_desc" modifiable="false"/>
-                  <property name="mo4_id"/>				
+                  <property name="mo4_id"/>
+                  <property name="mo4_article_number_cp"/>				
                   <property name="mo4_material_code"/>
                   <property name="mo4_bom_aligned"/>
                   <property name="mo4_rim_type"/>
                   <property name="mo4_length"/>
                   <property name="mo4_length_excess"/>
                   <property name="mo4_size"/>
-                  <property name="mo4_width_max"/>
-                  <property name="mo4_width_min"/>
+                  <property name="mo4_height_max"/>
+                  <property name="mo4_height_min"/>
                   <separator/>
                   <property name="owning_user" renderingHint="objectlink" modifiable="false"/>
                   <property name="checked_out" modifiable="false"/>

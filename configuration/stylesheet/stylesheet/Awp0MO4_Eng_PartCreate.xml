@@ -15,8 +15,10 @@
             <property name="item_id" renderingHint="textfield"/>
             <property name="revision:item_revision_id"/>
             <property name="object_name"/>
+            <property name="revision:mo4_object_name"/>
+            <property name="revision:mo4_name3"/>
+            <property name="revision:mo4_name_extension"/>
             <property name="mo4_article_number"/>
-            <property name="mo4_name_extension"/>
             <property name="object_desc"/>
             <inject type="dataset" src="Ads1OriginalCageCodeProperty"/>
             <property name="uom_tag"/>

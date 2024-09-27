@@ -29,6 +29,7 @@ All Rights Reserved.
                   <property name="mo4_cleanness"/>
                   <property name="mo4_gloss_level"/>
                   <property name="mo4_grain_relevance"/>
+				  <property name="mo4_orientation"/>
                   <property name="mo4_surface"/>
                   <separator/>
                   <property name="owning_user" renderingHint="objectlink" modifiable="false"/>

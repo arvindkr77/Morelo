@@ -15,6 +15,9 @@
             <property name="item_id" renderingHint="textfield"/>
             <property name="revision:item_revision_id"/>
             <property name="object_name"/>
+            <property name="revision:mo4_object_name"/>
+            <property name="revision:mo4_name3"/>
+            <property name="revision:mo4_name_extension"/>
             <property name="object_desc"/>
             <property name="uom_tag"/>
             <property name="pma0IsPartRequired"/>

@@ -1,0 +1,10 @@
+Description, how to configure AWC Type-Icons:
+https://docs.sw.siemens.com/en-US/doc/282219420/PL20220523330405661.Configuration/xid1481813
+ 
+Short Description
+1) Create new icon for TC object type „type<type_name>48.svg e.g typeMO4_Design48.svg
+2) save original TC_Root/aws2 path as copy or zip e.g C:\Siemens\Teamcenter2312\aws2 -> C:\Siemens\Teamcenter2312\aws2.zip
+3) store Icon created in (1)  in „TC_Root\aws2\stage\src\image"
+4) AW build & publish (start OOTB Skript „TC_Root\aws2\stage\awbuild.cmd" in TC cmd shell)
+
+ 

@@ -1269,6 +1269,18 @@
        value="true"/>
    <TcPropertyConstantAttach constantName="Enabled" typeName="MO4_Rim" propertyName="mo4_size"
        value="true"/>
+   <TcPropertyConstantAttach constantName="Fnd0InheritFrom" typeName="MO4_Eng_DesignRevision"
+       propertyName="mo4_name3" value="MO4_Eng_PartRevision.mo4_name3"/>
+   <TcPropertyConstantAttach constantName="Fnd0InheritFrom" typeName="MO4_Eng_DesignRevision"
+       propertyName="mo4_name_extension" value="MO4_Eng_PartRevision.mo4_name_extension"/>
+   <TcPropertyConstantAttach constantName="Fnd0InheritFrom" typeName="MO4_Eng_DesignRevision"
+       propertyName="mo4_object_name" value="MO4_Eng_PartRevision.mo4_object_name"/>
+   <TcPropertyConstantAttach constantName="Fnd0InheritFrom" typeName="MO4_Eng_PartRevision"
+       propertyName="mo4_name3" value="MO4_Eng_DesignRevision.mo4_name3"/>
+   <TcPropertyConstantAttach constantName="Fnd0InheritFrom" typeName="MO4_Eng_PartRevision"
+       propertyName="mo4_name_extension" value="MO4_Eng_DesignRevision.mo4_name_extension"/>
+   <TcPropertyConstantAttach constantName="Fnd0InheritFrom" typeName="MO4_Eng_PartRevision"
+       propertyName="mo4_object_name" value="MO4_Eng_DesignRevision.mo4_object_name"/>
    <TcPropertyConstantAttach constantName="InitialValue" typeName="MO4_Cover" propertyName="mo4_id"
        value="1"/>
    <TcPropertyConstantAttach constantName="InitialValue" typeName="MO4_Cover" propertyName="mo4_material_code"

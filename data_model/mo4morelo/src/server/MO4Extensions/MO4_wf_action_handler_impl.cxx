@@ -128,8 +128,12 @@ int MO4_ah_create_part_for_design
 			else // If Engineering Part is available then relate it with Selected Engineering Design Revision
 			{
 				if (!iRetCode) iRetCode = ITEM_ask_latest_rev(tEngPart, &tEngPartRev);
-				if (!iRetCode) iRetCode = GRM_create_relation( tEngPartRev, ptAttachments[i], tRelationType, NULLTAG, &tRelation );
-				if (!iRetCode) iRetCode = GRM_save_relation( tRelation );
+				if (!iRetCode) iRetCode = GRM_find_relation(tEngPartRev, ptAttachments[i], tRelationType, &tRelation);
+				if(tRelation == NULLTAG)
+				{
+					if (!iRetCode) iRetCode = GRM_create_relation( tEngPartRev, ptAttachments[i], tRelationType, NULLTAG, &tRelation );
+					if (!iRetCode) iRetCode = GRM_save_relation( tRelation );
+				}
 			}
 
 			MEM_free(pcObjectType);
@@ -259,11 +263,15 @@ int MO4_ah_create_design_for_part
 					MEM_free(pcNewDesignItemId);
 				}
 			}
-			else // If Engineering DEsign is available then relate it with Selected Engineering Part Revision
+			else // If Engineering Design is available then relate it with selected Engineering Part Revision
 			{
 				if (!iRetCode) iRetCode = ITEM_ask_latest_rev(tEngDesign, &tEngDesignRev);
-				if (!iRetCode) iRetCode = GRM_create_relation( ptAttachments[i], tEngDesignRev, tRelationType, NULLTAG, &tRelation );
-				if (!iRetCode) iRetCode = GRM_save_relation( tRelation );
+				if (!iRetCode) iRetCode = GRM_find_relation(ptAttachments[i], tEngDesignRev, tRelationType, &tRelation );
+				if(tRelation == NULLTAG)
+				{
+					if (!iRetCode) iRetCode = GRM_create_relation( ptAttachments[i], tEngDesignRev, tRelationType, NULLTAG, &tRelation );
+					if (!iRetCode) iRetCode = GRM_save_relation( tRelation );
+				}
 			}
 
 			MEM_free(pcObjectType);

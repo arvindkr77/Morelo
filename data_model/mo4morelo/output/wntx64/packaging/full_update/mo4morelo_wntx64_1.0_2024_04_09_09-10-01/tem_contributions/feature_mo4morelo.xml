@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--
+    Document   : feature_mo4morelo.xml
+    Description: This XML is used by TEM to install or upgrade the "mo4morelo" solution.
+--><feature>
+                        
+    
+    
+    
+    
+    <name value="Morelo"/>
+                        
+    
+    
+    
+    
+    <property name="feature_name" value="mo4morelo"/>
+                        
+    
+    
+    
+    
+    <group value="package"/>
+                        
+    
+    
+    
+    
+    <guid value="D6B9D34966E2A22EAB80169ED83F80A9"/>
+                        
+    
+    
+    
+    
+    <bundle value="${feature_name}Bundle.xml"/>
+                        
+    
+    
+    
+    
+    <description value="${feature_name}.description"/>
+                        
+    
+    
+    
+    
+    <include file="dataModelDependency.xml"/>
+        
+    <relation/>
+    <feature>
+                                                
+        
+        
+        
+        
+        <!--  Feature: Data Model -->
+                                                
+        
+        
+        
+        
+        <name value="Data Model"/>
+                                                
+        
+        
+        
+        
+        <property name="feature_id" value="datamodel"/>
+                                                
+        
+        
+        
+        
+        <property name="bmide_optional" value="false"/>
+                                                
+        
+        
+        
+        
+        <property name="template_name" value="${feature_name}"/>
+                                                
+        
+        
+        
+        
+        <property name="template_file" value="${template_name}_template.xml"/>
+                                                
+        
+        
+        
+        
+        <root value="true"/>
+                                                
+        
+        
+        
+        
+        <bundle value="${template_name}Bundle.xml"/>
+                                                
+        
+        
+        
+        
+        <description value="${template_name}.description"/>
+                                                
+        
+        
+        
+        
+        <guid value="A5B35A854704040780556C2CFC7F7ABA"/>
+                                                
+        
+        
+        
+        
+        <include file="coreDataModel2.xml"/>
+                                                
+        
+        
+        
+        
+        <include file="generatePlmxmlSchema.xml"/>
+    </feature>
+            
+    
+    <feature>
+                        
+        
+        <!--   Feature: Runtime Server -->
+                        
+        
+        <name value="Runtime Server"/>
+                 
+        
+        
+        <property name="feature_id" value="rtserver"/>
+                        
+        
+        <property name="bmide_optional" value="true"/>
+                        
+        
+        <bundle value="${feature_name}Bundle.xml"/>
+                        
+        
+        <description value="${feature_name}.description"/>
+                        
+        
+        <guid value="21344372B9EB02F2DF3CD9121CDB7485"/>
+                        
+        
+        <!-- Set to true/false if there is an rtserver component   -->
+                        
+        
+        <property name="template_rtserver" value="false"/>
+                        
+        
+        <property name="rtserver_file" value="${feature_name}_rtserver.zip"/>
+                        
+        
+        <files>
+                                    
+            
+            <code>
+                                                
+                
+                <unzip file="${rtserver_file}"/>
+                                            
+            
+            </code>
+                                
+        
+        </files>
+                        
+        
+        <install>
+                                    
+            
+            <code>
+                                                
+                
+                <textserver file="emh_text.xml" include="${feature_name}_errors.xml"/>
+                                                
+                
+                <textserver file="tc_text.xml" include="${feature_name}_text.xml"/>
+                                            
+            
+            </code>
+                                
+        
+        </install>
+                        
+        
+        <upgrade>
+                                    
+            
+            <code>
+                                                
+                
+                <textserver file="emh_text.xml" include="${feature_name}_errors.xml"/>
+                                                
+                
+                <textserver file="tc_text.xml" include="${feature_name}_text.xml"/>
+                                            
+            
+            </code>
+                                
+        
+        </upgrade>
+                    
+    
+    </feature>
+        
+    <dependencyReferences>
+        <reference name="foundation" value="8C061DD51E13E0CB9DC4687B1A3348BE"/>
+    </dependencyReferences>
+</feature>

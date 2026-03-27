@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--
+Copyright 2017 Siemens Product Lifecycle Management Software Inc. All Rights Reserved.
+================================================================================
+Copyright 2017.
+Siemens Product Lifecycle Management Software Inc.
+All Rights Reserved.
+================================================================================
+Copyright 2017 Siemens Product Lifecycle Management Software Inc. All Rights Reserved.
+-->
+<package guid="D6B9D34966E2A22EAB80169ED83F80A9" packageId="mo4morelo">
+    <displayName value="${packageId}.displayName"/>
+    <description value="${packageId}.description"/>
+    <contentType value="application"/>
+    <propertyContribution/>
+    <dependencies/>
+    <artifact artifactType="fnd0_dataModelArtifact" guid="A5B35A854704040780556C2CFC7F7ABA">
+        <deploymentActions>
+            <install>
+                <target description="Perform the file deployment actions including unzip, copy, and delete." name="fileProcessing">
+                    <unzip dest="${Teamcenter_root_path}" src="${Teamcenter_mo4morelo_path}/artifacts/mo4morelo_template.zip"/>
+                    <unzip dest="${Teamcenter_root_path}" src="${Teamcenter_mo4morelo_path}/artifacts/mo4morelo_install.zip"/>
+                    <copy file="${Teamcenter_mo4morelo_path}/artifacts/mo4morelo_icons.zip" todir="${Teamcenter_root_path}/install/mo4morelo"/>
+                </target>
+                <target description="Perform the operations that must be completed prior to the database being updated." name="preDatabaseUpdate">
+                    <TemplateDeploy name="mo4morelo"/>
+                </target>
+                <target description="Perform the operations that are database dependent." name="databaseUpdate"/>
+                <target description="Perform the operations that must be completed after the database update has occurred." name="postDatabaseUpdate"/>
+            </install>
+            <update>
+                <target description="Perform the file deployment actions including unzip, copy, and delete." name="fileProcessing">
+                    <unzip dest="${Teamcenter_root_path}" src="${Teamcenter_mo4morelo_path}/artifacts/mo4morelo_template.zip"/>
+                    <unzip dest="${Teamcenter_root_path}" src="${Teamcenter_mo4morelo_path}/artifacts/mo4morelo_install.zip"/>
+                    <copy file="${Teamcenter_mo4morelo_path}/artifacts/mo4morelo_icons.zip" force="true" overwrite="true" todir="${Teamcenter_root_path}/install/mo4morelo"/>
+                </target>
+                <target description="Perform the operations that must be completed prior to the database being updated." name="preDatabaseUpdate">
+                    <TemplateUpdate name="mo4morelo"/>
+                </target>
+                <target description="Perform the operations that are database dependent." name="databaseUpdate"/>
+                <target description="Perform the operations that must be completed after the database update has occurred." name="postDatabaseUpdate"/>
+            </update>
+        </deploymentActions>
+    </artifact>
+    <artifact artifactType="fnd0_serverArtifact" guid="21344372B9EB02F2DF3CD9121CDB7485">
+        <deploymentActions>
+            <install>
+                <target description="Perform the file deployment actions including unzip, copy, and delete." name="fileProcessing">
+                    <property name="template_rtserver" value="false"/>
+                    <unzip dest="${Teamcenter_root_path}" src="${Teamcenter_mo4morelo_path}/artifacts/mo4morelo_rtserver.zip"/>
+                </target>
+                <target description="Perform the operations that must be completed prior to the database being updated." name="preDatabaseUpdate">
+                    <XInclude destfile="${Teamcenter_root_path}/lang/textserver/no_translation/emh_text.xml" includefile="mo4morelo_errors.xml"/>
+                    <XInclude destfile="${Teamcenter_root_path}/lang/textserver/no_translation/tc_text.xml" includefile="mo4morelo_text.xml"/>
+                </target>
+            </install>
+            <update>
+                <target description="Perform the file deployment actions including unzip, copy, and delete." name="fileProcessing">
+                    <property name="template_rtserver" value="false"/>
+                    <unzip dest="${Teamcenter_root_path}" src="${Teamcenter_mo4morelo_path}/artifacts/mo4morelo_rtserver.zip"/>
+                </target>
+                <target description="Perform the operations that must be completed prior to the database being updated." name="preDatabaseUpdate">
+                    <XInclude destfile="${Teamcenter_root_path}/lang/textserver/no_translation/emh_text.xml" includefile="mo4morelo_errors.xml"/>
+                    <XInclude destfile="${Teamcenter_root_path}/lang/textserver/no_translation/tc_text.xml" includefile="mo4morelo_text.xml"/>
+                </target>
+            </update>
+        </deploymentActions>
+    </artifact>
+</package>
